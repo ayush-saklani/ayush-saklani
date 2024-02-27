@@ -16,12 +16,14 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" height="60"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="60"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="60"/>
+<img src="https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv" height="60"/>
 </p>
 
 <!--
+<img src="https://media1.tenor.com/m/u0cQup-HVAsAAAAC/perry-the-platypus-hat.gif" height="60"/>
+
 https://devicon.dev/
 -->
-
 <!--
 **ayush-saklani/ayush-saklani** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
