@@ -19,19 +19,4 @@
 <img src="https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv" height="60"/>
 </p>
 
-<!--
-<img src="https://media1.tenor.com/m/u0cQup-HVAsAAAAC/perry-the-platypus-hat.gif" height="60"/>
-
-https://devicon.dev/
--->
-<!--
-**ayush-saklani/ayush-saklani** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on 
-- 🌱 I’m currently learning NodeJS,MongoDB
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 📫 How to reach me: https://www.linkedin.com/in/ayush-saklani/
--->
+<!-- <img src="https://media1.tenor.com/m/u0cQup-HVAsAAAAC/perry-the-platypus-hat.gif" height="60"/> -->
