@@ -1,13 +1,3 @@
-.heading-text {
-  color: rgb(36, 36, 36);
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-}
-
-.text {
-  color: rgb(36, 36, 36);
-  font-family: "Montserrat", sans-serif;
-}
 
 body {
   font-family: "Montserrat", sans-serif;;
@@ -20,7 +10,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.png") top right no-repeat;
+  background: #040404 url("./assets/img/bg2.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -450,14 +440,14 @@ section .container {
 /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
-.resume .resume-title {
+/* .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
-}
-
+} */
+/* 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -505,5 +495,5 @@ section .container {
   left: -9px;
   top: 0;
   background: #18d26e;
-  border: 2px solid #18d26e;
-}
+  border: 2px solid #d21818;
+} */
