@@ -149,6 +149,10 @@ a:hover {
         padding: 0;
         margin: 0;
     }
+    #header h4 {
+        margin: 20px;
+        font-size: 18px;
+    }
 }
 
 /* Desktop Navigation  */
