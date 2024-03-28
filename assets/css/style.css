@@ -117,13 +117,10 @@ a:hover {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    #header.header-top {
-        height: 60px;
-    }
-
+@media (max-width: 991px) {
     #header.header-top h1 {
-        font-size: 26px;
+        display: none;;
+        
     }
 }
 
@@ -195,7 +192,7 @@ a:hover {
         display: inline-block;
     }
     #navbar{
-        display: none;
+        display: inline-block;
     }
 } */
 
@@ -245,7 +242,7 @@ a:hover {
     right: 15px;
 } */
 
-/* .navbar-mobile ul {
+.navbar-mobile ul {
     display: block;
     position: absolute;
     top: 55px;
@@ -270,7 +267,7 @@ a:hover {
 .navbar-mobile a:focus {
     font-size: 16px;
     position: relative;
-} */
+}
 
 /*--------------------------------------------------------------
 # Sections General
