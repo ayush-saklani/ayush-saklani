@@ -73,12 +73,18 @@ a:hover {
 .social-media-links a:hover {
     background: #265362;
 }
-
+/* 2 diffrent size breakpoints  */
 @media (max-width: 992px) {
     #header .container {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    #header h4 {
+        margin: 20px;
+        font-size: 18px;
     }
 }
 
@@ -148,10 +154,6 @@ a:hover {
         font-size: 36px;
         padding: 0;
         margin: 0;
-    }
-    #header h4 {
-        margin: 20px;
-        font-size: 18px;
     }
 }
 
