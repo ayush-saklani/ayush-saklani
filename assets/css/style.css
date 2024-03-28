@@ -29,12 +29,6 @@ body::before {
     z-index: -1;
 }
 
-/* @media (min-width: 1024px) {
-  body::before {
-    background-attachment: fixed;
-  }
-} */
-
 a {
     color: #fff;
     text-decoration: none;
@@ -62,11 +56,11 @@ a:hover {
   transition: ease-in-out 0.3s;
 } */
 
-.social-links a:hover {
+.social-media-links a:hover {
     color: #ffffff;
 }
 
-.social-links a {
+.social-media-links a {
     background: rgba(255, 255, 255, 0.1);
     height: 48px;
     width: 48px;
@@ -76,7 +70,7 @@ a:hover {
     justify-content: center;
 }
 
-.social-links a:hover {
+.social-media-links a:hover {
     background: #265362;
 }
 
@@ -93,12 +87,11 @@ a:hover {
     height: 80px;
     position: fixed;
     left: 0;
-    top: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.9);
 }
 
-#header.header-top .social-links,
+#header.header-top .social-media-links,
 #header.header-top h4 {
     display: none;
 }
@@ -116,20 +109,49 @@ a:hover {
 #header.header-top .navbar {
     margin: 0;
 }
-
+/* 2 diffrent size breakpoints for navbar */
 @media (max-width: 991px) {
+    #header.header-top .container {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    #header.header-top {
+        height: 130px;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.9);
+    }    
     #header.header-top h1 {
-        display: none;;
-        
+        height: 10px;
+        font-size: 36px;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width: 768px) {
+    #header.header-top .container {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    #header.header-top {
+        height: 110px;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.9);
+    }    
+    #header.header-top h1 {
+        height: 10px;
+        font-size: 36px;
+        padding: 0;
+        margin: 0;
     }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/* Desktop Navigation  */
 
 .navbar ul {
     display: flex;
@@ -187,91 +209,8 @@ a:hover {
 .navbar li:hover>a {
     color: #fff;
 }
-/* @media (max-width: 991px) {
-    #header b{
-        display: inline-block;
-    }
-    #navbar{
-        display: inline-block;
-    }
-} */
 
-
-/**
-* Mobile Navigation 
-*/
-
-/* .mobile-nav-toggle {
-    color: #fff;
-    font-size: 28px;
-    cursor: pointer;
-    display: none;
-    line-height: 0;
-    transition: 0.5s;
-    position: fixed;
-    right: 15px;
-    top: 15px;
-} */
-
-/* @media (max-width: 991px) {
-    .mobile-nav-toggle {
-        display: block;
-    }
-
-    .navbar ul {
-        display: none;
-    }
-} */
-
-/* .navbar-mobile {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.9);
-    transition: 0.3s;
-    z-index: 999;
-    margin-top: 0;
-} */
-/* 
-.navbar-mobile .mobile-nav-toggle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-} */
-
-.navbar-mobile ul {
-    display: block;
-    position: absolute;
-    top: 55px;
-    right: 15px;
-    bottom: 45px;
-    left: 15px;
-    padding: 10px 0;
-    overflow-y: auto;
-    transition: 0.3s;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.navbar-mobile li {
-    padding: 12px 20px;
-}
-
-.navbar-mobile li+li {
-    margin: 0;
-}
-
-.navbar-mobile a,
-.navbar-mobile a:focus {
-    font-size: 16px;
-    position: relative;
-}
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/* Sections General */
 section {
     overflow: hidden;
     position: absolute;
