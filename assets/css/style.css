@@ -2,6 +2,10 @@
   color: rgb(224, 224, 224);
   font-family: "Montserrat", sans-serif;
 }
+.text-header {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+}
 /*------- General ------*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -368,69 +372,9 @@ section .container {
   }
 }
 
-.section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 20px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
-}
-
-.section-title p {
-  margin: 0;
-  margin: -15px 0 15px 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about-me .content h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #FF7F11;
-}
-
-.about-me .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about-me .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.about-me .content ul strong {
-  margin-right: 10px;
-}
-
-.about-me .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: #FF7F11;
-  line-height: 0;
-}
-
-.about-me .content p:last-child {
-  margin-bottom: 0;
-}
-
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-/* .counts {
-  padding: 70px 0 60px;
-} */
 
 .counts .count-box {
   padding: 30px 30px 25px 30px;
