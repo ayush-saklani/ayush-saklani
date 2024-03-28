@@ -113,18 +113,13 @@ h6 {
 }
 
 #header.header-top .social-links,
-#header.header-top h2 {
+#header.header-top h4 {
   display: none;
 }
 
 #header.header-top h1 {
   margin-right: auto;
   font-size: 36px;
-}
-
-#header.header-top img {
-  max-height: 60px;
-  margin-right: 20px !important;
 }
 
 #header.header-top .container {
@@ -224,7 +219,7 @@ h6 {
 /**
 * Mobile Navigation 
 */
-/* .mobile-nav-toggle {
+.mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
   cursor: pointer;
@@ -290,7 +285,7 @@ h6 {
 .navbar-mobile a:focus {
   font-size: 16px;
   position: relative;
-} */
+}
 
 /*--------------------------------------------------------------
 # Sections General
