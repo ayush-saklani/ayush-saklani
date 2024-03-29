@@ -187,6 +187,29 @@ section .container {
         text-align: center;
     } 
 }
+/* Main container div */
+.under-development {
+    position: relative; /* Relative positioning for containing pseudo-element */
+    /* width: 100%;  */
+    /* height: 100vh; Set height as desired */
+}
+
+/* Overlay pseudo-element */
+.under-development::before {
+    content: "";        
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;                                 
+    height: 100%;                               
+    background-image: url('../img/under-development.png');     
+    background-size:contain ;                   
+    background-position: center ;               
+    background-repeat: no-repeat;
+    z-index: 3; 
+}
+
+
 /* hides the scrollbar for esthatics :) O 3 O */
 ::-webkit-scrollbar {
     display: none;
