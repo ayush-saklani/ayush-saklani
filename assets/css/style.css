@@ -262,10 +262,16 @@ section .container {
     font-weight: bolder;
     color: #fff;
 }
-
 /* transparent box  */
 .trans-box {
     background: rgba(255, 255, 255, 0.15);
     padding: 5px 15px;
     display: inline-block;
+}
+
+
+@media (max-width: 576px) {
+    .interests h6{
+        text-align: center;
+    } 
 }
