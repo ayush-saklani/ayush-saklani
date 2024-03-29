@@ -2,7 +2,6 @@
     color: rgb(196, 195, 195);
     font-family: "Montserrat", sans-serif;
 }
-
 .text-header {
     font-size: 48px;
     color: rgb(255, 255, 255);
@@ -16,7 +15,6 @@ body {
     position: relative;
     background: transparent;
 }
-
 body::before {
     content: "";
     position: fixed;
@@ -28,8 +26,7 @@ body::before {
     height: 100vh;
     z-index: -1;
 }
-
-a {
+a{
     color: #fff;
     text-decoration: none;
 }
@@ -47,10 +44,6 @@ a:hover {
     z-index: 997;
     overflow-y: auto;
 }
-/* #header * {
-  transition: ease-in-out 0.3s;
-} */
-
 /* transparent box for home social media */
 .social-media-links a {
     background: rgba(255, 255, 255, 0.1);
@@ -80,7 +73,6 @@ a:hover {
         font-size: 18px;
     }
 }
-
 /* Header Top */
 #header.header-top {
     height: 80px;
@@ -94,17 +86,14 @@ a:hover {
 #header.header-top h4 {
     display: none;
 }
-
 #header.header-top h1 {
     margin-right: auto;
     font-size: 36px;
 }
-
 #header.header-top .container {
     display: flex;
     align-items: center;
 }
-
 #header.header-top .navbar {
     margin: 0;
 }
@@ -120,7 +109,7 @@ a:hover {
     #header.header-top {
         height: 130px;
         position: fixed;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(81, 73, 73, 0.9);
     }    
     #header.header-top h1 {
         height: 10px;
@@ -136,8 +125,7 @@ a:hover {
         background: rgba(0, 0, 0, 0.9);
     }    
 }
-
-/* Desktop Navigation  */
+/* navbar css */
 .navbar li {
     position: relative;
 }
@@ -151,13 +139,12 @@ a:hover {
     transition: all 0.3s ease-in-out 0s;
 }
 .navbar a:hover:before,
-.navbar li:hover>a:before,
 .navbar .active:before {
     visibility: visible;
     width: 25px;
 }
 
-/* Sections General */
+/* Sections CSS */
 section {
     overflow: hidden;
     position: absolute;
@@ -189,7 +176,6 @@ section .container {
 
 
 /* Count meter  */
-
 /* transparent countdown box  */
 .trans-box-count {
     width: 100%;
