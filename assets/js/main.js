@@ -1,9 +1,7 @@
 (function () {
-	"use strict";
+	// "use strict";
 
-	/**
-	 * Easy selector helper function
-	 */
+	/*  Easy selector helper function  */
 	const select = (el, all = false) => {
 		el = el.trim();
 		if (all) {
@@ -13,9 +11,7 @@
 		}
 	};
 
-	/**
-	 * Easy event listener function
-	 */
+	/*  Easy event listener function  */
 	const on = (type, el, listener, all = false) => {
 		let selectEl = select(el, all);
 
@@ -28,14 +24,13 @@
 		}
 	};
 
-
 	/* Scrool with ofset on links with a class name .scrollto*/
 	on("click", "#navbar .nav-link", function (e) {
 		let section = select(this.hash);
 		if (section) {
 			e.preventDefault();
 
-			// let navbar = select("#navbar");
+			let navbar = select("#navbar");
 			let header = select("#header");
 			let sections = select("section", true);
 			let navlinks = select("#navbar .nav-link", true);
