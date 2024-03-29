@@ -21,5 +21,8 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="60"/>
 <img src="https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv" height="60"/>
 </p>
+<!-- <p align="center">
+<img src="https://i.pinimg.com/originals/9f/1d/58/9f1d582d5a8045fec25f03530d73dd24.gif" height="300"/>
+</p> -->
 
 <!-- <img src="https://media1.tenor.com/m/u0cQup-HVAsAAAAC/perry-the-platypus-hat.gif" height="60"/> -->
