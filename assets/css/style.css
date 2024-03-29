@@ -33,15 +33,11 @@ a {
     color: #fff;
     text-decoration: none;
 }
-
 a:hover {
     color: #54B4D3;
 }
 
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* # Header */
 #header {
     transition: ease-in-out 0.3s;
     position: relative;
@@ -238,10 +234,6 @@ section .container {
 }
 
 @media (max-width: 768px) {
-    section {
-        top: 120px;
-    }
-
     section.section-show {
         top: 80px;
     }
