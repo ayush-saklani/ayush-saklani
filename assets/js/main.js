@@ -12,10 +12,12 @@ const on = (type, el, listener, flag = false) => {
 
 on("click", "#navbar .nav-link", function (e) {
 	let section = select(this.hash);
+	console.log(this.hash)
 	if (section) {
 		let header = select("#header", false),
-			sections = select("section", true),
-			navlinks = select("#navbar .nav-link", true);
+		sections = select("section", true),
+		navlinks = select("#navbar .nav-link", true);
+		console.log(sections)
 
 		navlinks.forEach((item) => item.classList.remove("active"));
 		this.classList.add("active");
