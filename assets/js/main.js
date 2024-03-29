@@ -29,9 +29,7 @@
 	};
 
 
-	/**
-	 * Scrool with ofset on links with a class name .scrollto
-	 */
+	/* Scrool with ofset on links with a class name .scrollto*/
 	on("click", "#navbar .nav-link", function (e) {
 		let section = select(this.hash);
 		if (section) {
@@ -77,36 +75,5 @@
 		true
 	);
 
-	/* Activate/show sections on load with hash links */
-	window.addEventListener("load", () => {
-		if (window.location.hash) {
-			let initial_nav = select(window.location.hash);
-
-			if (initial_nav) {
-				let header = select("#header");
-				let navlinks = select("#navbar .nav-link", true);
-
-				header.classList.add("header-top");
-
-				navlinks.forEach((item) => {
-					if (item.getAttribute("href") == window.location.hash) {
-						item.classList.add("active");
-					} else {
-						item.classList.remove("active");
-					}
-				});
-
-				setTimeout(function () {
-					initial_nav.classList.add("section-show");
-				}, 350);
-
-				scrollto(window.location.hash);
-			}
-		}
-	});
-
-	/**
-	 * Initiate Pure Counter
-	 */
 	new PureCounter();
 })();
