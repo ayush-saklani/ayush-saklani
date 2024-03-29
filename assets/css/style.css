@@ -44,7 +44,7 @@ a:hover {
     z-index: 997;
     overflow-y: auto;
 }
-/* transparent box for home social media */
+/* circular transparent box for home social media */
 .social-media-links a {
     background: rgba(255, 255, 255, 0.1);
     height: 48px;
@@ -54,7 +54,6 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
-
 .social-media-links a:hover {
     color: #ffffff;
     background: #214855;
@@ -73,6 +72,7 @@ a:hover {
         font-size: 18px;
     }
 }
+
 /* Header Top */
 #header.header-top {
     height: 80px;
