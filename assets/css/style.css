@@ -47,7 +47,6 @@ a:hover {
     z-index: 997;
     overflow-y: auto;
 }
-
 /* #header * {
   transition: ease-in-out 0.3s;
 } */
@@ -64,7 +63,8 @@ a:hover {
 }
 
 .social-media-links a:hover {
-    background: #265362;
+    color: #ffffff;
+    background: #214855;
 }
 /* 2 diffrent size breakpoints  */
 @media (max-width: 992px) {
@@ -130,24 +130,11 @@ a:hover {
     }
 }
 @media (max-width: 768px) {
-    #header.header-top .container {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-    }
     #header.header-top {
         height: 110px;
         position: fixed;
         background: rgba(0, 0, 0, 0.9);
     }    
-    #header.header-top h1 {
-        height: 10px;
-        font-size: 36px;
-        padding: 0;
-        margin: 0;
-    }
 }
 
 /* Desktop Navigation  */
@@ -155,7 +142,6 @@ a:hover {
 .navbar ul {
     display: flex;
 }
-
 .navbar li {
     position: relative;
 }
@@ -266,4 +252,9 @@ section .container {
     .interests h6{
         text-align: center;
     } 
+}
+
+/* hides the scrollbar for esthatics */
+::-webkit-scrollbar {
+    display: none;
 }
