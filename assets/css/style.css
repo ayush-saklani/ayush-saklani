@@ -31,7 +31,6 @@ a{
 a:hover {
     color: #54B4D3;
 }
-
 /* # Header */
 #header {
     transition: ease-in-out 0.3s;
@@ -78,7 +77,6 @@ a:hover {
     right: 0;
     background: rgba(0, 0, 0, 0.9);
 }
-
 #header.header-top .social-media-links,
 #header.header-top h4 {
     display: none;
@@ -167,7 +165,6 @@ section .container {
         top: 80px;
     }
 }
-/* Count meter  */
 /* transparent countdown box  */
 .trans-box-count {
     width: 100%;
@@ -194,7 +191,6 @@ section .container {
 ::-webkit-scrollbar {
     display: none;
 }
-
 /*                     _             __           
                      /_|      _ /  (  _ / /_   ' 
                     (  |(/(/_) /) __)(//(((//)/  
