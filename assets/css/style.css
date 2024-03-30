@@ -222,7 +222,6 @@ section .container {
     z-index: 3; 
 }
 
-
 /* hides the scrollbar for esthatics :) O 3 O */
 ::-webkit-scrollbar {
     display: none;
