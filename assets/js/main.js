@@ -1,16 +1,13 @@
-const select = (el, flag) => (flag ? [...document.querySelectorAll(el)] : document.querySelector(el));
-const on = (type, el, listener, flag = false) => {
-	let selectEl = select(el, flag);
-	if (selectEl) {
-		if (flag) {
-			selectEl.forEach((e) => e.addEventListener(type, listener));
-		} else {
-			selectEl.addEventListener(type, listener);
-		}
+const select = (target_element, flag) => (flag ? [...document.querySelectorAll(target_element)] : document.querySelector(target_element));
+const add_listener = (target_element, func) => {
+	let selectEl = select(target_element, true);
+	console.log(selectEl)
+	if (selectEl){
+		selectEl.forEach((e) => e.addEventListener("click", func));
 	}
 };
 
-on("click", "#navbar .nav-link", function (e) {
+add_listener("#navbar .nav-link", function (e) {
 	let section = select(this.hash);
 	// console.log(this.hash)
 	if (section) {
@@ -41,4 +38,4 @@ on("click", "#navbar .nav-link", function (e) {
 		}
 		section.scrollIntoView({ behavior: "smooth" });
 	}
-}, true);
+});
