@@ -7,7 +7,7 @@ function add_listener (target_element, func){
 	}
 };
 
-add_listener("#navbar .nav-link", function (e) {
+add_listener("#navbar .nav-link", function () {
 	let section = select(this.hash);
 	// console.log(this.hash)
 	if (section) {
