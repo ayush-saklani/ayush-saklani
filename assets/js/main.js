@@ -1,9 +1,9 @@
 const select = (target_element, flag) => (flag ? [...document.querySelectorAll(target_element)] : document.querySelector(target_element));
-const add_listener = (target_element, func) => {
-	let selectEl = select(target_element, true);
-	console.log(selectEl)
-	if (selectEl){
-		selectEl.forEach((e) => e.addEventListener("click", func));
+function add_listener (target_element, func){
+	let target_arr = select(target_element, true); //select all elemant with this class
+	console.log(target_arr)
+	if (target_arr){
+		target_arr.forEach((e) => e.addEventListener("click", func));
 	}
 };
 
@@ -13,7 +13,7 @@ add_listener("#navbar .nav-link", function (e) {
 	if (section) {
 		let header = select("#header", false);
 		let sections = select("section", true);
-		let navlinks = select("#navbar .nav-link", true);
+		let navlinks = select(".nav-link", true);
 		// console.log("1 "+header)
 		// console.log("2 "+sections)
 		// console.log("3 "+navlinks)
