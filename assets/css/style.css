@@ -68,7 +68,7 @@ a:hover {
     color: #ffffff;
     background: #214855;
 }
-/* 2 diffrent size breakpoints  */
+/* 2 diffrent size breakpoints for tab and mobile */
 @media (max-width: 992px) {
     #header .container {
         display: flex;
@@ -82,7 +82,7 @@ a:hover {
         font-size: 18px;
     }
 }
-/* Header Top */
+/* Header Top // (other than home) */
 #header.header-top {
     height: 80px;
     position: fixed;

@@ -12,7 +12,7 @@ const on = (type, el, listener, flag = false) => {
 
 on("click", "#navbar .nav-link", function (e) {
 	let section = select(this.hash);
-	console.log(this.hash)
+	// console.log(this.hash)
 	if (section) {
 		let header = select("#header", false);
 		let sections = select("section", true);
