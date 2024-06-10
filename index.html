@@ -22,7 +22,7 @@
     <header id="header">
         <div class="container">
             <h1 class="text-header my-3"><a class="link-light" href="index.html"><b>Ayush Saklani</b></a></h1>
-            <h4 class="text">I'm an enthusiastic <b>CS</b> undergrad hailing from Dehradun, India.</h4>
+            <h4 class="text">I'm an enthusiastic <b class="flash">CS</b> undergrad hailing from Dehradun, India.</h4>
             <nav id="navbar" class="navbar mt-4 ">
                 <ul class="text-center list-unstyled p-0 m-0 d-flex">
                     <li class="me-4"><a class="nav-link active" href="#header"><span class="text">Home</span></a></li>
@@ -184,6 +184,9 @@
                 <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-2">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="60"/>
                 </div>
+                <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" height="60"/>
+                </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 py-3 px-2">
                     <img src="https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv" height="60"/>
                 </div>
@@ -208,6 +211,7 @@
                         <a class="h3 mx-1" href="https://github.com/ayush-saklani" target="_blank"><i class="devicon-github-original"></i></a>
                         <a class="h3 mx-1" href="https://www.instagram.com/ayush_saklani/" target="_blank"><i class="bi bi-instagram"></i></a>
                         <a class="h3 mx-1" href="mailto:ayushsaklani04@gmail.com" target="_blank" ><i class="bi bi-envelope-at-fill"></i></a>
+                        <a class="h6 mx-1 text text-warning" href="./assets/docs/resume.pdf" target="_blank" download ><i class="h3 bi bi-file-earmark-arrow-down-fill text-warning"></i>Resumé</a>
                     <h4 class="text my-3"><b>Education</b></h4>
                     <div class="ps-4 pb-3 border-start border-dark border-2">
                         <h5 class="text-info text-uppercase text"><b><i class="bi bi-caret-right-fill"></i>Modern School, Rishikesh</b></h5>
@@ -262,6 +266,19 @@
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" width="60" height="60"/>
                         </ul>
                     </div>
+                    <div class="ps-4 pb-3 border-start border-dark border-2">
+                        <h5 class="text-info text-uppercase text"><b><i class="bi bi-caret-right-fill"></i>Attendance Marking System (Mark my spot)</b></h5>
+                        <h6 class="trans-box"><b>2024</b></h6>
+                        <ul>
+                            <li class="pb-2">The Smart Attendance Marking web-based application.</li>
+                            <li class="pb-2">It allows students to input their details via a web form and generates QR codes</li>
+                            <li class="pb-2">Enables teachers to scan QR codes to mark attendance</li>
+                            <li class="pb-2">later a CSV file with record can be downloaded.</li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="60"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="60"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="60"/>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="ps-4 pb-3 border-start border-dark border-2">
@@ -283,19 +300,6 @@
                         </ul>
                     </div>
                     <div class="ps-4 pb-3 border-start border-dark border-2">
-                        <h5 class="text-info text-uppercase text"><b><i class="bi bi-caret-right-fill"></i>Attendance Marking System (Mark my spot)</b></h5>
-                        <h6 class="trans-box"><b>2024</b></h6>
-                        <ul>
-                            <li class="pb-2">The Smart Attendance Marking web-based application.</li>
-                            <li class="pb-2">It allows students to input their details via a web form and generates QR codes</li>
-                            <li class="pb-2">Enables teachers to scan QR codes to mark attendance</li>
-                            <li class="pb-2">later a CSV file with record can be downloaded.</li>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="60"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="60"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="60"/>
-                        </ul>
-                    </div>
-                    <div class="ps-4 pb-3 border-start border-dark border-2">
                         <h5 class="text-info text-uppercase text"><b><i class="bi bi-caret-right-fill"></i>Mr. Minesweeper</b></h5>
                         <h6 class="trans-box"><b>2024</b></h6>
                         <ul>
@@ -309,21 +313,46 @@
                             <img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"height="60"/>
                         </ul>
                     </div>
-                    <div class="ps-4 pb-3 border-start border-dark border-2 under-development">
-                        <h5 class="text-info text-uppercase text"><b><i class="bi bi-caret-right-fill"></i>Class-Sync Timetable manager (beta)</b></h5>
-                        <h6 class="trans-box"><b>2024 (under development)</b></h6>
+                    <div class="ps-4 pb-3 border-start border-dark border-2">
+                        <h5 class="text-info text-uppercase text"><b><i class="bi bi-caret-right-fill"></i>Class-Sync Timetable manager (v.1.0)</b></h5>
+                        <h6 class="trans-box"><b>2024</b></h6>
                         <ul>
-                            <li class="pb-2">Time table manager for students and teachers.</li>
-                            <li class="pb-2">will be a addon to navit .</li>
+                            <li class="pb-2"> Created a web application to manage university timetables and prevent classroom scheduling conﬂicts.</li>
+                            <li class="pb-2"> Time table manager for students and teachers.</li>
+                            <li class="pb-2"> Designed server-side functionalities using NodeJS, MongoDB, and ExpressJS.</li>
+                            <li class="pb-2"> Built user interfaces with HTML, CSS, JavaScript, and React.js for students, teachers, and administrators.</li>
+                            <li class="pb-2"> Enabled real-time updates and conﬂict resolution through dedicated viewing and editing pages.</li>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="60"/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="60"/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="60"/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"height="60"/>
                             <img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"height="60"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" height="60"/>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Status_iucn_EX_icon_blank.svg" height="60"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" height="60"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" height="60"/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" height="60"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" height="60"/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="60"/>
-                            <img src="https://camelot-py.readthedocs.io/en/master/_static/png/camelot-logo.png" height="60"/>
+                        </ul>
+                    </div>
+                    <div class="ps-4 pb-3 border-start border-dark border-2 under-development">
+                        <h5 class="text-info text-uppercase text"><b><i class="bi bi-caret-right-fill"></i>Comming soon.....</b></h5>
+                        <h6 class="trans-box"><b>2024 ?</b></h6>
+                        <ul>
+                            <li class="mb-2 placeholder placeholder-wave">Lorem ipsum dolor sit amet consectetur adipisicing.</li><br>
+                            <li class="mb-2 placeholder placeholder-wave">Lorem, ipsum dolor.</li><br>
+                            <li class="mb-2 placeholder placeholder-wave">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque</li><br>
+                            <li class="mb-2 placeholder placeholder-wave">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque</li><br>
+                            <li class="mb-2 placeholder placeholder-wave">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque</li><br>
+                            <li class="mb-2 placeholder placeholder-wave">Lorem ipsum dolor sit amet.</li><br>
+                            <li class="mb-2 placeholder placeholder-wave">Lorem ipsum dolor sit amet.</li><br>
+                            <li class="mb-2 placeholder placeholder-wave">Lorem ipsum dolor sit amet.</li><br>
+                            <li class="mb-2 placeholder placeholder-wave" style="height: 65px; width: 65px;">later a CSV file with record can be downloaded.</li>
+                            <li class="mb-2 placeholder placeholder-wave" style="height: 65px; width: 65px;">later a CSV file with record can be downloaded.</li>
+                            <li class="mb-2 placeholder placeholder-wave" style="height: 65px; width: 65px;">later a CSV file with record can be downloaded.</li>
+                            <li class="mb-2 placeholder placeholder-wave" style="height: 65px; width: 65px;">later a CSV file with record can be downloaded.</li>
+                            <li class="mb-2 placeholder placeholder-wave" style="height: 65px; width: 65px;">later a CSV file with record can be downloaded.</li>
                         </ul>
                     </div>
                 </div>
@@ -344,9 +373,13 @@
                     <a class="h3 mx-1" href="https://www.linkedin.com/in/ayush-saklani/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
                     <a class="h2 mx-1" href="https://github.com/ayush-saklani" target="_blank"><i class="devicon-github-original"></i></a>
                 </div> -->
+                <h4 class="text my-3 text-info text-uppercase"><b>Class-Sync Timetable Manager [ server : active ]</b></h4>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://projectclasssync.vercel.app/" title="Class-Sync Timetable Manager" allowfullscreen></iframe>
+                </div>
                 <h4 class="text my-3 text-info text-uppercase"><b>navit indoor navigation [backend pathfinding server : inactive]</b></h4>
                 <div class="ratio ratio-16x9 mb-3">
-                    <iframe src="https://navit.vercel.app/" title="portfolio" allowfullscreen></iframe>
+                    <iframe src="https://navit.vercel.app/" title="navit indoor navigation" allowfullscreen></iframe>
                 </div>
                 <h4 class="text my-3 text-info text-uppercase"><b>Mr. Minesweeper</b></h4>
                 <div class="ratio ratio-16x9 mb-3">
@@ -354,19 +387,17 @@
                 </div>
                 <h4 class="text my-3 text-info text-uppercase"><b>Mark my spot</b></h4>
                 <div class="ratio ratio-16x9 mb-3">
-                    <iframe src="https://markmyspot.vercel.app/" title="portfolio" allowfullscreen></iframe>
+                    <iframe src="https://markmyspot.vercel.app/" title="Mark my spot" allowfullscreen></iframe>
                 </div>
                 <h4 class="text my-3 text-info text-uppercase"><b>portfolio Website</b></h4>
                 <div class="ratio ratio-16x9 mb-3">
-                    <iframe src="https://ayushsaklani.vercel.app/" title="portfolio" allowfullscreen></iframe>
+                    <iframe src="https://ayushsaklani.vercel.app/" title="portfolio" allowfullscreen style="pointer-events: none;"></iframe>
                 </div>
                 <div class="container under-development">
-                    <div class="container"></div>
-                    <div class="container"></div>
-                    <div class="container"></div>
-                    <div class="container"></div>
-                    <div class="container"></div>
-                    <div class="container"></div>
+                    <h4 class="text my-3 text-info text-uppercase placeholder placeholder-wave"><b>Lorem ipsum dolor sit amet consectetur adipisicing.</b></h4>
+                    <div class="ratio ratio-16x9 mb-3 placeholder placeholder-glow">
+                        <iframe src="" title="Lorem ipsum dolor" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="container text-center">
                     <img src="https://i.pinimg.com/originals/9f/1d/58/9f1d582d5a8045fec25f03530d73dd24.gif" height="300"/>

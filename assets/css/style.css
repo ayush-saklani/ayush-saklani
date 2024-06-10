@@ -24,6 +24,17 @@ body::before {
     height: 100vh;
     z-index: -1;
 }
+.flash{
+    animation: flash 1s infinite;
+}
+@keyframes flash {
+    0%, 100% {
+        color: #54B4D3;
+    }
+    50% {
+        color: white ;
+    }
+}
 @media (max-width: 768px) {
     body::before {
         content: "";
@@ -220,6 +231,9 @@ section .container {
     background-position: center ;               
     background-repeat: no-repeat;
     z-index: 3; 
+}
+iframe{
+    border: 0.5px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 /* hides the scrollbar for esthatics :) O 3 O */
