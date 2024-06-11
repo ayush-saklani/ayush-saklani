@@ -1,3 +1,4 @@
+document.getElementById("age").innerHTML = Math.floor((new Date() - new Date("12-04-2004"))/ (1000 * 60 * 60 * 24 * 365.25));
 const select = (target_element, flag) => (flag ? [...document.querySelectorAll(target_element)] : document.querySelector(target_element));
 function add_listener (target_element, func){
 	let target_arr = select(target_element, true); //select all elemant with this class
