@@ -1,7 +1,9 @@
 const logotext = "Ayush Saklani";
 const meta = {
     title: "Ayush Saklani",
-    description: "I’m Ayush Saklani a CS undergrad, Full stack devloper, from Dehradun Uttrarakhand",
+    short_description: "I’m Ayush Saklani a CS undergrad, Full stack devloper, from Dehradun Uttrarakhand",
+    description: `An computer science undergrad pursuing BTech CSE (2025 batch) from GEHU. 
+    I am a passionate programmer and a quick learner, always eager to learn new technologies and implement them in my projects.`,
 };
 
 const introdata = {
@@ -22,7 +24,7 @@ const dataabout = {
 const dataabout2 = [
     { title: "Birthdate", "data": "XX December 2004" },
     { title: "Website", "data": "ayushsaklani.vercel.app" },
-    { title: "Phone", "data": "+91 9411169994" },
+    { title: "Phone", "data": "+91 94xxxxxxxxx" },
     { title: "City", "data": "Dehradun,Uttarakhand" },
     { title: "Age", "data": "19" },
     { title: "Degree", "data": "BTech CSE" },
@@ -114,6 +116,7 @@ const resumedata = [
         data: [
             {
                 heading: "University campus navigator (Navit) (v.1.0)",
+                link: "https://github.com/ayush-saklani/navit",
                 tags: ["2024"],
                 description: [
                     "Guides you to the place you want to go inside university campus.",
@@ -134,6 +137,7 @@ const resumedata = [
             },
             {
                 heading: "Class-Sync Timetable manager (v.1.8)",
+                link: "https://github.com/ayush-saklani/classsync",
                 tags: ["2024"],
                 description: [
                     "Created a web application to manage university timetables and prevent classroom scheduling conﬂicts.",
@@ -178,13 +182,15 @@ const resumedata = [
 
 const contactConfig = {
     YOUR_EMAIL: "ayushsaklani04@gmail.com",
-    YOUR_FONE: "+91 9411169994",
+    YOUR_FONE: "+91 94XXXXXXXXX",
     description: "An computer science undergrad pursuing BTech CSE (2025 batch) from GEHU. I am a passionate programmer and a quick learner, always eager to learn new technologies and implement them in my projects.",
     github: 'github.com/ayush-saklani',
     linkedin: "linkedin.com/in/ayush-saklani",
 };
 
 const socialprofils = {
+    email: "mailto:ayushsaklani04@gmail.com",
+    resume: "",
     github: "https://github.com/ayush-saklani/",
     linkedin: "https://www.linkedin.com/in/ayush-saklani/",
     instagram: "https://www.instagram.com/ayush_saklanii/",

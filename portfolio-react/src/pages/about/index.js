@@ -7,6 +7,7 @@ import {
     dataabout2,
     meta,
     skills,
+    socialprofils,
 } from "../../content_option";
 
 export const About = () => {
@@ -18,7 +19,7 @@ export const About = () => {
                     <title> About | {meta.title}</title>
                     <meta name="description" content={meta.description} />
                 </Helmet>
-                <Row className="mb-5 mt-3 pt-md-3">
+                <Row className="mb-3 mt-3 pt-md-3">
                     <Col lg="12">
                         <h1 className="display-4 mb-4">About me</h1>
                         <hr className="t_border my-4 ml-0 text-left" />
@@ -46,7 +47,7 @@ export const About = () => {
                         );
                     })}
                 </Row>
-                <Row className="sec_sp">
+                <Row className="sec_sp pb-5">
                     <Col lg="3">
                         <h3 className="color_sec py-4">Skills</h3>
                     </Col>
