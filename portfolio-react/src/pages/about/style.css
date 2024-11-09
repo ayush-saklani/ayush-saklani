@@ -100,7 +100,7 @@
 }
 .trans-box-count {
     width: 100%;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--primary-color-lighter);
 }
 .trans-box-count span {
     font-size: 36px;

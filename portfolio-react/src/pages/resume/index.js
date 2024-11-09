@@ -34,7 +34,7 @@ export const Resume = () => {
                                 <h1 className="fw-bold">{data.title} </h1>
                                 {
                                     data.data.map((data, i) => (
-                                        <div key={i} className="pt-2 ">
+                                        <div key={i} className="pt-1">
                                             <h4 className="fw-bold pt-1 resume-heading"><FaPlay className="me-2" />
                                                 {data.link ?
                                                     <a href={data.link} target="_blank">

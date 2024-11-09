@@ -30,7 +30,7 @@ export const About = () => {
                 </Row>
 
 
-                <Row className="sec_sp row">
+                <Row className="sec_sp row py-2" style={{ backgroundColor: "var(--primary-color-lighter)" }}>
                     <img src={my_photo} className="col-xl-4 col-lg-7 py-4" style={{ objectFit: "contain" }} />
                     <div className="col-xl-8 col-lg-5  row">
                         <h3 className="color_sec py-2 fw-bold">{dataabout.title}</h3>
@@ -51,10 +51,10 @@ export const About = () => {
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="trans-box-count row p-4">
                                     <div class="col-lg-4 p-3 text-center">
-                                        <i><img src={data.logo_link} alt="github" height="60px" /></i>
+                                        <i><img src={data.logo_link} height="60px" /></i>
                                     </div>
                                     <div class="col-lg-8 text-center">
-                                        <CountUp end={data.data} />
+                                        <CountUp end={data.data} style={{ color: "var(--text-color)" }} />
                                         <a class="text" href={data.link} target="_blank"><b>{data.title}</b></a>
                                     </div>
                                 </div>
@@ -62,13 +62,13 @@ export const About = () => {
                         )
                     })}
                 </div>
-                <Row className="sec_sp pb-5">
+                <Row className="sec_sp py-2 pb-5" style={{ backgroundColor: "var(--primary-color-lighter)" }}>
                     {/* <h3 className="color_sec py-2">Coding Skills &amp; Interests</h3> */}
                     <div class="row text-center">
                         {
                             Interests.map((data, i) => {
                                 return (
-                                    <div key={i} className="col-lg-1 col-md-2 col-sm-3 py-2 px-1 col-4">
+                                    <div key={i} className="col-lg-1 col-md-2 col-sm-3 col-4 my-3">
                                         <img src={data} height="70" />
                                     </div>
                                 );
