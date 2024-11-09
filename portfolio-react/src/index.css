@@ -5,7 +5,9 @@
     --text-color: #fff;
     --text-color-2: #fff;
     --text-color-3: rgb(204, 0, 0);
+    --text-color-4: #08a7c7;
     --overlay-color: rgb(12 12 12 / 63%);
+    --primary-color-lighter : rgb(32, 32, 32);
 }
 
 [data-theme="light"] {
@@ -15,7 +17,9 @@
     --text-color: #000;
     --text-color-2: #000;
     --text-color-3: rgb(204, 0, 0);
+    --text-color-4: #017a92;
     --overlay-color: rgb(255 255 255 / 70%);
+    --primary-color-lighter : #ecebeb;
 }
 
 html,
@@ -93,4 +97,20 @@ code {
 
 .color_sec {
     color: var(--secondary-color);
+}
+.under-development {
+    position: relative;
+}
+.under-development::before {
+    content: "";        
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;                                 
+    height: 100%;                               
+    background-image: url('./assets/images/under-development.png');     
+    background-size:contain ;                   
+    background-position: center ;               
+    background-repeat: no-repeat;
+    z-index: 3; 
 }

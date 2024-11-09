@@ -30,6 +30,11 @@ const dataabout2 = [
     { title: "Degree", "data": "BTech CSE" },
     { title: "Email", "data": "ayushsaklani04@gmail.com" }
 ]
+const dataabout3 = {
+    "leetcode_sol": 127,
+    "projects_done": 10,
+    "rapid_rating": 1552
+};
 const worktimeline = [];
 
 const skills = [{
@@ -179,7 +184,20 @@ const resumedata = [
         ],
     },
 ];
-
+const project_demo = [
+    {
+        project_title: "University campus navigator (Navit) (v.1.0)",
+        project_link: "https://github.com/ayush-saklani/navit",
+    },
+    {
+        project_title: "Class-Sync Timetable manager (v.1.8)",
+        project_link: "https://github.com/ayush-saklani/classsync",
+    },
+    {
+        project_title: "Mr. Minesweeper",
+        project_link: "https://github.com/ayush-saklani/minesweeper",
+    }
+]
 const contactConfig = {
     YOUR_EMAIL: "ayushsaklani04@gmail.com",
     YOUR_FONE: "+91 94XXXXXXXXX",
@@ -200,6 +218,7 @@ export {
     meta,
     dataabout,
     dataabout2,
+    dataabout3,
     worktimeline,
     skills,
     services,
@@ -208,4 +227,5 @@ export {
     socialprofils,
     logotext,
     resumedata,
+    project_demo,
 };

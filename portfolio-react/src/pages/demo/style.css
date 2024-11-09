@@ -1,0 +1,6 @@
+.project-container{
+    background-color: var(--primary-color-lighter);
+}
+.project-heading{
+    color: var(--text-color-4);
+}
