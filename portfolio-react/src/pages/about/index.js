@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import PureCounter from "@srexi/purecounterjs";
 const pure = new PureCounter();
+import CountUp from 'react-countup';
 import github_logo from "../../assets/images/github-logo.png";
 import my_photo from "../../assets/images/me.jpg";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -9,6 +10,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
     dataabout,
     dataabout2,
+    dataabout3,
     meta,
     skills,
     socialprofils,
@@ -39,56 +41,36 @@ export const About = () => {
                         </div>
                     </Col>
                 </Row>
-                
+
                 <Row className="sec_sp row">
-                    <img src={my_photo} className="col-lg-4 pb-4" style={{objectFit:"contain"}} />
+                    <img src={my_photo} className="col-lg-4 pb-4" style={{ objectFit: "contain" }} />
                     <div className="col-lg-8 row">
                         {dataabout2.map((data, i) => {
                             return (
                                 <div key={i} className="col-lg-6 col-sm-6">
-                                    {/* <Col lg="8" key={i}> */}
-                                        <h4 className="color_sec py-1">{data.title}</h4>
-                                        <p>{data.data}</p>
-                                    {/* </Col> */}
+                                    <h4 className="color_sec py-1" style={{ color: "var(--text-color-4)" }}><b>{data.title}</b></h4>
+                                    <h5>{data.data}</h5>
                                 </div>
                             );
                         })}
                     </div>
                 </Row>
                 <div class="row sec_sp">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="trans-box-count row p-4">
-                            <div class="col-lg-4 p-3 text-center">
-                                <i><img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png" alt="leetcode" height="60px" /></i>
+                    {dataabout3.map((data, i) => {
+                        return (
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="trans-box-count row p-4">
+                                    <div class="col-lg-4 p-3 text-center">
+                                        <i><img src={data.logo_link} alt="github" height="60px" /></i>
+                                    </div>
+                                    <div class="col-lg-8 text-center">
+                                        <CountUp end={data.data} />
+                                        <a class="text" href="https://github.com/ayush-saklani?tab=repositories" target="_blank"><b>{data.title}</b></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-8 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="116" data-purecounter-duration="1" class="purecounter"></span>
-                                <a class="text" href="https://leetcode.com/ayush_saklani/" target="_blank"><b>Problem solved</b></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="trans-box-count row p-4">
-                            <div class="col-lg-4 p-3 text-center">
-                                <i><img src={github_logo} alt="github" height="60px" /></i>
-                            </div>
-                            <div class="col-lg-8 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
-                                <a class="text" href="https://github.com/ayush-saklani?tab=repositories" target="_blank"><b>Projects done</b></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="trans-box-count row p-4">
-                            <div class="col-lg-4 p-3 text-center">
-                                <i><img src="https://play-lh.googleusercontent.com/A3MvSm0eEVCkHQP9rUE1Cl3ju90CqCjTxcQqt4tBDzEMT7RWixWBCFgT7mIcN0hk2Q" alt="github" height="60px" /></i>
-                            </div>
-                            <div class="col-lg-8 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="1552" data-purecounter-duration="1" class="purecounter"></span>
-                                <a class="text" href="https://www.chess.com/member/ayushsaklani" target="_blank"><b>Rapid Rating</b></a>
-                            </div>
-                        </div>
-                    </div>
+                        )
+                    })}
                 </div>
                 {/* <div class="container">
                     <h6 class="text text-uppercase text-secondary"><b>Coding Skills &amp; Interests</b></h6>

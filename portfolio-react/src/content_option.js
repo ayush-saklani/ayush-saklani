@@ -1,3 +1,4 @@
+import githublogo from "./assets/images/github-logo.png";
 const logotext = "Ayush Saklani";
 const meta = {
     title: "Ayush Saklani",
@@ -16,6 +17,35 @@ const introdata = {
     description: "I'm Ayush Saklani, an enthusiastic CS undergrad hailing from Dehradun, India.",
     your_img_url: "https://ayushsaklani.vercel.app/assets/img/bgog-sm.jpg",
 };
+const logos = {
+    "c": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+    "cplusplus": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    "python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "jupyter": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg",
+    "java": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
+    "html": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "css": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "nodejs": "https://devicon-website.vercel.app/api/nodejs/original.svg",
+    "bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+    "express": "/assets/img/expressjs-logo.png",
+    "mongodb": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+    "mongoose": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg",
+    "json": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg",
+    "mysql": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
+    "npm": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
+    "postman": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+    "openstreetmap": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Openstreetmap_logo.svg",
+    "leaflet": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1280px-Leaflet_logo.svg.png",
+    "windows11": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg",
+    "linux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    "vscode": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    "azure": "https://devicon-website.vercel.app/api/azure/original.svg",
+    "pikachu": "https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv",
+    "github": githublogo,
+    "leetcode" : "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png",
+    "chess.com" : "https://play-lh.googleusercontent.com/A3MvSm0eEVCkHQP9rUE1Cl3ju90CqCjTxcQqt4tBDzEMT7RWixWBCFgT7mIcN0hk2Q",
+};
 
 const dataabout = {
     title: "Know Me Better",
@@ -24,17 +54,29 @@ const dataabout = {
 const dataabout2 = [
     { title: "Birthdate", "data": "XX December 2004" },
     { title: "Website", "data": "ayushsaklani.vercel.app" },
-    { title: "Phone", "data": "+91 94xxxxxxxxx" },
+    { title: "Phone", "data": "+91 94XXXXXXXX" },
     { title: "City", "data": "Dehradun,Uttarakhand" },
     { title: "Age", "data": "19" },
     { title: "Degree", "data": "BTech CSE" },
     { title: "Email", "data": "ayushsaklani04@gmail.com" }
 ]
-const dataabout3 = {
-    "leetcode_sol": 127,
-    "projects_done": 10,
-    "rapid_rating": 1552
-};
+const dataabout3 = [
+    {
+        title: "Problem solved",
+        data: 127,
+        logo_link: logos["leetcode"],
+    },
+    {
+        title: "Projects done",
+        data: 10,
+        logo_link: logos["github"],
+    },
+    {
+        title: "Rapid Rating",
+        data: 1552,
+        logo_link: logos["chess.com"],
+    }
+];
 const worktimeline = [];
 
 const skills = [{
@@ -138,7 +180,8 @@ const resumedata = [
                     "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png",
                     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
                     "https://upload.wikimedia.org/wikipedia/commons/b/b0/Openstreetmap_logo.svg",
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1280px-Leaflet_logo.svg.png"],
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1280px-Leaflet_logo.svg.png"
+                ],
             },
             {
                 heading: "Class-Sync Timetable manager (v.1.8)",
