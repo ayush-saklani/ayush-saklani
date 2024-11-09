@@ -107,6 +107,10 @@
     color: #08a7c7 !important;
 }
 a{
-    color:inherit;
+    color:inherit !important;
+    text-decoration: none;
+}
+a:hover{
+    color: var(--text-color-2) !important;
     text-decoration: none;
 }

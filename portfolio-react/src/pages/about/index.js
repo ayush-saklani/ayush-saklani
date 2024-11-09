@@ -1,7 +1,5 @@
 import React from "react";
 import "./style.css";
-import PureCounter from "@srexi/purecounterjs";
-const pure = new PureCounter();
 import CountUp from 'react-countup';
 import github_logo from "../../assets/images/github-logo.png";
 import my_photo from "../../assets/images/me.jpg";

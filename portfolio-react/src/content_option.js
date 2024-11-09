@@ -1,4 +1,7 @@
 import githublogo from "./assets/images/github-logo.png";
+import expresslogo from "./assets/images/expressjs-logo.png";
+import leafletlogo from "./assets/images/Leaflet_logo.png";
+import vercellogo from "./assets/images/vercel-logo.png";
 const logotext = "Ayush Saklani";
 const meta = {
     title: "Ayush Saklani",
@@ -28,7 +31,7 @@ const logos = {
     "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "nodejs": "https://devicon-website.vercel.app/api/nodejs/original.svg",
     "bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-    "express": "/assets/img/expressjs-logo.png",
+    "expressjs": expresslogo,
     "mongodb": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
     "mongoose": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg",
     "json": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg",
@@ -36,15 +39,22 @@ const logos = {
     "npm": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
     "postman": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
     "openstreetmap": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Openstreetmap_logo.svg",
-    "leaflet": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1280px-Leaflet_logo.svg.png",
+    "leaflet": leafletlogo,
     "windows11": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg",
     "linux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
     "vscode": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
     "azure": "https://devicon-website.vercel.app/api/azure/original.svg",
     "pikachu": "https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv",
     "github": githublogo,
-    "leetcode" : "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png",
-    "chess.com" : "https://play-lh.googleusercontent.com/A3MvSm0eEVCkHQP9rUE1Cl3ju90CqCjTxcQqt4tBDzEMT7RWixWBCFgT7mIcN0hk2Q",
+    "leetcode": "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png",
+    "chess.com": "https://play-lh.googleusercontent.com/A3MvSm0eEVCkHQP9rUE1Cl3ju90CqCjTxcQqt4tBDzEMT7RWixWBCFgT7mIcN0hk2Q",
+    "streamlit": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg",
+    "numpy": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-plain-wordmark.svg",
+    "pandas": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg",
+    "scikitlearn": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+    "reactjs": "https://devicon-website.vercel.app/api/react/original.svg",
+    "vercel": vercellogo,
+    "tensorflow": "https://devicon-website.vercel.app/api/tensorflow/original.svg",
 };
 
 const dataabout = {
@@ -117,29 +127,6 @@ const skills = [{
 }
 ];
 
-const services = [];
-const Education = [{
-    Heading: "Education",
-    data: [{
-        title: "B.Tech CSE",
-        date: "2021-2025",
-        content: "Graphic Era Hill University, Dehradun",
-        board: "GEHU",
-    },
-    {
-        title: "Intermediate",
-        date: "2020",
-        content: "Modern School, Rishikesh",
-        board: "ICSE",
-    },
-    {
-        title: "Matriculation",
-        date: "2018",
-        content: "Modern School, Rishikesh",
-        board: "ISC",
-    },
-    ],
-}]
 const resumedata = [
     {
         title: "Education",
@@ -162,8 +149,9 @@ const resumedata = [
         title: "Projects",
         data: [
             {
-                heading: "University campus navigator (Navit) (v.1.0)",
+                heading: "Navit - University campus navigator (v.2.0)",
                 link: "https://github.com/ayush-saklani/navit",
+                hosted_link : "https://navit.vercel.app/",
                 tags: ["2024"],
                 description: [
                     "Guides you to the place you want to go inside university campus.",
@@ -172,20 +160,14 @@ const resumedata = [
                     "Uses OpenStreetMap for custom mapping features for map.",
                 ],
                 technologies: [
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-                    "https://devicon-website.vercel.app/api/nodejs/original.svg",
-                    "https://devicon-website.vercel.app/api/azure/original.svg",
-                    "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
-                    "https://upload.wikimedia.org/wikipedia/commons/b/b0/Openstreetmap_logo.svg",
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1280px-Leaflet_logo.svg.png"
+                    logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
+                    logos['azure'], logos["vercel"], logos["json"], logos["npm"], logos["python"], logos["postman"], logos["openstreetmap"], logos["leaflet"],
                 ],
             },
             {
-                heading: "Class-Sync Timetable manager (v.1.8)",
+                heading: "Class-Sync Timetable manager (v.2.0)",
                 link: "https://github.com/ayush-saklani/classsync",
+                hosted_link : "https://projectclasssync.vercel.app/",
                 tags: ["2024"],
                 description: [
                     "Created a web application to manage university timetables and prevent classroom scheduling conﬂicts.",
@@ -195,52 +177,80 @@ const resumedata = [
                     "Enabled real-time updates and conﬂict resolution through dedicated viewing and editing pages.",
                 ],
                 technologies: [
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-                    "https://devicon-website.vercel.app/api/react/original.svg",
-                    "https://devicon-website.vercel.app/api/azure/original.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-                    "https://upload.wikimedia.org/wikipedia/commons/b/bf/Status_iucn_EX_icon_blank.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+                    logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
+                    logos['azure'], logos["vercel"], logos["json"], logos["npm"],logos["postman"],
                 ],
+            },
+            {
+                heading: "Book Recommender System",
+                link: "https://github.com/ayush-saklani/book-recommendation-system",
+                tags: ["2023"],
+                description: [
+                    "Uses the database from Kaggle with 100K book.",
+                    "Machine Learning project that does content-based filtering to recommend the books to users.",
+                ],
+                technologies: [logos["python"], logos["jupyter"], logos["streamlit"], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
+            },
+            {
+                heading: "Stock price prediction using LSTM",
+                link: "https://github.com/ayush-saklani/Stock-price-prediction-using-LSTM?tab=readme-ov-file",
+                tags: ["2024"],
+                description: [
+                    "Uses the database from Kaggle with 100K book.",
+                    "Machine Learning project that does content-based filtering to recommend the books to users.",
+                ],
+                technologies: [logos["python"], logos["jupyter"],logos['tensorflow'], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
             },
             {
                 heading: "Mr. Minesweeper",
                 tags: ["2024"],
+                hosted_link : "https://mrminesweeper.vercel.app/",
+                link: "https://github.com/ayush-saklani/minesweeper",
                 description: [
                     "This is a implementation of the classic Minesweeper game built using HTML, CSS, and JavaScript.",
                     "Three difficulty levels: Easy, Medium, and Hard with diffrent board size and number of mines.",
                     "Flagging mines, Game over detection and audio effects.",
                 ],
-                technologies: [
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+                technologies: [logos["html"], logos["css"], logos["javascript"], logos["bootstrap"],],
+            },
+            {
+                heading: "Attendance Marking System (Mark my spot)",
+                link: "https://github.com/ayush-saklani/QR-Atttendence-System",
+                hosted_link : "https://markmyspot.vercel.app/",
+                tags: ["2024"],
+                description: [
+                    "The Smart Attendance Marking web-based application.",
+                    "It allows students to input their details via a web form and generates QR codes",
+                    "Enables teachers to scan QR codes to mark attendance",
+                    "later a CSV file with record can be downloaded.",
                 ],
-            }
+                technologies: [logos["html"], logos["css"], logos["javascript"]],
+            },
+            {
+                heading: "Car Rental Management System",
+                link: "https://github.com/ayush-saklani/car-rental-system",
+                tags: ["2022"],
+                description: [
+                    "Implemented in C & C++ using flat file system with user and admin portal using OOPs concepts.",
+                    "With admin and user portals.",
+                ],
+                technologies: [logos["c"], logos["cplusplus"]],
+            },
+            {
+                heading: "Library Management System",
+                link: "https://github.com/ayush-saklani/library-management-system",
+                tags: ["2022"],
+                description: [
+                    "LMS implemented in C and CPP using flat file system.",
+                    "Using OOPs concepts and basic frontend.",
+                    "With Librarian and user portals.",
+                ],
+                technologies: [logos["c"], logos["cplusplus"]],
+            },
         ],
     },
 ];
-const project_demo = [
-    {
-        project_title: "University campus navigator (Navit) (v.1.0)",
-        project_link: "https://github.com/ayush-saklani/navit",
-    },
-    {
-        project_title: "Class-Sync Timetable manager (v.1.8)",
-        project_link: "https://github.com/ayush-saklani/classsync",
-    },
-    {
-        project_title: "Mr. Minesweeper",
-        project_link: "https://github.com/ayush-saklani/minesweeper",
-    }
-]
+
 const contactConfig = {
     YOUR_EMAIL: "ayushsaklani04@gmail.com",
     YOUR_FONE: "+91 94XXXXXXXXX",
@@ -264,11 +274,9 @@ export {
     dataabout3,
     worktimeline,
     skills,
-    services,
     introdata,
     contactConfig,
     socialprofils,
     logotext,
     resumedata,
-    project_demo,
 };

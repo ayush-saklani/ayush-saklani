@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { meta, project_demo, resumedata, socialprofils } from "../../content_option";
+import { meta, resumedata, socialprofils } from "../../content_option";
 export const Demo = () => {
     return (
         <HelmetProvider>
@@ -19,13 +19,13 @@ export const Demo = () => {
                 </Row>
                 <div class="row project-super-container">
                     {
-                        project_demo.map((data, i) => {
+                        resumedata[1].data.map((data, i) => {
                             return (
-
+                                data.hosted_link &&
                                 <div key={i} className="pb-4 mb-4 project-container">
-                                    <h2 className="fw-bold my-3 text-uppercase project-heading py-2 px-2">{data.project_title} </h2>
+                                    <h2 className="fw-bold my-3 text-uppercase project-heading py-2 px-2">{data.heading} </h2>
                                     <div className="ratio ratio-16x9 mb-3 project-frame">
-                                        <iframe src="{data.project_link}" title="Class-Sync Timetable Manager" allowfullscreen></iframe>
+                                        <iframe src={data.hosted_link} allowfullscreen></iframe>
                                     </div>
                                 </div>
                             );
