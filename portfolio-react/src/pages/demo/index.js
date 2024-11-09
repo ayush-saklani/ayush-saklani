@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { meta, resumedata, socialprofils } from "../../content_option";
+import { meta, resumedata } from "../../content_option";
 export const Demo = () => {
     return (
         <HelmetProvider>
@@ -19,7 +19,7 @@ export const Demo = () => {
                 </Row>
                 <div class="row project-super-container">
                     {
-                        resumedata[1].data.map((data, i) => {
+                        resumedata[resumedata.length-1].data.map((data, i) => {
                             return (
                                 data.hosted_link &&
                                 <div key={i} className="pb-4 mb-4 project-container">

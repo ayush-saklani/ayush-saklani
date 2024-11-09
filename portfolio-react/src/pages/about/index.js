@@ -10,8 +10,7 @@ import {
     dataabout2,
     dataabout3,
     meta,
-    skills,
-    socialprofils,
+    Interests
 } from "../../content_option";
 
 export const About = () => {
@@ -29,23 +28,16 @@ export const About = () => {
                         <hr className="t_border my-4 ml-0 text-left" />
                     </Col>
                 </Row>
-                <Row>
-                    <Col lg="3">
-                        <h3 className="color_sec py-4">{dataabout.title}</h3>
-                    </Col>
-                    <Col lg="9" className="d-flex align-items-center">
-                        <div>
-                            <p>{dataabout.aboutme}</p>
-                        </div>
-                    </Col>
-                </Row>
+
 
                 <Row className="sec_sp row">
-                    <img src={my_photo} className="col-lg-4 pb-4" style={{ objectFit: "contain" }} />
-                    <div className="col-lg-8 row">
+                    <img src={my_photo} className="col-xl-4 col-lg-7 py-4" style={{ objectFit: "contain" }} />
+                    <div className="col-xl-8 col-lg-5  row">
+                        <h3 className="color_sec py-2 fw-bold">{dataabout.title}</h3>
+                        <p><b>{dataabout.aboutme}</b></p>
                         {dataabout2.map((data, i) => {
                             return (
-                                <div key={i} className="col-lg-6 col-sm-6">
+                                <div key={i} className="col-lg-12 col-sm-6 col-xl-6 col-sm-12">
                                     <h4 className="color_sec py-1" style={{ color: "var(--text-color-4)" }}><b>{data.title}</b></h4>
                                     <h5>{data.data}</h5>
                                 </div>
@@ -63,113 +55,26 @@ export const About = () => {
                                     </div>
                                     <div class="col-lg-8 text-center">
                                         <CountUp end={data.data} />
-                                        <a class="text" href="https://github.com/ayush-saklani?tab=repositories" target="_blank"><b>{data.title}</b></a>
+                                        <a class="text" href={data.link} target="_blank"><b>{data.title}</b></a>
                                     </div>
                                 </div>
                             </div>
                         )
                     })}
                 </div>
-                {/* <div class="container">
-                    <h6 class="text text-uppercase text-secondary"><b>Coding Skills &amp; Interests</b></h6>
-                    <div class="row text-center">
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://devicon-website.vercel.app/api/nodejs/original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="/assets/img/expressjs-logo.png" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Openstreetmap_logo.svg" height="60" />
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 py-3 px-2 col-8">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1280px-Leaflet_logo.svg.png" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 py-3 px-1 col-4">
-                            <img src="https://devicon-website.vercel.app/api/azure/original.svg" height="60" />
-                        </div>
-                        <div class="col-lg-11 col-md-10 col-sm-12 py-3 px-2">
-                            <img src="https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv" height="60" />
-                        </div>
-                    </div>
-                </div> */}
                 <Row className="sec_sp pb-5">
-                    <Col lg="3">
-                        <h3 className="color_sec py-4">Skills</h3>
-                    </Col>
-                    <Col lg="9">
-                        {skills.map((data, i) => {
-                            return (
-                                <div key={i}>
-                                    <h3 className="progress-title">{data.name}</h3>
-                                    <div className="progress">
-                                        <div
-                                            className="progress-bar"
-                                            style={{
-                                                width: `${data.value}%`,
-                                            }}
-                                        >
-                                            <div className="progress-value">{data.value}%</div>
-                                        </div>
+                    {/* <h3 className="color_sec py-2">Coding Skills &amp; Interests</h3> */}
+                    <div class="row text-center">
+                        {
+                            Interests.map((data, i) => {
+                                return (
+                                    <div key={i} className="col-lg-1 col-md-2 col-sm-3 py-2 px-1 col-4">
+                                        <img src={data} height="70" />
                                     </div>
-                                </div>
-                            );
-                        })}
-                    </Col>
+                                );
+                            })
+                        }
+                    </div>
                 </Row>
             </Container>
         </HelmetProvider>

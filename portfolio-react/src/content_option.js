@@ -2,7 +2,9 @@ import githublogo from "./assets/images/github-logo.png";
 import expresslogo from "./assets/images/expressjs-logo.png";
 import leafletlogo from "./assets/images/Leaflet_logo.png";
 import vercellogo from "./assets/images/vercel-logo.png";
+
 const logotext = "Ayush Saklani";
+
 const meta = {
     title: "Ayush Saklani",
     short_description: "I’m Ayush Saklani a CS undergrad, Full stack devloper, from Dehradun Uttrarakhand",
@@ -20,6 +22,7 @@ const introdata = {
     description: "I'm Ayush Saklani, an enthusiastic CS undergrad hailing from Dehradun, India.",
     your_img_url: "https://ayushsaklani.vercel.app/assets/img/bgog-sm.jpg",
 };
+
 const logos = {
     "c": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
     "cplusplus": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
@@ -28,12 +31,16 @@ const logos = {
     "java": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
     "html": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     "css": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "tailwindcss": "https://devicon-website.vercel.app/api/tailwindcss/plain.svg",
+    "bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
     "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "nodejs": "https://devicon-website.vercel.app/api/nodejs/original.svg",
-    "bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+    "reactjs": "https://devicon-website.vercel.app/api/react/original.svg",
     "expressjs": expresslogo,
     "mongodb": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
     "mongoose": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg",
+    "azure": "https://devicon-website.vercel.app/api/azure/original.svg",
+    "vercel": vercellogo,
     "json": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg",
     "mysql": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
     "npm": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
@@ -43,88 +50,67 @@ const logos = {
     "windows11": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg",
     "linux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
     "vscode": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-    "azure": "https://devicon-website.vercel.app/api/azure/original.svg",
-    "pikachu": "https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv",
     "github": githublogo,
-    "leetcode": "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png",
-    "chess.com": "https://play-lh.googleusercontent.com/A3MvSm0eEVCkHQP9rUE1Cl3ju90CqCjTxcQqt4tBDzEMT7RWixWBCFgT7mIcN0hk2Q",
     "streamlit": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg",
     "numpy": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-plain-wordmark.svg",
     "pandas": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg",
     "scikitlearn": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
-    "reactjs": "https://devicon-website.vercel.app/api/react/original.svg",
-    "vercel": vercellogo,
     "tensorflow": "https://devicon-website.vercel.app/api/tensorflow/original.svg",
+    "leetcode": "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png",
+    "chess.com": "https://play-lh.googleusercontent.com/A3MvSm0eEVCkHQP9rUE1Cl3ju90CqCjTxcQqt4tBDzEMT7RWixWBCFgT7mIcN0hk2Q",
+    "pikachu": "https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv",
 };
+
+const Interests = [
+    logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"], logos["java"], logos["html"], logos["css"],
+    logos["tailwindcss"], logos["bootstrap"], logos["javascript"], logos["nodejs"], logos["reactjs"], logos["expressjs"], logos["mongodb"],
+    logos["mongoose"], logos["azure"], logos["vercel"], logos["mysql"], logos["npm"], logos["openstreetmap"], logos["leaflet"], logos["windows11"],
+    logos["linux"], logos["json"], logos["postman"], logos["vscode"], logos["pikachu"],
+];
 
 const dataabout = {
     title: "Know Me Better",
     aboutme: `Ayush saklani is an computer science undergrad from Dehradun, Uttarakhand pursuing BTech CSE (2025 batch) from Graphic era hill University.`,
 };
+
+const socialprofils = {
+    email: "mailto:ayushsaklani04@gmail.com",
+    resume: "",
+    github: "https://github.com/ayush-saklani/",
+    linkedin: "https://www.linkedin.com/in/ayush-saklani/",
+    instagram: "https://www.instagram.com/ayush_saklanii/",
+    twitter: "https://x.com/ayush_saklanii",
+    leetcode: "",
+    chesscom: "https://www.chess.com/member/ayushsaklani",
+};
+
 const dataabout2 = [
-    { title: "Birthdate", "data": "XX December 2004" },
     { title: "Website", "data": "ayushsaklani.vercel.app" },
-    { title: "Phone", "data": "+91 94XXXXXXXX" },
-    { title: "City", "data": "Dehradun,Uttarakhand" },
-    { title: "Age", "data": "19" },
+    { title: "Email", "data": "ayushsaklani04@gmail.com" },
+    { title: "City", "data": "Dehradun, Uttarakhand" },
     { title: "Degree", "data": "BTech CSE" },
-    { title: "Email", "data": "ayushsaklani04@gmail.com" }
+    { title: "Age", "data": "20" },
 ]
+
 const dataabout3 = [
     {
         title: "Problem solved",
         data: 127,
         logo_link: logos["leetcode"],
+        link: socialprofils.leetcode,
     },
     {
         title: "Projects done",
         data: 10,
         logo_link: logos["github"],
+        link: socialprofils.github,
     },
     {
         title: "Rapid Rating",
         data: 1552,
         logo_link: logos["chess.com"],
+        link: socialprofils.chesscom
     }
-];
-const worktimeline = [];
-
-const skills = [{
-    name: "C/C++",
-    value: 90,
-},
-{
-    name: "Python",
-    value: 60,
-},
-{
-    name: "JavaScript / Node.js",
-    value: 70,
-},
-{
-    name: "Express.js",
-    value: 70,
-},
-{
-    name: "React",
-    value: 50,
-},
-{
-    name: "MongoDB / Mongoose",
-    value: 50,
-},
-{
-    name: "HTML / CSS  / Bootstrap",
-    value: 80,
-},
-{
-    name: "Git / Github",
-    value: 70,
-},
-{
-    name: "Azure",
-    value: 50,
-}
 ];
 
 const resumedata = [
@@ -146,12 +132,25 @@ const resumedata = [
         ],
     },
     {
+        title: "Experience",
+        data: [
+            {
+                heading: "Crux Sphere Technologies",
+                tags: ["Software Developer Intern", "2024", "November-present"],
+            },
+            {
+                heading: "Technology Business Incubator - GEU",
+                tags: ["Full Stack Developer Intern","Summer Internship", "2024", "July-October"],
+            },
+        ],
+    },
+    {
         title: "Projects",
         data: [
             {
                 heading: "Navit - University campus navigator (v.2.0)",
                 link: "https://github.com/ayush-saklani/navit",
-                hosted_link : "https://navit.vercel.app/",
+                hosted_link: "https://navit.vercel.app/",
                 tags: ["2024"],
                 description: [
                     "Guides you to the place you want to go inside university campus.",
@@ -167,7 +166,7 @@ const resumedata = [
             {
                 heading: "Class-Sync Timetable manager (v.2.0)",
                 link: "https://github.com/ayush-saklani/classsync",
-                hosted_link : "https://projectclasssync.vercel.app/",
+                hosted_link: "https://projectclasssync.vercel.app/",
                 tags: ["2024"],
                 description: [
                     "Created a web application to manage university timetables and prevent classroom scheduling conﬂicts.",
@@ -178,7 +177,7 @@ const resumedata = [
                 ],
                 technologies: [
                     logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
-                    logos['azure'], logos["vercel"], logos["json"], logos["npm"],logos["postman"],
+                    logos['azure'], logos["vercel"], logos["json"], logos["npm"], logos["postman"],
                 ],
             },
             {
@@ -199,12 +198,12 @@ const resumedata = [
                     "Uses the database from Kaggle with 100K book.",
                     "Machine Learning project that does content-based filtering to recommend the books to users.",
                 ],
-                technologies: [logos["python"], logos["jupyter"],logos['tensorflow'], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
+                technologies: [logos["python"], logos["jupyter"], logos['tensorflow'], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
             },
             {
                 heading: "Mr. Minesweeper",
                 tags: ["2024"],
-                hosted_link : "https://mrminesweeper.vercel.app/",
+                hosted_link: "https://mrminesweeper.vercel.app/",
                 link: "https://github.com/ayush-saklani/minesweeper",
                 description: [
                     "This is a implementation of the classic Minesweeper game built using HTML, CSS, and JavaScript.",
@@ -216,7 +215,7 @@ const resumedata = [
             {
                 heading: "Attendance Marking System (Mark my spot)",
                 link: "https://github.com/ayush-saklani/QR-Atttendence-System",
-                hosted_link : "https://markmyspot.vercel.app/",
+                hosted_link: "https://markmyspot.vercel.app/",
                 tags: ["2024"],
                 description: [
                     "The Smart Attendance Marking web-based application.",
@@ -251,32 +250,15 @@ const resumedata = [
     },
 ];
 
-const contactConfig = {
-    YOUR_EMAIL: "ayushsaklani04@gmail.com",
-    YOUR_FONE: "+91 94XXXXXXXXX",
-    description: "An computer science undergrad pursuing BTech CSE (2025 batch) from GEHU. I am a passionate programmer and a quick learner, always eager to learn new technologies and implement them in my projects.",
-    github: 'github.com/ayush-saklani',
-    linkedin: "linkedin.com/in/ayush-saklani",
-};
-
-const socialprofils = {
-    email: "mailto:ayushsaklani04@gmail.com",
-    resume: "",
-    github: "https://github.com/ayush-saklani/",
-    linkedin: "https://www.linkedin.com/in/ayush-saklani/",
-    instagram: "https://www.instagram.com/ayush_saklanii/",
-    twitter: "https://x.com/ayush_saklanii",
-};
 export {
     meta,
     dataabout,
     dataabout2,
     dataabout3,
-    worktimeline,
-    skills,
     introdata,
-    contactConfig,
     socialprofils,
     logotext,
     resumedata,
+    logos,
+    Interests,
 };

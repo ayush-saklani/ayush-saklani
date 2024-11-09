@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { meta, resumedata,socialprofils } from "../../content_option";
+import { meta, resumedata, socialprofils } from "../../content_option";
 import { FaAddressCard, FaDownload, FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
 export const Resume = () => {
     return (
@@ -20,12 +20,12 @@ export const Resume = () => {
                 </Row>
                 <h1 className="fw-bold">{meta.title} </h1>
                 <h6 className=" py-1">{meta.description}</h6>
-                <h2 className="mb-5">
+                <h2 className="mb-4">
                     {socialprofils.github && <a href={socialprofils.github} target="_blank"><FaGithub className="me-2" /></a>}
                     {socialprofils.linkedin && <a href={socialprofils.linkedin} target="_blank"><FaLinkedin className="me-2" /></a>}
                     {socialprofils.twitter && <a href={socialprofils.twitter} target="_blank"><FaXTwitter className="me-2" /></a>}
                     {socialprofils.email && <a href={socialprofils.email} target="_blank"><FaAddressCard className="me-2" /></a>}
-                    {socialprofils.resume && <a href={socialprofils.resume} target="_blank"><FaDownload className="me-2"/></a>}
+                    {socialprofils.resume && <a href={socialprofils.resume} target="_blank"><FaDownload className="me-2" /></a>}
                 </h2>
                 {
                     resumedata.map((data, i) => {
@@ -34,7 +34,7 @@ export const Resume = () => {
                                 <h1 className="fw-bold">{data.title} </h1>
                                 {
                                     data.data.map((data, i) => (
-                                        <div key={i} className="pt-3 ">
+                                        <div key={i} className="pt-2 ">
                                             <h4 className="fw-bold pt-1 resume-heading"><FaPlay className="me-2" />
                                                 {data.link ?
                                                     <a href={data.link} target="_blank">
@@ -71,7 +71,8 @@ export const Resume = () => {
                                 }
                             </div>
                         );
-                    })}
+                    })
+                }
             </Container>
         </HelmetProvider>
     );
