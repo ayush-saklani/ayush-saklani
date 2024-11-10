@@ -2,8 +2,14 @@ import githublogo from "./assets/images/github-logo.png";
 import expresslogo from "./assets/images/expressjs-logo.png";
 import leafletlogo from "./assets/images/Leaflet_logo.png";
 import vercellogo from "./assets/images/vercel-logo.png";
+import myphoto2 from "./assets/images/me.jpg";
 
 const logotext = "Ayush Saklani";
+
+const images = {
+    my_photo: "https://ayushsaklani.vercel.app/assets/img/bgog-sm.jpg",
+    my_photo2: myphoto2,
+} 
 
 const meta = {
     title: "Ayush Saklani",
@@ -20,7 +26,7 @@ const introdata = {
         third: "I develop Web apps",
     },
     description: "I'm Ayush Saklani, an enthusiastic CS undergrad hailing from Dehradun, India.",
-    your_img_url: "https://ayushsaklani.vercel.app/assets/img/bgog-sm.jpg",
+    your_img_url: images.my_photo,
 };
 
 const logos = {
@@ -151,7 +157,7 @@ const resumedata = [
                 heading: "Navit - University campus navigator (v.2.0)",
                 link: "https://github.com/ayush-saklani/navit",
                 hosted_link: "https://navit.vercel.app/",
-                tags: ["2024"],
+                tags: ["2024","Web Development"],
                 description: [
                     "Guides you to the place you want to go inside university campus.",
                     "Designed specially for freshers and Visiting Faculties.",
@@ -167,7 +173,7 @@ const resumedata = [
                 heading: "Class-Sync Timetable manager (v.2.0)",
                 link: "https://github.com/ayush-saklani/classsync",
                 hosted_link: "https://projectclasssync.vercel.app/",
-                tags: ["2024"],
+                tags: ["2024","Web Development"],
                 description: [
                     "Created a web application to manage university timetables and prevent classroom scheduling conﬂicts.",
                     "Time table manager for students and teachers.",
@@ -183,7 +189,7 @@ const resumedata = [
             {
                 heading: "Book Recommender System",
                 link: "https://github.com/ayush-saklani/book-recommendation-system",
-                tags: ["2023"],
+                tags: ["2023","Machine Learning"],
                 description: [
                     "Uses the database from Kaggle with 100K book.",
                     "Machine Learning project that does content-based filtering to recommend the books to users.",
@@ -193,7 +199,7 @@ const resumedata = [
             {
                 heading: "Stock price prediction using LSTM",
                 link: "https://github.com/ayush-saklani/Stock-price-prediction-using-LSTM?tab=readme-ov-file",
-                tags: ["2024"],
+                tags: ["2024","Machine Learning"],
                 description: [
                     "Uses the database from Kaggle with 100K book.",
                     "Machine Learning project that does content-based filtering to recommend the books to users.",
@@ -202,7 +208,7 @@ const resumedata = [
             },
             {
                 heading: "Mr. Minesweeper",
-                tags: ["2024"],
+                tags: ["2024","Web Development"],
                 hosted_link: "https://mrminesweeper.vercel.app/",
                 link: "https://github.com/ayush-saklani/minesweeper",
                 description: [
@@ -216,7 +222,7 @@ const resumedata = [
                 heading: "Attendance Marking System (Mark my spot)",
                 link: "https://github.com/ayush-saklani/QR-Atttendence-System",
                 hosted_link: "https://markmyspot.vercel.app/",
-                tags: ["2024"],
+                tags: ["2024","Web Development"],
                 description: [
                     "The Smart Attendance Marking web-based application.",
                     "It allows students to input their details via a web form and generates QR codes",
@@ -228,7 +234,7 @@ const resumedata = [
             {
                 heading: "Car Rental Management System",
                 link: "https://github.com/ayush-saklani/car-rental-system",
-                tags: ["2022"],
+                tags: ["2022","Terminal Based"],
                 description: [
                     "Implemented in C & C++ using flat file system with user and admin portal using OOPs concepts.",
                     "With admin and user portals.",
@@ -238,10 +244,10 @@ const resumedata = [
             {
                 heading: "Library Management System",
                 link: "https://github.com/ayush-saklani/library-management-system",
-                tags: ["2022"],
+                tags: ["2022","Terminal Based"],
                 description: [
                     "LMS implemented in C and CPP using flat file system.",
-                    "Using OOPs concepts and basic frontend.",
+                    "Using OOPs concepts and basic terminal frontend.",
                     "With Librarian and user portals.",
                 ],
                 technologies: [logos["c"], logos["cplusplus"]],
@@ -261,4 +267,5 @@ export {
     resumedata,
     logos,
     Interests,
+    images,
 };

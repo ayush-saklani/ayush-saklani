@@ -1,8 +1,6 @@
 import React from "react";
 import "./style.css";
 import CountUp from 'react-countup';
-import github_logo from "../../assets/images/github-logo.png";
-import my_photo from "../../assets/images/me.jpg";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import {
@@ -10,7 +8,8 @@ import {
     dataabout2,
     dataabout3,
     meta,
-    Interests
+    Interests,
+    images
 } from "../../content_option";
 
 export const About = () => {
@@ -31,7 +30,7 @@ export const About = () => {
 
 
                 <Row className="sec_sp row py-2" style={{ backgroundColor: "var(--primary-color-lighter)" }}>
-                    <img src={my_photo} className="col-xl-4 col-lg-7 py-4" style={{ objectFit: "contain" }} />
+                    <img src={images.my_photo2} className="col-xl-4 col-lg-7 py-4" style={{ objectFit: "contain" }} />
                     <div className="col-xl-8 col-lg-5  row">
                         <h3 className="color_sec py-2 fw-bold">{dataabout.title}</h3>
                         <p><b>{dataabout.aboutme}</b></p>

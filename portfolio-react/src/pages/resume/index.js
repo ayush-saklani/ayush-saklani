@@ -60,9 +60,9 @@ export const Resume = () => {
                                             }
                                             {
                                                 data.technologies &&
-                                                <div className="technologies ps-4 ms-2">
+                                                <div className="technologies ps-4 ms-2 pt-2 pb-3">
                                                     {data.technologies.map((technology, i) => (
-                                                        <img key={i} className="technology-element pe-1" src={technology} alt={technology} height={65} />
+                                                        <img key={i} className="technology-element pe-1 mb-1" src={technology} alt={technology} height={65} />
                                                     ))}
                                                 </div>
                                             }
