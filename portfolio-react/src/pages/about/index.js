@@ -30,15 +30,15 @@ export const About = () => {
 
 
                 <Row className="sec_sp row py-2" style={{ backgroundColor: "var(--primary-color-lighter)" }}>
-                    <img src={images.my_photo2} className="col-xl-4 col-lg-7 py-4" style={{ objectFit: "contain" }} />
-                    <div className="col-xl-8 col-lg-5  row">
+                    <img src={images.my_photo2} className="col-xl-4 col-lg-7 py-2" style={{ objectFit: "contain" }} />
+                    <div className="col-xl-8 col-lg-5 row py-2">
                         <h3 className="color_sec py-2 fw-bold">{dataabout.title}</h3>
                         <p><b>{dataabout.aboutme}</b></p>
                         {dataabout2.map((data, i) => {
                             return (
-                                <div key={i} className="col-lg-12 col-sm-6 col-xl-6 col-sm-12">
-                                    <h4 className="color_sec py-1" style={{ color: "var(--text-color-4)" }}><b>{data.title}</b></h4>
-                                    <h5>{data.data}</h5>
+                                <div key={i} className="col-lg-12 col-sm-6 col-xl-6 col-sm-12 pb-2">
+                                    <h5 className="color_sec fw-semibold" style={{ color: "var(--text-color-4)" }}><b>{data.title}</b></h5>
+                                    <h5 className="fw-medium">{data.data}</h5>
                                 </div>
                             );
                         })}

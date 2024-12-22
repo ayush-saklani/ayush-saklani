@@ -3,13 +3,13 @@ import expresslogo from "./assets/images/expressjs-logo.png";
 import leafletlogo from "./assets/images/Leaflet_logo.png";
 import vercellogo from "./assets/images/vercel-logo.png";
 import myphoto2 from "./assets/images/me.jpg";
-
+import myphoto3 from "./assets/images/me_2.png";
 const logotext = "Ayush Saklani";
 
 const images = {
-    my_photo: "https://ayushsaklani.vercel.app/assets/img/bgog-sm.jpg",
+    my_photo: myphoto3,
     my_photo2: myphoto2,
-} 
+}
 
 const meta = {
     title: "Ayush Saklani",
@@ -42,7 +42,7 @@ const logos = {
     "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "nodejs": "https://devicon-website.vercel.app/api/nodejs/original.svg",
     "reactjs": "https://devicon-website.vercel.app/api/react/original.svg",
-    "expressjs": expresslogo,
+    "expressjs": "https://devicon-website.vercel.app/api/express/original.svg?color=%23FFFFFF",
     "mongodb": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
     "mongoose": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg",
     "azure": "https://devicon-website.vercel.app/api/azure/original.svg",
@@ -65,13 +65,20 @@ const logos = {
     "leetcode": "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png",
     "chess.com": "https://play-lh.googleusercontent.com/A3MvSm0eEVCkHQP9rUE1Cl3ju90CqCjTxcQqt4tBDzEMT7RWixWBCFgT7mIcN0hk2Q",
     "pikachu": "https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv",
+    "pikachu2": "https://i.pinimg.com/originals/ab/be/28/abbe28a943ed44fcd98452687f7c46c9.gif",
+    "nextjs": "https://devicon-website.vercel.app/api/nextjs/original-wordmark.svg?color=%23FFFFFF",
+    "nginx": "https://devicon-website.vercel.app/api/nginx/original.svg",
+    "firebase": "https://devicon-website.vercel.app/api/firebase/plain-wordmark.svg",
+    "postgressql": "https://devicon-website.vercel.app/api/postgresql/original.svg",
+
 };
 
 const Interests = [
     logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"], logos["java"], logos["html"], logos["css"],
-    logos["tailwindcss"], logos["bootstrap"], logos["javascript"], logos["nodejs"], logos["reactjs"], logos["expressjs"], logos["mongodb"],
-    logos["mongoose"], logos["azure"], logos["vercel"], logos["mysql"], logos["npm"], logos["openstreetmap"], logos["leaflet"], logos["windows11"],
-    logos["linux"], logos["json"], logos["postman"], logos["vscode"], logos["pikachu"],
+    logos["tailwindcss"], logos["bootstrap"], logos["javascript"], logos["nodejs"], logos["reactjs"], logos["nextjs"], logos["expressjs"],
+    logos["firebase"], logos["mongodb"], logos["mongoose"], logos["azure"], logos["vercel"], logos["mysql"], logos["npm"],
+    logos["openstreetmap"], logos["leaflet"], logos["windows11"], logos["linux"], logos["json"], logos["postman"], logos["vscode"],
+    logos["pikachu2"],
 ];
 
 const dataabout = {
@@ -146,7 +153,7 @@ const resumedata = [
             },
             {
                 heading: "Technology Business Incubator - GEU",
-                tags: ["Full Stack Developer Intern","Summer Internship", "2024", "July-October"],
+                tags: ["Full Stack Developer Intern", "Summer Internship", "2024", "July-October"],
             },
         ],
     },
@@ -154,10 +161,10 @@ const resumedata = [
         title: "Projects",
         data: [
             {
-                heading: "Navit - University campus navigator (v.2.0)",
+                heading: "Navit - University campus navigator (v.2.2)",
                 link: "https://github.com/ayush-saklani/navit",
                 hosted_link: "https://navit.vercel.app/",
-                tags: ["2024","Web Development"],
+                tags: ["2024", "Web Development"],
                 description: [
                     "Guides you to the place you want to go inside university campus.",
                     "Designed specially for freshers and Visiting Faculties.",
@@ -165,6 +172,7 @@ const resumedata = [
                     "Uses OpenStreetMap for custom mapping features for map.",
                 ],
                 technologies: [
+                    logos['reactjs'], logos["tailwindcss"],
                     logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
                     logos['azure'], logos["vercel"], logos["json"], logos["npm"], logos["python"], logos["postman"], logos["openstreetmap"], logos["leaflet"],
                 ],
@@ -173,7 +181,7 @@ const resumedata = [
                 heading: "Class-Sync Timetable manager (v.2.0)",
                 link: "https://github.com/ayush-saklani/classsync",
                 hosted_link: "https://projectclasssync.vercel.app/",
-                tags: ["2024","Web Development"],
+                tags: ["2024", "Web Development"],
                 description: [
                     "Created a web application to manage university timetables and prevent classroom scheduling conﬂicts.",
                     "Time table manager for students and teachers.",
@@ -189,7 +197,7 @@ const resumedata = [
             {
                 heading: "Book Recommender System",
                 link: "https://github.com/ayush-saklani/book-recommendation-system",
-                tags: ["2023","Machine Learning"],
+                tags: ["2023", "Machine Learning"],
                 description: [
                     "Uses the database from Kaggle with 100K book.",
                     "Machine Learning project that does content-based filtering to recommend the books to users.",
@@ -199,7 +207,7 @@ const resumedata = [
             {
                 heading: "Stock price prediction using LSTM",
                 link: "https://github.com/ayush-saklani/Stock-price-prediction-using-LSTM?tab=readme-ov-file",
-                tags: ["2024","Machine Learning"],
+                tags: ["2024", "Machine Learning"],
                 description: [
                     "Uses the database from Kaggle with 100K book.",
                     "Machine Learning project that does content-based filtering to recommend the books to users.",
@@ -208,7 +216,7 @@ const resumedata = [
             },
             {
                 heading: "Mr. Minesweeper",
-                tags: ["2024","Web Development"],
+                tags: ["2024", "Web Development"],
                 hosted_link: "https://mrminesweeper.vercel.app/",
                 link: "https://github.com/ayush-saklani/minesweeper",
                 description: [
@@ -222,7 +230,7 @@ const resumedata = [
                 heading: "Attendance Marking System (Mark my spot)",
                 link: "https://github.com/ayush-saklani/QR-Atttendence-System",
                 hosted_link: "https://markmyspot.vercel.app/",
-                tags: ["2024","Web Development"],
+                tags: ["2024", "Web Development"],
                 description: [
                     "The Smart Attendance Marking web-based application.",
                     "It allows students to input their details via a web form and generates QR codes",
@@ -234,7 +242,7 @@ const resumedata = [
             {
                 heading: "Car Rental Management System",
                 link: "https://github.com/ayush-saklani/car-rental-system",
-                tags: ["2022","Terminal Based"],
+                tags: ["2022", "Terminal Based"],
                 description: [
                     "Implemented in C & C++ using flat file system with user and admin portal using OOPs concepts.",
                     "With admin and user portals.",
@@ -244,7 +252,7 @@ const resumedata = [
             {
                 heading: "Library Management System",
                 link: "https://github.com/ayush-saklani/library-management-system",
-                tags: ["2022","Terminal Based"],
+                tags: ["2022", "Terminal Based"],
                 description: [
                     "LMS implemented in C and CPP using flat file system.",
                     "Using OOPs concepts and basic terminal frontend.",

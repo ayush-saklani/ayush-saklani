@@ -2,6 +2,7 @@
     padding-bottom: 8px;
 }
 .description-element{
+    font-weight: 550 !important;
 }
 .technologies{
     display: flex;
