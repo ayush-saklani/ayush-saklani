@@ -1,9 +1,6 @@
 .description{
     padding-bottom: 8px;
 }
-.description-element{
-    font-weight: 550 !important;
-}
 .technologies{
     display: flex;
     flex-wrap: wrap;
@@ -15,15 +12,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-.tag-element{
-    margin-right: 5px;
-    padding: 8px;
-    background-color: rgba(255, 255, 255, 0.707);
-    color: black;
-    text-align: center;
-    border-radius: 3px;
-    font-weight: bolder;
-}
+
 .resume-heading{
     color: #08a7c7 !important;
 }

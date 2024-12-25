@@ -35,7 +35,7 @@ const Headermain = () => {
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
-                <ul className="the_menu">
+                <ul className="the_menu hover:text-highlight-light">
                   <li className="menu_item ">
                     <Link onClick={handleToggle} to="/" className="my-3">Home</Link>
                   </li>

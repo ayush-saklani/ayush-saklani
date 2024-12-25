@@ -17,23 +17,25 @@ export const Demo = () => {
                         <hr className="t_border mt-4 ml-0 text-left" />
                     </Col>
                 </Row>
-                <div class="row project-super-container">
+                <div className="row project-super-container">
                     {
-                        resumedata[resumedata.length-1].data.map((data, i) => {
+                        resumedata[resumedata.length - 1].data.map((data, i) => {
                             return (
                                 data.hosted_link &&
-                                <div key={i} className="pb-4 mb-4 project-container">
-                                    <h2 className="fw-bold my-3 text-uppercase project-heading py-2 px-2">{data.heading} </h2>
-                                    <div className="ratio ratio-16x9 mb-3 project-frame">
+                                <div key={i} className="pb-3 mb-4 project-container">
+                                    <a href={data.link} target="_blank">
+                                        <h2 className="font-bold text-2xl my-1 uppercase p-2 text-highlight hover:text-highlight-hover">{data.heading} </h2>
+                                    </a>
+                                    <div className="ratio ratio-16x9 project-frame">
                                         <iframe src={data.hosted_link} allowfullscreen></iframe>
                                     </div>
                                 </div>
                             );
                         })
                     }
-                    <div className="under-development pb-4 mb-4 project-container">
-                        <h2 className="placeholder placeholder-wave fw-bold my-3 text-uppercase project-heading my-2 px-2"><b>Lorem ipsum dolor sit amet consectetur.</b></h2>
-                        <div className="ratio ratio-16x9 mb-3 project-frame placeholder placeholder-glow">
+                    <div className="under-development pb-3 mb-4 project-container">
+                        <h2 className="placeholder placeholder-wave my-3 px-2 font-bold text-2xl uppercase text-highlight hover:text-highlight-hover"><b>Lorem ipsum dolor sit amet consectetur.</b></h2>
+                        <div className="ratio ratio-16x9 project-frame placeholder placeholder-glow">
                             <iframe src="" title="Lorem ipsum dolor" allowfullscreen></iframe>
                         </div>
                     </div>

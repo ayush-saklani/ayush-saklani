@@ -14,7 +14,7 @@ const images = {
 const meta = {
     title: "Ayush Saklani",
     short_description: "I’m Ayush Saklani a CS undergrad, Full stack devloper, from Dehradun Uttrarakhand",
-    description: `An computer science undergrad pursuing BTech CSE (2025 batch) from GEHU. 
+    description: ` I am Ayush Saklani, a final-year CSE undergrad student. With a strong foundation in Machine Learning and Full-Stack Development. 
     I am a passionate programmer and a quick learner, always eager to learn new technologies and implement them in my projects.`,
 };
 
@@ -103,6 +103,8 @@ const dataabout2 = [
     { title: "City", "data": "Dehradun, Uttarakhand" },
     { title: "Degree", "data": "BTech CSE" },
     { title: "Age", "data": "20" },
+    { title: "Languages", data: "English, Hindi" },
+    { title: "Interests", data: "ML, Web Development" },
 ]
 
 const dataabout3 = [
