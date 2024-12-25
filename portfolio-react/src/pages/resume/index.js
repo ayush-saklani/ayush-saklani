@@ -3,7 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { meta, resumedata, socialprofils } from "../../content_option";
-import { FaAddressCard, FaDownload, FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
 import { FaFileDownload } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 
@@ -24,11 +24,11 @@ export const Resume = () => {
                 <h1 className="text-3xl font-bold">{meta.title} </h1>
                 <h6 className="my-2 text-md font-medium">{meta.description}</h6>
                 <h2 className="my-3 text-3xl flex gap-1">
-                    {socialprofils.github && <a href={socialprofils.github} target="_blank"><FaGithub /></a>}
-                    {socialprofils.linkedin && <a href={socialprofils.linkedin} target="_blank"><FaLinkedin /></a>}
-                    {socialprofils.twitter && <a href={socialprofils.twitter} target="_blank"><FaXTwitter /></a>}
-                    {socialprofils.email && <a href={socialprofils.email} target="_blank"><BiLogoGmail /></a>}
-                    {socialprofils.resume && <a href={socialprofils.resume} target="_blank"><FaFileDownload /></a>}
+                    {socialprofils.github && <a href={socialprofils.github} target="_blank" rel="noopener noreferrer"><FaGithub /></a>}
+                    {socialprofils.linkedin && <a href={socialprofils.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>}
+                    {socialprofils.twitter && <a href={socialprofils.twitter} target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>}
+                    {socialprofils.email && <a href={socialprofils.email} target="_blank" rel="noopener noreferrer"><BiLogoGmail /></a>}
+                    {socialprofils.resume && <a href={socialprofils.resume} target="_blank" rel="noopener noreferrer"><FaFileDownload /></a>}
                 </h2>
                 {
                     resumedata.map((data, i) => {
@@ -41,7 +41,7 @@ export const Resume = () => {
                                             <h4 className="fw-bold py-1 text-highlight flex items-center text-lg uppercase">
                                                 <FaPlay className="me-2" />
                                                 {data.link ?
-                                                    <a href={data.link} target="_blank">
+                                                    <a href={data.link} target="_blank" rel="noopener noreferrer">
                                                         {data.heading}
                                                     </a> : data.heading
                                                 }

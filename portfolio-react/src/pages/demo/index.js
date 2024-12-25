@@ -23,11 +23,11 @@ export const Demo = () => {
                             return (
                                 data.hosted_link &&
                                 <div key={i} className="pb-3 mb-4 project-container">
-                                    <a href={data.link} target="_blank">
+                                    <a href={data.link} target="_blank" rel="noopener noreferrer">
                                         <h2 className="font-bold text-2xl my-1 uppercase p-2 text-highlight hover:text-highlight-hover">{data.heading} </h2>
                                     </a>
                                     <div className="ratio ratio-16x9 project-frame">
-                                        <iframe src={data.hosted_link} allowfullscreen></iframe>
+                                        <iframe src={data.hosted_link} allowfullscreen title={data.heading}></iframe>
                                     </div>
                                 </div>
                             );

@@ -1,5 +1,4 @@
 import githublogo from "./assets/images/github-logo.png";
-import expresslogo from "./assets/images/expressjs-logo.png";
 import leafletlogo from "./assets/images/Leaflet_logo.png";
 import vercellogo from "./assets/images/vercel-logo.png";
 import myphoto2 from "./assets/images/me.jpg";

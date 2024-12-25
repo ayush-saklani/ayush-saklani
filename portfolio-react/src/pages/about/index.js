@@ -28,7 +28,7 @@ export const About = () => {
                     </Col>
                 </Row>
                 <Row className="mb-5 bg-grey py-2" >
-                    <img src={images.my_photo} className="col-xl-4 col-lg-7 py-2" style={{ objectFit: "contain" }} />
+                    <img src={images.my_photo} className="col-xl-4 col-lg-7 py-2" style={{ objectFit: "contain" }} alt="Me"/>
                     <div className="col-xl-8 col-lg-5 row py-3">
                         <h3 className="text-highlight hover:text-highlight-hover mb-2 text-3xl font-bold">{dataabout.title}</h3>
                         <span className="fw-semibold my-2">
@@ -53,7 +53,7 @@ export const About = () => {
                                 </div>
                                 <div className="col-lg-8 text-center text-align-center my-auto">
                                     <CountUp end={data.data} className="text-3xl block font-bold" />
-                                    <a className="text" href={data.link} target="_blank"><b>{data.title}</b></a>
+                                    <a className="text" href={data.link} target="_blank" rel="noopener noreferrer"><b>{data.title}</b></a>
                                 </div>
                             </div>
                         )
@@ -65,7 +65,7 @@ export const About = () => {
                         Interests.map((data, i) => {
                             return (
                                 <div key={i} className="col-lg-1 col-md-2 col-sm-3 col-2 col-4 p-2 my-auto">
-                                    <img src={data} height="80" />
+                                    <img src={data} height="80" alt="Logo"/>
                                 </div>
                             );
                         })

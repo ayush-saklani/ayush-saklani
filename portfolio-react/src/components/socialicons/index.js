@@ -15,35 +15,35 @@ export const Socialicons = (params) => {
       <ul>
         {socialprofils.twitter && (
           <li>
-            <a href={socialprofils.twitter} target="_blank">
+            <a href={socialprofils.twitter} target="_blank" rel="noopener noreferrer">
               <FaXTwitter />
             </a>
           </li>
         )}
         {socialprofils.github && (
           <li>
-            <a href={socialprofils.github} target="_blank">
+            <a href={socialprofils.github} target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
           </li>
         )}
         {socialprofils.linkedin && (
           <li>
-            <a href={socialprofils.linkedin} target="_blank">
+            <a href={socialprofils.linkedin} target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
           </li>
         )}
         {socialprofils.youtube && (
           <li>
-            <a href={socialprofils.youtube} target="_blank">
+            <a href={socialprofils.youtube} target="_blank" rel="noopener noreferrer">
               <FaYoutube />
             </a>
           </li>
         )}
         {socialprofils.instagram && (
           <li>
-            <a href={socialprofils.instagram} target="_blank">
+            <a href={socialprofils.instagram} target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
           </li>
