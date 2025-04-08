@@ -37,7 +37,7 @@ export const Home = () => {
                     }}
                   />
                 </h1>
-                <p className="my-3 font-medium">{introdata.description}</p>
+                <p className="my-3 font-bold">{introdata.description}</p>
                 <div className="intro_btn-action pb-5">
                   <Link to="/resume" className="text_2">
                     <div id="button_p" className="ac_btn btn ">

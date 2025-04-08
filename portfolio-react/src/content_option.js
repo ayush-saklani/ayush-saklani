@@ -7,7 +7,7 @@ const logotext = "Ayush Saklani";
 
 const images = {
     my_photo: myphoto3,
-    my_photo2: myphoto2,
+    my_photo2: myphoto3,
 }
 
 const meta = {
@@ -21,10 +21,10 @@ const introdata = {
     title: "I’m Ayush Saklani",
     animated: {
         first: "I'm a Full Stack Developer",
-        second: "I'm a CS undergrad",
+        second: "I'm a CS undergrad Student",
         third: "I develop Web apps",
     },
-    description: "I'm Ayush Saklani, an enthusiastic CS undergrad hailing from Dehradun, India.",
+    description: "I'm a Software Developer, hailing from Dehradun, Uttarakhand, India.",
     your_img_url: images.my_photo,
 };
 
@@ -39,6 +39,9 @@ const logos = {
     "tailwindcss": "https://devicon-website.vercel.app/api/tailwindcss/plain.svg",
     "bootstrap": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
     "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "typescript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "graphql": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    "redux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     "nodejs": "https://devicon-website.vercel.app/api/nodejs/original.svg",
     "reactjs": "https://devicon-website.vercel.app/api/react/original.svg",
     "expressjs": "https://devicon-website.vercel.app/api/express/original.svg?color=%23FFFFFF",
@@ -73,16 +76,15 @@ const logos = {
 };
 
 const Interests = [
-    logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"], logos["java"], logos["html"], logos["css"],
-    logos["tailwindcss"], logos["bootstrap"], logos["javascript"], logos["nodejs"], logos["reactjs"], logos["nextjs"], logos["expressjs"],
-    logos["firebase"], logos["mongodb"], logos["mongoose"], logos["azure"], logos["vercel"], logos["mysql"], logos["npm"],
-    logos["openstreetmap"], logos["leaflet"], logos["windows11"], logos["linux"], logos["json"], logos["postman"], logos["vscode"],
-    logos["pikachu2"],
+    logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"], logos["html"], logos["css"],
+    logos["tailwindcss"], logos["bootstrap"], logos["javascript"], logos["typescript"], logos["nodejs"], logos["reactjs"],
+    logos["nextjs"], logos["expressjs"], logos["firebase"], logos["mongodb"], logos["mongoose"], logos["azure"], logos["vercel"],
+    logos["mysql"], logos["openstreetmap"], logos["leaflet"], logos["json"], logos["postman"], logos["pikachu"],
 ];
 
 const dataabout = {
     title: "Know Me Better",
-    aboutme: `Ayush saklani is an computer science undergrad from Dehradun, Uttarakhand pursuing BTech CSE (2025 batch) from Graphic era hill University.`,
+    aboutme: "I am a final-year CSE undergrad student. With a strong foundation in Machine Learning and Full-Stack Development. I am a passionate programmer and a quick learner, always eager to learn new technologies and implement them in my projects.",
 };
 
 const socialprofils = {
@@ -97,19 +99,18 @@ const socialprofils = {
 };
 
 const dataabout2 = [
-    { title: "Website", "data": "ayushsaklani.vercel.app" },
     { title: "Email", "data": "ayushsaklani04@gmail.com" },
     { title: "City", "data": "Dehradun, Uttarakhand" },
     { title: "Degree", "data": "BTech CSE" },
     { title: "Age", "data": "20" },
     { title: "Languages", data: "English, Hindi" },
-    { title: "Interests", data: "ML, Web Development" },
+    // { title: "Interests", data: "Programming, Web Development, Machine Learning" },
 ]
 
 const dataabout3 = [
     {
         title: "Problem solved",
-        data: 127,
+        data: 148,
         logo_link: logos["leetcode"],
         link: socialprofils.leetcode,
     },
@@ -150,7 +151,7 @@ const resumedata = [
         data: [
             {
                 heading: "Crux Sphere Technologies",
-                tags: ["Software Developer Intern", "2024", "November-present"],
+                tags: ["Software Developer Intern", "November 2024 - March 2025"],
             },
             {
                 heading: "Technology Business Incubator - GEU",
@@ -161,6 +162,22 @@ const resumedata = [
     {
         title: "Projects",
         data: [
+            {
+                heading: "Class-Sync Generator - Timetable Generation using Genetic Algorithm",
+                link: "https://github.com/ayush-saklani/classsync-generator",
+                hosted_link: "",
+                tags: ["2025", "Machine Learning"],
+                description: [
+                    "Created a Genetic Algorithm from scratch to generate the timetable for university.",
+                    "It uses the data from the Class-Sync project to generate the timetable.",
+                    "It Generates the timetable and saves it back to the database.",
+                    "This eliminates any conflicts, clashes and optimizes the timetable Scheduling.",
+
+                ],
+                technologies: [
+                    logos["javascript"], logos["nodejs"], logos["mongodb"], logos["json"]
+                ],
+            },
             {
                 heading: "Navit - University campus navigator (v.2.2)",
                 link: "https://github.com/ayush-saklani/navit",
@@ -174,8 +191,8 @@ const resumedata = [
                 ],
                 technologies: [
                     logos['reactjs'], logos["tailwindcss"],
-                    logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
-                    logos['azure'], logos["vercel"], logos["json"], logos["npm"], logos["python"], logos["postman"], logos["openstreetmap"], logos["leaflet"],
+                    logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
+                    logos["json"], logos["openstreetmap"], logos["leaflet"], logos['azure'], logos["vercel"], logos["postman"],
                 ],
             },
             {
@@ -185,9 +202,9 @@ const resumedata = [
                 tags: ["2024", "Web Development"],
                 description: [
                     "Created a web application to manage university timetables and prevent classroom scheduling conﬂicts.",
-                    "Time table manager for students and teachers.",
+                    "Time table manager for Students and Teachers.",
                     "Designed server-side functionalities using NodeJS, MongoDB, and ExpressJS.",
-                    "Built user interfaces with HTML, CSS, JavaScript, and React.js for students, teachers, and administrators.",
+                    "Built user interfaces with HTML, CSS, JavaScript, and React.js for students, teachers, and admins.",
                     "Enabled real-time updates and conﬂict resolution through dedicated viewing and editing pages.",
                 ],
                 technologies: [

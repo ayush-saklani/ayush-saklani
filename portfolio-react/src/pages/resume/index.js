@@ -21,9 +21,9 @@ export const Resume = () => {
                         <hr className="t_border mt-4 ml-0 text-left" />
                     </Col>
                 </Row>
-                <h1 className="text-3xl font-bold">{meta.title} </h1>
-                <h6 className="my-2 text-md font-medium">{meta.description}</h6>
-                <h2 className="my-3 text-3xl flex gap-1">
+                <h1 className="text-3xl font-bold my-2">{meta.title} </h1>
+                <h6 className="my-2 text-base font-semibold">{meta.description}</h6>
+                <h2 className="my-3 text-3xl flex gap-2">
                     {socialprofils.github && <a href={socialprofils.github} target="_blank" rel="noopener noreferrer"><FaGithub /></a>}
                     {socialprofils.linkedin && <a href={socialprofils.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>}
                     {socialprofils.twitter && <a href={socialprofils.twitter} target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>}
@@ -33,13 +33,13 @@ export const Resume = () => {
                 {
                     resumedata.map((data, i) => {
                         return (
-                            <div key={i} className="pb-4">
+                            <div key={i} className="py-3">
                                 <h1 className="text-4xl font-bold my-1">{data.title} </h1>
                                 {
                                     data.data.map((data, i) => (
-                                        <div key={i} className="pt-1">
-                                            <h4 className="fw-bold py-1 text-highlight flex items-center text-lg uppercase">
-                                                <FaPlay className="me-2" />
+                                        <div key={i} className="pt-1 rounded-md p-3 my-2 bg-[#25252549]">
+                                            <h4 className="ps-3 py-1 text-highlight flex items-center text-xl font-extrabold uppercase my-0.5">
+                                                <FaPlay className="me-2" size={16} />
                                                 {data.link ?
                                                     <a href={data.link} target="_blank" rel="noopener noreferrer">
                                                         {data.heading}
@@ -48,7 +48,7 @@ export const Resume = () => {
                                             </h4>
                                             {
                                                 data.tags &&
-                                                <div className="ps-4 ms-2 gap-1 flex flex-wrap">
+                                                <div className="ps-4 ms-2 gap-1.5 flex flex-wrap">
                                                     {data.tags.map((tag, i) => (
                                                         <h6 key={i} className="bg-tag text-black text-center rounded-sm font-bold p-2">{tag}</h6>
                                                     ))}
@@ -58,13 +58,13 @@ export const Resume = () => {
                                                 data.description &&
                                                 <div className="ps-4 ms-2 py-2">
                                                     {data.description.map((description, i) => (
-                                                        <li key={i} className="mb-1 text-md font-medium">{description}</li>
+                                                        <li key={i} className="mb-1 text-base font-medium">{description}</li>
                                                     ))}
                                                 </div>
                                             }
                                             {
                                                 data.technologies &&
-                                                <div className="ps-4 ms-2 py-2 flex flex-wrap gap-1">
+                                                <div className="px-4 mx-2 py-2 flex flex-wrap gap-1.5">
                                                     {data.technologies.map((technology, i) => (
                                                         <img key={i} className="h-[65px] w-[65px]" src={technology} alt={technology} height={65} />
                                                     ))}

@@ -28,7 +28,7 @@ export const About = () => {
                     </Col>
                 </Row>
                 <Row className="mb-5 bg-grey py-2" >
-                    <img src={images.my_photo} className="col-xl-4 col-lg-7 py-2" style={{ objectFit: "contain" }} alt="Me"/>
+                    <img src={images.my_photo2} className="col-xl-4 col-lg-7 py-2" style={{ objectFit: "contain" }} alt="Me"/>
                     <div className="col-xl-8 col-lg-5 row py-3">
                         <h3 className="text-highlight hover:text-highlight-hover mb-2 text-3xl font-bold">{dataabout.title}</h3>
                         <span className="fw-semibold my-2">
@@ -59,13 +59,17 @@ export const About = () => {
                         )
                     })}
                 </div>
+                {/* <Row className="mb-5 bg-grey text-center align-items-center row px-2 py-3 gap-2">
+                    <h3 className="color_sec py-2 font-bold text-xl">Github Contibution Graph</h3>
+                    <img src="http://ghchart.rshah.org/ayush-saklani" />
+                </Row> */}
                 <Row className="mb-5 bg-grey text-center align-items-center row px-2 py-3">
-                    {/* <h3 className="color_sec py-2">Coding Skills &amp; Interests</h3> */}
+                    {/* <h3 className="color_sec py-2 px-3 font-semibold text-xl justify-start flex">{"Coding Skills & Interests"}</h3> */}
                     {
                         Interests.map((data, i) => {
                             return (
-                                <div key={i} className="col-lg-1 col-md-2 col-sm-3 col-2 col-4 p-2 my-auto">
-                                    <img src={data} height="80" alt="Logo"/>
+                                <div key={i} className="col-lg-1 col-md-2 col-sm-3 col-2 col-4 p-2 m-1 text-center rounded-2xl shadow-2xl">
+                                    <img src={data} height="80" alt="Logo" />
                                 </div>
                             );
                         })
