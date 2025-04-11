@@ -27,9 +27,9 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" height="70"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" height="70"/>
 <img src="https://devicon-website.vercel.app/api/vscode/original.svg" height="70"/>
+<img src="./assets/img/chesscom.png" height="70"/>
+<img src="./assets/img/LeetCodelogo.png" height="70"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Openstreetmap_logo.svg"height="70"/> 
-<img src="https://play-lh.googleusercontent.com/A3MvSm0eEVCkHQP9rUE1Cl3ju90CqCjTxcQqt4tBDzEMT7RWixWBCFgT7mIcN0hk2Q" height="70"/>
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png" height="70"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1280px-Leaflet_logo.svg.png" height="50" style="padding-bottom:10px"/>
 <!-- <img src="https://i.pinimg.com/originals/ab/be/28/abbe28a943ed44fcd98452687f7c46c9.gif" height="70"/> -->
 <img src="https://64.media.tumblr.com/c3becd2c993f457fac2cd7b3bd53538d/tumblr_mivect2TMc1rfjowdo1_r1_500.gifv" height="70"/>
