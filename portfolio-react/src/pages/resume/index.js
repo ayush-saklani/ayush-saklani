@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { Education, Experience, meta, resumedata, socialprofils } from "../../content_option";
+import { Education, Experience, meta, Projects, resumedata, socialprofils } from "../../content_option";
 import { FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
 import { FaFileDownload } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
@@ -33,13 +33,13 @@ export const Resume = () => {
                 </h2>
                 {
                     <div className="py-3">
-                        <h1 className="text-4xl font-bold my-1">Education</h1>
+                        <h1 className="text-3xl md:text-4xl font-bold my-1">Education</h1>
                         {
                             Education.map((data, i) => (
-                                <div key={i} className="rounded-m p-3 my- bg-[#25252549]">
-                                    <h4 className="px-2  text-highlight flex text-xl font-extrabold uppercase align-middle flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
+                                <div key={i} className="rounded-m p-3 bg-[#25252549]">
+                                    <h4 className="px-2 text-highlight flex text-lg md:text-xl font-extrabold uppercase align-middle flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
                                         <span className="flex flex-col lg:flex-row items-start lg:items-center gap-2">
-                                            <span className="flex items-center text-highlight font-extrabold text-xl uppercase gap-2">
+                                            <span className="flex items-center text-highlight font-extrabold uppercase gap-2">
                                                 <FaPlay className="me-2" size={16} />
                                                 <span>{data.heading}</span>
                                             </span>
@@ -48,91 +48,85 @@ export const Resume = () => {
                                                 <span className="text-[cyan]">{data.certification}</span>
                                             </div>
                                         </span>
-                                        <span className="text-white font-bold text-xl uppercase px-[2rem] lg:px-0">{data.year}</span>
+                                        <span className="text-white font-bold uppercase px-[2rem] lg:px-0">{data.year}</span>
                                     </h4>
                                 </div>
                             ))
                         }
                     </div>
                 }
-                {/* this is experience section which is commented out */}
-                {/* {   
+                {
                     <div className="py-3">
-                        <h1 className="text-4xl font-bold my-1">Experience</h1>
+                        <h1 className="text-3xl md:text-4xl font-bold my-1">Experience</h1>
                         {
                             Experience.map((data, i) => (
-                                <div key={i} className="rounded-m p-3 my- bg-[#25252549]">
-                                    <h4 className="px-2  text-highlight flex text-xl font-extrabold  align-middle flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
-                                        <span className="flex flex-col lg:flex-row items-start lg:items-center gap-2">
-                                            <span className="flex items-center text-highlight font-extrabold text-xl uppercase gap-2">
+                                <div key={i} className="rounded-m p-3 bg-[#25252549]">
+                                    <div className="px-2 text-highlight flex text-lg md:text-xl font-extrabold align-middle flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
+                                        <span className="flex flex-col items-start lg:items-start gap-2">
+                                            <span className="flex items-center text-highlight font-extrabold uppercase gap-2">
                                                 <FaPlay className="me-2" size={16} />
                                                 <span>{data.heading}</span>
                                             </span>
-                                            <div className="flex flex-wrap items-center gap-2">
+                                            <div className="flex items-center gap-2 mx-[2rem]">
                                                 <span className="text-white">{data.role}</span>
-                                                <span className="text-[cyan]">{data.certification}</span>
                                             </div>
                                         </span>
-                                        <span className="text-white font-bold text-lg">{data.year}</span>
-                                    </h4>
+                                        <span className="text-white font-bold px-[2rem] lg:px-0">{data.year}</span>
+                                    </div>
+
                                 </div>
                             ))
                         }
                     </div>
-                } */}
+                }
                 {
-                    resumedata.map((data, i) => {
-                        return (
-                            data.title != "Education" && // this is to remove the education section from the data 
-                            <div key={i} className="py-3">
-                                <h1 className="text-4xl font-bold my-1">{data.title} </h1>
-                                {
-                                    data.data.map((data, i) => (
-                                        <div key={i} className="pt-1 rounded-md p-3 my-2 bg-[#25252549]">
-                                            {/* {
-                                                data.link &&
-                                                <div className="w-3/3">
-                                                    <Project_Card information={data} />
-                                                </div>
-                                            } */}
-                                            <h4 className="ps-3 py-1 text-highlight flex items-center text-xl font-extrabold uppercase my-0.5">
-                                                <FaPlay className="me-2" size={16} />
-                                                {data.link ?
-                                                    <a href={data.link} target="_blank" rel="noopener noreferrer">
-                                                        {data.heading}
-                                                    </a> : data.heading
-                                                }
-                                            </h4>
-                                            {
-                                                data.tags &&
-                                                <div className="ps-4 ms-2 gap-1.5 flex flex-wrap">
-                                                    {data.tags.map((tag, i) => (
-                                                        <h6 key={i} className="bg-tag text-black text-center rounded-sm font-bold p-2">{tag}</h6>
-                                                    ))}
-                                                </div>
-                                            }
-                                            {
-                                                data.description &&
-                                                <div className="ps-4 ms-2 py-2">
-                                                    {data.description.map((description, i) => (
-                                                        <li key={i} className="mb-1 text-base font-medium">{description}</li>
-                                                    ))}
-                                                </div>
-                                            }
-                                            {
-                                                data.technologies &&
-                                                <div className="px-4 mx-2 py-2 flex flex-wrap gap-1.5">
-                                                    {data.technologies.map((technology, i) => (
-                                                        <img key={i} className="h-[65px] w-[65px]" src={technology} alt={technology} height={65} />
-                                                    ))}
-                                                </div>
-                                            }
+                    <div className="py-3">
+                        <h1 className="text-3xl md:text-4xl font-bold my-1">Projects</h1>
+                        {
+                            Projects.map((data, i) => (
+                                <div key={i} className="pt-1 p-3 my-2 bg-[#25252549]">
+                                    {/* {
+                                        data.link &&
+                                        <div className="w-3/3">
+                                            <Project_Card information={data} />
                                         </div>
-                                    ))
-                                }
-                            </div>
-                        );
-                    })
+                                    } */}
+                                    <h4 className="ps-3 py-1 text-highlight flex items-center text-lg md:text-xl font-extrabold uppercase my-0.5">
+                                        <FaPlay className="me-2" size={16} />
+                                        {data.link ?
+                                            <a href={data.link} target="_blank" rel="noopener noreferrer">
+                                                {data.heading}
+                                            </a> : data.heading
+                                        }
+                                    </h4>
+                                    {
+                                        data.tags &&
+                                        <div className="mx-[2rem] gap-1.5 flex flex-wrap">
+                                            {data.tags.map((tag, i) => (
+                                                <h6 key={i} className="bg-tag text-black text-center rounded-sm font-bold p-2">{tag}</h6>
+                                            ))}
+                                        </div>
+                                    }
+                                    {
+                                        data.description &&
+                                        <div className="mx-[2rem] py-2">
+                                            {data.description.map((description, i) => (
+                                                <li key={i} className="mb-1 text-sm md:text-base font-medium">{description}</li>
+                                            ))}
+                                        </div>
+                                    }
+                                    {
+                                        data.technologies &&
+                                        <div className="mx-[2rem] py-2 flex flex-wrap gap-1.5">
+                                            {data.technologies.map((technology, i) => (
+                                                <img key={i} className="h-[50px] lg:h-[65px] lg:w-[65px]" src={technology} alt={technology} height={65} />
+                                            ))}
+                                        </div>
+                                    }
+                                </div>
+                            ))
+                        }
+                    </div>
                 }
             </Container>
         </HelmetProvider>
