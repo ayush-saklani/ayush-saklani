@@ -155,7 +155,7 @@ const resumedata = [
             },
             {
                 heading: "Technology Business Incubator - GEU",
-                tags: ["Full Stack Developer Intern", "July 2024 -October 2024"],
+                tags: ["Full Stack Developer Intern", "July 2024 - October 2024"],
             },
         ],
     },
@@ -281,6 +281,157 @@ const resumedata = [
         ],
     },
 ];
+const Education = [
+    {
+        heading: "Graphic Era Hill University, Dehradun",
+        tags: ["GEHU", "B.Tech CSE"],
+        year: "2021-2025",
+        certification: "B.Tech CSE",
+        board: "GEHU",
+    },
+    {
+        heading: "Modern School, Rishikesh",
+        tags: ["ICSE", "Intermediate"],
+        year: "2020",
+        certification: "12th",
+        board: "ICSE",
+    },
+    {
+        heading: "Modern School, Rishikesh",
+        tags: ["ISC", "Matriculation"],
+        year: "2018",
+        certification: "10th",
+        board: "ICSE",
+    }
+]
+const Experience = [
+    {
+        heading: "Crux Sphere Technologies",
+        tags: ["Software Developer Intern", "November 2024 - April 2025"],
+    },
+    {
+        heading: "Technology Business Incubator - GEU",
+        tags: ["Full Stack Developer Intern", "July 2024 - October 2024"],
+    },
+]
+const Projects = [
+    {
+        heading: "Class-Sync Generator - Timetable Generation using Genetic Algorithm",
+        link: "https://github.com/ayush-saklani/classsync-generator",
+        hosted_link: "",
+        tags: ["2025", "Machine Learning"],
+        description: [
+            "Created a Genetic Algorithm from scratch to generate the timetable for university.",
+            "It uses the data from the Class-Sync project to generate the timetable.",
+            "It Generates the timetable and saves it back to the database.",
+            "This eliminates any conflicts, clashes and optimizes the timetable Scheduling.",
+
+        ],
+        technologies: [
+            logos["javascript"], logos["nodejs"], logos["mongodb"], logos["json"]
+        ],
+    },
+    {
+        heading: "Navit - University campus navigator (v.2.2)",
+        link: "https://github.com/ayush-saklani/navit",
+        hosted_link: "https://navit.vercel.app/",
+        tags: ["2024", "Web Development"],
+        description: [
+            "Guides you to the place you want to go inside university campus.",
+            "Designed specially for freshers and Visiting Faculties.",
+            "Uses Dijkstra algorithm and show you the path to the room.",
+            "Uses OpenStreetMap for custom mapping features for map.",
+        ],
+        technologies: [
+            logos['reactjs'], logos["tailwindcss"],
+            logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
+            logos["json"], logos["openstreetmap"], logos["leaflet"], logos['azure'], logos["vercel"], logos["postman"],
+        ],
+    },
+    {
+        heading: "Class-Sync Timetable manager (v.2.0)",
+        link: "https://github.com/ayush-saklani/classsync",
+        hosted_link: "https://projectclasssync.vercel.app/",
+        tags: ["2024", "Web Development"],
+        description: [
+            "Created a web application to manage university timetables and prevent classroom scheduling conﬂicts.",
+            "Time table manager for Students and Teachers.",
+            "Designed server-side functionalities using NodeJS, MongoDB, and ExpressJS.",
+            "Built user interfaces with HTML, CSS, JavaScript, and React.js for students, teachers, and admins.",
+            "Enabled real-time updates and conﬂict resolution through dedicated viewing and editing pages.",
+        ],
+        technologies: [
+            logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
+            logos['azure'], logos["vercel"], logos["json"], logos["npm"], logos["postman"],
+        ],
+    },
+    {
+        heading: "Book Recommender System",
+        link: "https://github.com/ayush-saklani/book-recommendation-system",
+        tags: ["2023", "Machine Learning"],
+        description: [
+            "Uses the database from Kaggle with 100K book.",
+            "Machine Learning project that does content-based filtering to recommend the books to users.",
+        ],
+        technologies: [logos["python"], logos["jupyter"], logos["streamlit"], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
+    },
+    {
+        heading: "Stock price prediction using LSTM",
+        link: "https://github.com/ayush-saklani/Stock-price-prediction-using-LSTM?tab=readme-ov-file",
+        tags: ["2024", "Machine Learning"],
+        description: [
+            "Uses the database from Kaggle with 100K book.",
+            "Machine Learning project that does content-based filtering to recommend the books to users.",
+        ],
+        technologies: [logos["python"], logos["jupyter"], logos['tensorflow'], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
+    },
+    {
+        heading: "Mr. Minesweeper",
+        tags: ["2024", "Web Development"],
+        hosted_link: "https://mrminesweeper.vercel.app/",
+        link: "https://github.com/ayush-saklani/minesweeper",
+        description: [
+            "This is a implementation of the classic Minesweeper game built using HTML, CSS, and JavaScript.",
+            "Three difficulty levels: Easy, Medium, and Hard with diffrent board size and number of mines.",
+            "Flagging mines, Game over detection and audio effects.",
+        ],
+        technologies: [logos["html"], logos["css"], logos["javascript"], logos["bootstrap"],],
+    },
+    {
+        heading: "Attendance Marking System (Mark my spot)",
+        link: "https://github.com/ayush-saklani/QR-Atttendence-System",
+        hosted_link: "https://markmyspot.vercel.app/",
+        tags: ["2024", "Web Development"],
+        description: [
+            "The Smart Attendance Marking web-based application.",
+            "It allows students to input their details via a web form and generates QR codes",
+            "Enables teachers to scan QR codes to mark attendance",
+            "later a CSV file with record can be downloaded.",
+        ],
+        technologies: [logos["html"], logos["css"], logos["javascript"]],
+    },
+    {
+        heading: "Car Rental Management System",
+        link: "https://github.com/ayush-saklani/car-rental-system",
+        tags: ["2022", "Terminal Based"],
+        description: [
+            "Implemented in C & C++ using flat file system with user and admin portal using OOPs concepts.",
+            "With admin and user portals.",
+        ],
+        technologies: [logos["c"], logos["cplusplus"]],
+    },
+    {
+        heading: "Library Management System",
+        link: "https://github.com/ayush-saklani/library-management-system",
+        tags: ["2022", "Terminal Based"],
+        description: [
+            "LMS implemented in C and CPP using flat file system.",
+            "Using OOPs concepts and basic terminal frontend.",
+            "With Librarian and user portals.",
+        ],
+        technologies: [logos["c"], logos["cplusplus"]],
+    },
+]
 
 export {
     meta,
@@ -294,4 +445,7 @@ export {
     logos,
     Interests,
     images,
+    Education,
+    Experience,
+    Projects,
 };

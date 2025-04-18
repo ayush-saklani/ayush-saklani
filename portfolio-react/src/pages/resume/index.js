@@ -2,10 +2,11 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { meta, resumedata, socialprofils } from "../../content_option";
+import { Education, meta, resumedata, socialprofils } from "../../content_option";
 import { FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
 import { FaFileDownload } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
+import Project_Card from "../../components/Project_Card";
 
 export const Resume = () => {
     return (
@@ -30,6 +31,29 @@ export const Resume = () => {
                     {socialprofils.email && <a href={socialprofils.email} target="_blank" rel="noopener noreferrer"><BiLogoGmail /></a>}
                     {socialprofils.resume && <a href={socialprofils.resume} target="_blank" rel="noopener noreferrer"><FaFileDownload /></a>}
                 </h2>
+                {/* {
+                    <div className="py-3">
+                        <h1 className="text-4xl font-bold my-1">Education</h1>
+                        {
+                            Education.map((data, i) => (
+                                <div key={i} className="rounded-m p-3 my- bg-[#25252549]">
+                                    <h4 className="px-2  text-highlight flex items-center justify-between text-xl font-extrabold uppercase align-middle ">
+                                        <span className="flex items-center gap-3">
+                                            <span className="flex items-center">
+                                                <FaPlay className="me-2" size={16} />
+
+                                                <span>{data.heading}</span>
+                                            </span>
+                                            <span className="text-white">{data.board}</span>
+                                            <span className="text-whitse">{data.certification}</span>
+                                        </span>
+                                        <span className="text-white font-bold text-xl uppercase my-0.5">{data.year}</span>
+                                    </h4>
+                                </div>
+                            ))
+                        }
+                    </div>
+                } */}
                 {
                     resumedata.map((data, i) => {
                         return (
@@ -38,6 +62,12 @@ export const Resume = () => {
                                 {
                                     data.data.map((data, i) => (
                                         <div key={i} className="pt-1 rounded-md p-3 my-2 bg-[#25252549]">
+                                            {/* {
+                                                data.link &&
+                                                <div className="w-3/3">
+                                                    <Project_Card information={data} />
+                                                </div>
+                                            } */}
                                             <h4 className="ps-3 py-1 text-highlight flex items-center text-xl font-extrabold uppercase my-0.5">
                                                 <FaPlay className="me-2" size={16} />
                                                 {data.link ?
