@@ -151,11 +151,11 @@ const resumedata = [
         data: [
             {
                 heading: "Crux Sphere Technologies",
-                tags: ["Software Developer Intern", "November 2024 - March 2025"],
+                tags: ["Software Developer Intern", "November 2024 - April 2025"],
             },
             {
                 heading: "Technology Business Incubator - GEU",
-                tags: ["Full Stack Developer Intern", "Summer Internship", "2024", "July-October"],
+                tags: ["Full Stack Developer Intern", "July 2024 -October 2024"],
             },
         ],
     },

@@ -44,11 +44,11 @@ export const About = () => {
                         })}
                     </div>
                 </Row>
-                <div class="mb-5 justify-content-between align-items-center text-center px-2 row">
+                <div class="mb-5 justify-content-between align-items-center text-center row gap-3 py-3 grid grid-cols-12">
                     {dataabout3.map((data, i) => {
                         return (
-                            <div className="col-lg-4 col-md-4 col-sm-4 trans-box-count row p-4 bg-grey" key={i}>
-                                <div className="col-lg-4 p-3 align-items-center">
+                            <div className="col-span-4 trans-box-count h-full lg:flex p-4 bg-grey " key={i}>
+                                <div className="col-lg-4 p-2 align-items-center">
                                     <img src={data.logo_link} className="mx-auto aspect-square" alt="logo" width={70} />
                                 </div>
                                 <div className="col-lg-8 text-center text-align-center my-auto">
@@ -63,7 +63,7 @@ export const About = () => {
                     <h3 className="color_sec py-2 font-bold text-xl">Github Contibution Graph</h3>
                     <img src="http://ghchart.rshah.org/ayush-saklani" />
                 </Row> */}
-                <Row className="mb-5 bg-grey text-center align-items-center row px-2 py-3">
+                <Row className="mb-5 bg-grey text-center justify-evenly row px-2 py-3">
                     {/* <h3 className="color_sec py-2 px-3 font-semibold text-xl justify-start flex">{"Coding Skills & Interests"}</h3> */}
                     {
                         Interests.map((data, i) => {
