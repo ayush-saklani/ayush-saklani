@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { Education, meta, resumedata, socialprofils } from "../../content_option";
+import { Education, Experience, meta, resumedata, socialprofils } from "../../content_option";
 import { FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
 import { FaFileDownload } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
@@ -31,23 +31,49 @@ export const Resume = () => {
                     {socialprofils.email && <a href={socialprofils.email} target="_blank" rel="noopener noreferrer"><BiLogoGmail /></a>}
                     {socialprofils.resume && <a href={socialprofils.resume} target="_blank" rel="noopener noreferrer"><FaFileDownload /></a>}
                 </h2>
-                {/* {
+                {
                     <div className="py-3">
                         <h1 className="text-4xl font-bold my-1">Education</h1>
                         {
                             Education.map((data, i) => (
                                 <div key={i} className="rounded-m p-3 my- bg-[#25252549]">
-                                    <h4 className="px-2  text-highlight flex items-center justify-between text-xl font-extrabold uppercase align-middle ">
-                                        <span className="flex items-center gap-3">
-                                            <span className="flex items-center">
+                                    <h4 className="px-2  text-highlight flex text-xl font-extrabold uppercase align-middle flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
+                                        <span className="flex flex-col lg:flex-row items-start lg:items-center gap-2">
+                                            <span className="flex items-center text-highlight font-extrabold text-xl uppercase gap-2">
                                                 <FaPlay className="me-2" size={16} />
-
                                                 <span>{data.heading}</span>
                                             </span>
-                                            <span className="text-white">{data.board}</span>
-                                            <span className="text-whitse">{data.certification}</span>
+                                            <div className="flex flex-wrap items-center gap-2 px-[2rem] lg:px-0">
+                                                <span className="text-white">{data.board}</span>
+                                                <span className="text-[cyan]">{data.certification}</span>
+                                            </div>
                                         </span>
-                                        <span className="text-white font-bold text-xl uppercase my-0.5">{data.year}</span>
+                                        <span className="text-white font-bold text-xl uppercase px-[2rem] lg:px-0">{data.year}</span>
+                                    </h4>
+                                </div>
+                            ))
+                        }
+                    </div>
+                }
+                {/* this is experience section which is commented out */}
+                {/* {   
+                    <div className="py-3">
+                        <h1 className="text-4xl font-bold my-1">Experience</h1>
+                        {
+                            Experience.map((data, i) => (
+                                <div key={i} className="rounded-m p-3 my- bg-[#25252549]">
+                                    <h4 className="px-2  text-highlight flex text-xl font-extrabold  align-middle flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
+                                        <span className="flex flex-col lg:flex-row items-start lg:items-center gap-2">
+                                            <span className="flex items-center text-highlight font-extrabold text-xl uppercase gap-2">
+                                                <FaPlay className="me-2" size={16} />
+                                                <span>{data.heading}</span>
+                                            </span>
+                                            <div className="flex flex-wrap items-center gap-2">
+                                                <span className="text-white">{data.role}</span>
+                                                <span className="text-[cyan]">{data.certification}</span>
+                                            </div>
+                                        </span>
+                                        <span className="text-white font-bold text-lg">{data.year}</span>
                                     </h4>
                                 </div>
                             ))
@@ -57,6 +83,7 @@ export const Resume = () => {
                 {
                     resumedata.map((data, i) => {
                         return (
+                            data.title != "Education" && // this is to remove the education section from the data 
                             <div key={i} className="py-3">
                                 <h1 className="text-4xl font-bold my-1">{data.title} </h1>
                                 {

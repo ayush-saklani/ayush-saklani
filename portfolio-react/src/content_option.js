@@ -61,7 +61,7 @@ const logos = {
     "github": githublogo,
     "streamlit": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg",
     "numpy": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-plain-wordmark.svg",
-    "pandas": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg",
+    "pandas": "https://devicon-website.vercel.app/api/pandas/original-wordmark.svg?color=%23FFFFFF",
     "scikitlearn": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
     "tensorflow": "https://devicon-website.vercel.app/api/tensorflow/original.svg",
     "leetcode": "https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png",
@@ -76,9 +76,9 @@ const logos = {
 };
 
 const Interests = [
-    logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"], logos["html"], logos["css"],
-    logos["tailwindcss"], logos["bootstrap"], logos["javascript"], logos["typescript"], logos["nodejs"], logos["reactjs"],
-    logos["nextjs"], logos["expressjs"], logos["firebase"], logos["mongodb"], logos["mongoose"], logos["azure"], logos["vercel"],
+    logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"], logos["reactjs"], logos["nextjs"],
+    logos["tailwindcss"],  logos["javascript"], logos["typescript"], logos["nodejs"],
+    logos["expressjs"], logos["firebase"], logos["mongodb"], logos["azure"],
     logos["mysql"], logos["openstreetmap"], logos["leaflet"], logos["json"], logos["postman"], logos["pikachu"],
 ];
 
@@ -163,23 +163,23 @@ const resumedata = [
         title: "Projects",
         data: [
             {
-                heading: "Class-Sync Generator - Timetable Generation using Genetic Algorithm",
+                heading: "Timetable Generation using Genetic Algorithm",
                 link: "https://github.com/ayush-saklani/classsync-generator",
                 hosted_link: "",
                 tags: ["2025", "Machine Learning"],
                 description: [
                     "Created a Genetic Algorithm from scratch to generate the timetable for university.",
+                    "This eliminates any conflicts, clashes and optimizes the timetable Scheduling.",
                     "It uses the data from the Class-Sync project to generate the timetable.",
                     "It Generates the timetable and saves it back to the database.",
-                    "This eliminates any conflicts, clashes and optimizes the timetable Scheduling.",
-
                 ],
                 technologies: [
+                    logos['python'], logos["jupyter"], logos["numpy"], logos["pandas"],
                     logos["javascript"], logos["nodejs"], logos["mongodb"], logos["json"]
                 ],
             },
             {
-                heading: "Navit - University campus navigator (v.2.2)",
+                heading: "Navit - University campus navigator (v.2.1)",
                 link: "https://github.com/ayush-saklani/navit",
                 hosted_link: "https://navit.vercel.app/",
                 tags: ["2024", "Web Development"],
@@ -307,11 +307,25 @@ const Education = [
 const Experience = [
     {
         heading: "Crux Sphere Technologies",
+        role: "Software Developer Intern",
+        year: "November 2024 - April 2025",
         tags: ["Software Developer Intern", "November 2024 - April 2025"],
+        description: [
+            "Worked on developing and maintaining web applications.",
+            "Collaborated with a team to design and implement new features.",
+            "Gained hands-on experience with full-stack development technologies.",
+        ],
     },
     {
         heading: "Technology Business Incubator - GEU",
+        role: "Full Stack Developer Intern",
+        year: "July 2024 - October 2024",
         tags: ["Full Stack Developer Intern", "July 2024 - October 2024"],
+        description: [
+            "Worked on developing and maintaining web applications.",
+            "Collaborated with a team to design and implement new features.",
+            "Gained hands-on experience with full-stack development technologies.",
+        ],
     },
 ]
 const Projects = [
