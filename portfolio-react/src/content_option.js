@@ -76,9 +76,9 @@ const logos = {
 };
 
 const Interests = [
-    logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"], logos["reactjs"], logos["nextjs"],
-    logos["tailwindcss"],  logos["javascript"], logos["typescript"], logos["nodejs"],
-    logos["expressjs"], logos["firebase"], logos["mongodb"], logos["azure"],
+    logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"],
+    logos["reactjs"], logos["nextjs"], logos["tailwindcss"], logos["javascript"], logos["typescript"],
+    logos["nodejs"], logos["expressjs"], logos["firebase"], logos["mongodb"], logos["azure"],
     logos["mysql"], logos["openstreetmap"], logos["leaflet"], logos["json"], logos["postman"], logos["pikachu"],
 ];
 
@@ -308,8 +308,8 @@ const Experience = [
     {
         heading: "Crux Sphere Technologies",
         role: "Software Developer Intern",
-        year: "November 2024 - April 2025",
-        tags: ["Software Developer Intern", "November 2024 - April 2025"],
+        year: "November 2024 - March 2025",
+        tags: ["Software Developer Intern", "November 2024 - March 2025"],
         description: [
             "Worked on developing and maintaining web applications.",
             "Collaborated with a team to design and implement new features.",
@@ -330,23 +330,24 @@ const Experience = [
 ]
 const Projects = [
     {
-        heading: "Class-Sync Generator - Timetable Generation using Genetic Algorithm",
+        heading: "Timetable Generation using Genetic Algorithm",
         link: "https://github.com/ayush-saklani/classsync-generator",
         hosted_link: "",
         tags: ["2025", "Machine Learning"],
         description: [
             "Created a Genetic Algorithm from scratch to generate the timetable for university.",
+            "This eliminates any conflicts, clashes and optimizes the timetable Scheduling.",
             "It uses the data from the Class-Sync project to generate the timetable.",
             "It Generates the timetable and saves it back to the database.",
-            "This eliminates any conflicts, clashes and optimizes the timetable Scheduling.",
-
         ],
         technologies: [
+            logos['python'], logos["jupyter"], logos["numpy"], logos["pandas"],
             logos["javascript"], logos["nodejs"], logos["mongodb"], logos["json"]
         ],
+        image: [myphoto2]
     },
     {
-        heading: "Navit - University campus navigator (v.2.2)",
+        heading: "Navit - University campus navigator (v.2.1)",
         link: "https://github.com/ayush-saklani/navit",
         hosted_link: "https://navit.vercel.app/",
         tags: ["2024", "Web Development"],
@@ -358,9 +359,10 @@ const Projects = [
         ],
         technologies: [
             logos['reactjs'], logos["tailwindcss"],
-            logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
+            logos["javascript"], logos["nodejs"], logos["expressjs"], logos["mongodb"],
             logos["json"], logos["openstreetmap"], logos["leaflet"], logos['azure'], logos["vercel"], logos["postman"],
         ],
+        image: [myphoto2]
     },
     {
         heading: "Class-Sync Timetable manager (v.2.0)",
@@ -375,9 +377,10 @@ const Projects = [
             "Enabled real-time updates and conﬂict resolution through dedicated viewing and editing pages.",
         ],
         technologies: [
-            logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["mongoose"],
-            logos['azure'], logos["vercel"], logos["json"], logos["npm"], logos["postman"],
+            logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"],
+            logos["json"], logos['azure'], logos["vercel"], logos["postman"],
         ],
+        image: [myphoto2]
     },
     {
         heading: "Book Recommender System",
@@ -388,6 +391,7 @@ const Projects = [
             "Machine Learning project that does content-based filtering to recommend the books to users.",
         ],
         technologies: [logos["python"], logos["jupyter"], logos["streamlit"], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
+        image: [myphoto2]
     },
     {
         heading: "Stock price prediction using LSTM",
@@ -398,6 +402,7 @@ const Projects = [
             "Machine Learning project that does content-based filtering to recommend the books to users.",
         ],
         technologies: [logos["python"], logos["jupyter"], logos['tensorflow'], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
+        image: [myphoto2]
     },
     {
         heading: "Mr. Minesweeper",
@@ -410,6 +415,7 @@ const Projects = [
             "Flagging mines, Game over detection and audio effects.",
         ],
         technologies: [logos["html"], logos["css"], logos["javascript"], logos["bootstrap"],],
+        image: [myphoto2]
     },
     {
         heading: "Attendance Marking System (Mark my spot)",
@@ -423,6 +429,7 @@ const Projects = [
             "later a CSV file with record can be downloaded.",
         ],
         technologies: [logos["html"], logos["css"], logos["javascript"]],
+        image: [myphoto2]
     },
     {
         heading: "Car Rental Management System",
@@ -433,6 +440,7 @@ const Projects = [
             "With admin and user portals.",
         ],
         technologies: [logos["c"], logos["cplusplus"]],
+        image: [myphoto2]
     },
     {
         heading: "Library Management System",
@@ -444,6 +452,7 @@ const Projects = [
             "With Librarian and user portals.",
         ],
         technologies: [logos["c"], logos["cplusplus"]],
+        image: [myphoto2]
     },
 ]
 

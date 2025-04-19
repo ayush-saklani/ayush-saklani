@@ -4,10 +4,10 @@ import styled from 'styled-components';
 const Project_Card = ({ information }) => {
   return (
     <StyledWrapper>
-      <div className="flip-card w-full flex items-center justify-center lg:h-[40vh] h-[60vh]">
-        <div className="flip-card-inner bg-[#171717]">
+      <div className="flip-card w-full flex items-center justify-center lg:h-[40vh] h-[50vh]">
+        <div className="flip-card-inner bg-gradient-to-tr from-[#171717] to-[#252525] rounded-lg shadow-lg flex flex-col justify-center items-center gap-2">
           <div className="flip-card-front px-3 align-middle flex flex-col justify-center items-center gap-2">
-            <h4 className="py-1 text-highlight flex text-2xl font-extrabold uppercase">
+            <h4 className="py-1 text-highlight flex text-xl md:text-2xl font-extrabold uppercase">
               {information.link ?
                 <a href={information.link} target="_blank" rel="noopener noreferrer">
                   {information.heading}
@@ -21,7 +21,7 @@ const Project_Card = ({ information }) => {
             </div>
             <div className="px-4 mx-2 py-2 flex flex-wrap gap-1.5 items-center justify-center">
               {information.technologies.map((technology, i) => (
-                <img key={i} className="h-[65px] w-[65px]" src={technology} alt={technology} height={65} />
+                <img key={i} className="h-[50px]" src={technology} alt={technology} height={65} />
               ))}
             </div>
           </div>
