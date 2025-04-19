@@ -344,7 +344,9 @@ const Projects = [
             logos['python'], logos["jupyter"], logos["numpy"], logos["pandas"],
             logos["javascript"], logos["nodejs"], logos["mongodb"], logos["json"]
         ],
-        image: [myphoto2]
+        image: [
+            "https://raw.githubusercontent.com/ayush-saklani/classsync-generator/eb13f2f42e3714492d6d357f05e9fa3d0c69223c/assets/img/structure.svg"
+        ]
     },
     {
         heading: "Navit - University campus navigator (v.2.1)",
@@ -365,15 +367,14 @@ const Projects = [
         image: [myphoto2]
     },
     {
-        heading: "Class-Sync Timetable manager (v.2.0)",
+        heading: "Class-Sync - University Timetable manager (v.2.0)",
         link: "https://github.com/ayush-saklani/classsync",
         hosted_link: "https://projectclasssync.vercel.app/",
         tags: ["2024", "Web Development"],
         description: [
             "Created a web application to manage university timetables and prevent classroom scheduling conﬂicts.",
-            "Time table manager for Students and Teachers.",
-            "Designed server-side functionalities using NodeJS, MongoDB, and ExpressJS.",
-            "Built user interfaces with HTML, CSS, JavaScript, and React.js for students, teachers, and admins.",
+            // "Time table manager for Students and Teachers and admins.",
+            "Designed Backend in NodeJS, MongoDB, and ExpressJS and UI in Next.js, HTML, CSS and JavaScript.",
             "Enabled real-time updates and conﬂict resolution through dedicated viewing and editing pages.",
         ],
         technologies: [
@@ -429,7 +430,9 @@ const Projects = [
             "later a CSV file with record can be downloaded.",
         ],
         technologies: [logos["html"], logos["css"], logos["javascript"]],
-        image: [myphoto2]
+        image: [
+            "https://raw.githubusercontent.com/ayush-saklani/QR-Atttendence-System/refs/heads/main/media/pika.png"
+        ]
     },
     {
         heading: "Car Rental Management System",
@@ -440,7 +443,7 @@ const Projects = [
             "With admin and user portals.",
         ],
         technologies: [logos["c"], logos["cplusplus"]],
-        image: [myphoto2]
+        image: ["https://raw.githubusercontent.com/ayush-saklani/car-rental-system/refs/heads/main/Readme%20Media/7_user_car_list.png"]
     },
     {
         heading: "Library Management System",
@@ -452,7 +455,9 @@ const Projects = [
             "With Librarian and user portals.",
         ],
         technologies: [logos["c"], logos["cplusplus"]],
-        image: [myphoto2]
+        image: [
+            "https://raw.githubusercontent.com/ayush-saklani/library-management-system/refs/heads/main/Readme%20Media/6.0_student_book_list.png"
+        ]
     },
 ]
 
