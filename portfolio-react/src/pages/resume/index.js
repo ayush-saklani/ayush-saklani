@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { Education, Experience, meta, Projects, resumedata, socialprofils } from "../../content_option";
+import { Education, Experience, meta, Projects, socialprofils } from "../../content_option";
 import { FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
 import { FaFileDownload } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
