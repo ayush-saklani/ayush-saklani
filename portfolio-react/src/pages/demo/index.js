@@ -18,7 +18,7 @@ export const Demo = () => {
                         <hr className="t_border mt-4 ml-0 text-left" />
                     </Col>
                 </Row>
-                <div className="row project-super-container">
+                <div className="row project-super-container hidden md:block">
                     {
                         Projects.map((data, i) => {
                             return (
@@ -40,6 +40,14 @@ export const Demo = () => {
                             <iframe src="" title="Lorem ipsum dolor" allowfullscreen></iframe>
                         </div>
                     </div>
+                </div>
+                <div className="row project-super-container md:hidden">
+                    <h1 className="text-3xl font-bold my-2">
+                        <div className="sm:text-2xl text-xl font-bold my-2">Screen size too small.</div>
+                        <div className="sm:text-2xl text-xl font-bold my-2">Please use a larger screen.</div>
+                        <div className="sm:text-2xl text-xl font-bold my-2">OR</div>
+                        <div className="sm:text-2xl text-xl font-bold my-2">Use the <span className="text-highlight">{"Demo"}</span> link in the resume section.</div>
+                    </h1>
                 </div>
             </Container>
         </HelmetProvider>
