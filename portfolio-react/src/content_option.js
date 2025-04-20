@@ -345,6 +345,7 @@ const Projects = [
             logos["javascript"], logos["nodejs"], logos["mongodb"], logos["json"]
         ],
         image: [
+            "https://raw.githubusercontent.com/ayush-saklani/classsync-generator/eb13f2f42e3714492d6d357f05e9fa3d0c69223c/assets/img/structure.svg",
             "https://raw.githubusercontent.com/ayush-saklani/classsync-generator/eb13f2f42e3714492d6d357f05e9fa3d0c69223c/assets/img/structure.svg"
         ]
     },
@@ -364,7 +365,10 @@ const Projects = [
             logos["javascript"], logos["nodejs"], logos["expressjs"], logos["mongodb"],
             logos["json"], logos["openstreetmap"], logos["leaflet"], logos['azure'], logos["vercel"], logos["postman"],
         ],
-        image: [myphoto2]
+        image: [
+            "https://raw.githubusercontent.com/ayush-saklani/navit/refs/heads/main/assets/images/snapshot/ss1.png",
+            "https://raw.githubusercontent.com/ayush-saklani/navit/refs/heads/main/assets/images/snapshot/ss2.png",
+        ]
     },
     {
         heading: "Class-Sync - University Timetable manager (v.2.0)",
@@ -381,7 +385,10 @@ const Projects = [
             logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"],
             logos["json"], logos['azure'], logos["vercel"], logos["postman"],
         ],
-        image: [myphoto2]
+        image: [
+            "https://raw.githubusercontent.com/ayush-saklani/classsync/refs/heads/main/assets/img/snapshots/ss2.png",
+            "https://raw.githubusercontent.com/ayush-saklani/classsync/refs/heads/main/assets/img/snapshots/ss1.png",
+        ]
     },
     {
         heading: "Book Recommender System",
@@ -392,7 +399,10 @@ const Projects = [
             "Machine Learning project that does content-based filtering to recommend the books to users.",
         ],
         technologies: [logos["python"], logos["jupyter"], logos["streamlit"], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
-        image: [myphoto2]
+        image: [
+            "https://raw.githubusercontent.com/ayush-saklani/book-recommendation-system/refs/heads/main/snapshots/ss1.png",
+            "https://raw.githubusercontent.com/ayush-saklani/book-recommendation-system/refs/heads/main/snapshots/ss2.png",
+        ]
     },
     {
         heading: "Stock price prediction using LSTM",
@@ -403,7 +413,10 @@ const Projects = [
             "Machine Learning project that does content-based filtering to recommend the books to users.",
         ],
         technologies: [logos["python"], logos["jupyter"], logos['tensorflow'], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
-        image: [myphoto2]
+        image: [
+            "https://raw.githubusercontent.com/ayush-saklani/Stock-price-prediction-using-LSTM/refs/heads/main/assets/logo1.png",
+            "https://raw.githubusercontent.com/ayush-saklani/Stock-price-prediction-using-LSTM/refs/heads/main/assets/logo1.png"
+        ]
     },
     {
         heading: "Mr. Minesweeper",
@@ -416,7 +429,10 @@ const Projects = [
             "Flagging mines, Game over detection and audio effects.",
         ],
         technologies: [logos["html"], logos["css"], logos["javascript"], logos["bootstrap"],],
-        image: [myphoto2]
+        image: [
+            "https://raw.githubusercontent.com/ayush-saklani/minesweeper/refs/heads/main/assets/image/snapshots/ss2.png",
+            "https://raw.githubusercontent.com/ayush-saklani/minesweeper/refs/heads/main/assets/image/snapshots/ss1.png",
+        ]
     },
     {
         heading: "Attendance Marking System (Mark my spot)",
@@ -431,7 +447,8 @@ const Projects = [
         ],
         technologies: [logos["html"], logos["css"], logos["javascript"]],
         image: [
-            "https://raw.githubusercontent.com/ayush-saklani/QR-Atttendence-System/refs/heads/main/media/pika.png"
+            "https://raw.githubusercontent.com/ayush-saklani/QR-Atttendence-System/refs/heads/main/media/pika.png",
+            "https://raw.githubusercontent.com/ayush-saklani/QR-Atttendence-System/refs/heads/main/media/pika.png",
         ]
     },
     {
@@ -443,7 +460,10 @@ const Projects = [
             "With admin and user portals.",
         ],
         technologies: [logos["c"], logos["cplusplus"]],
-        image: ["https://raw.githubusercontent.com/ayush-saklani/car-rental-system/refs/heads/main/Readme%20Media/7_user_car_list.png"]
+        image: [
+            "https://raw.githubusercontent.com/ayush-saklani/car-rental-system/refs/heads/main/Readme%20Media/7_user_car_list.png",
+            "https://raw.githubusercontent.com/ayush-saklani/car-rental-system/refs/heads/main/Readme%20Media/7_user_car_list.png"
+        ]
     },
     {
         heading: "Library Management System",
@@ -456,7 +476,8 @@ const Projects = [
         ],
         technologies: [logos["c"], logos["cplusplus"]],
         image: [
-            "https://raw.githubusercontent.com/ayush-saklani/library-management-system/refs/heads/main/Readme%20Media/6.0_student_book_list.png"
+            "https://raw.githubusercontent.com/ayush-saklani/library-management-system/refs/heads/main/Readme%20Media/6.0_student_book_list.png",
+            "https://raw.githubusercontent.com/ayush-saklani/library-management-system/refs/heads/main/Readme%20Media/6.0_student_book_list.png",
         ]
     },
 ]

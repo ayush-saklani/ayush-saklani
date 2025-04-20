@@ -83,7 +83,7 @@ export const Resume = () => {
                     <div className="py-3">
                         <h1 className="text-3xl md:text-4xl font-bold my-1">Projects</h1>
                         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6 lg:gap-8 mb-3">
-                            {0 &&
+                            {false &&
                                 Projects.map((data, i) => (
                                     <div className="w-3/3 col-span-1">
                                         <Project_Card information={data} />
