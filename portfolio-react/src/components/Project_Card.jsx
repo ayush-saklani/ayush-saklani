@@ -42,7 +42,7 @@ const Project_Card = ({ information }) => {
           </div>
           <div
             style={{
-              backgroundImage: `url(${information.image[0]})`,
+              backgroundImage: `url(${information.image[1]})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',

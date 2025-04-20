@@ -435,7 +435,7 @@ const Projects = [
         ]
     },
     {
-        heading: "Attendance Marking System (Mark my spot)",
+        heading: "Attendance Marking System",
         link: "https://github.com/ayush-saklani/QR-Atttendence-System",
         hosted_link: "https://markmyspot.vercel.app/",
         tags: ["2024", "Web Development"],
@@ -462,7 +462,7 @@ const Projects = [
         technologies: [logos["c"], logos["cplusplus"]],
         image: [
             "https://raw.githubusercontent.com/ayush-saklani/car-rental-system/refs/heads/main/Readme%20Media/7_user_car_list.png",
-            "https://raw.githubusercontent.com/ayush-saklani/car-rental-system/refs/heads/main/Readme%20Media/7_user_car_list.png"
+            "https://raw.githubusercontent.com/ayush-saklani/car-rental-system/refs/heads/main/Readme%20Media/4_Admin_portal.png",
         ]
     },
     {
@@ -477,7 +477,7 @@ const Projects = [
         technologies: [logos["c"], logos["cplusplus"]],
         image: [
             "https://raw.githubusercontent.com/ayush-saklani/library-management-system/refs/heads/main/Readme%20Media/6.0_student_book_list.png",
-            "https://raw.githubusercontent.com/ayush-saklani/library-management-system/refs/heads/main/Readme%20Media/6.0_student_book_list.png",
+            "https://raw.githubusercontent.com/ayush-saklani/library-management-system/refs/heads/main/Readme%20Media/9_admin_logs.png",
         ]
     },
 ]
