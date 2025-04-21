@@ -24,8 +24,8 @@ const Headermain = () => {
             {/* /////////////////////////////////////////// */}
             {/* Uncomment this line to enable theme toggle */}
             {/* /////////////////////////////////////////// */}
-            {/* <Themetoggle /> */} 
-            <button className="menu__button  nav_ac" onClick={handleToggle}>
+            {/* <Themetoggle /> */}
+            <button className="menu__button  nav_ac d-flex align-items-center justify-content-center" onClick={handleToggle}>
               {!isActive ? <VscClose /> : <VscGrabber />}
             </button>
           </div>
