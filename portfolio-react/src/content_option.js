@@ -1,12 +1,12 @@
 import githublogo from "./assets/images/github-logo.png";
 import leafletlogo from "./assets/images/Leaflet_logo.png";
 import vercellogo from "./assets/images/vercel-logo.png";
-import myphoto2 from "./assets/images/me.jpg";
-import myphoto3 from "./assets/images/me_2.png";
+import myphoto2 from "./assets/images/me5.jpg";
+import myphoto3 from "./assets/images/me_3.jpg";
 const logotext = "Ayush Saklani";
 
 const images = {
-    my_photo: myphoto3,
+    my_photo: myphoto2,
     my_photo2: myphoto3,
 }
 

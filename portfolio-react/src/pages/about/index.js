@@ -44,14 +44,15 @@ export const About = () => {
                         })}
                     </div>
                 </Row>
-                <div class="mb-5 justify-content-between align-items-center text-center row gap-3 py-3 grid grid-cols-12">
+                <div class="mb-5 justify-content-between align-items-center text-center row gap-3 py-3 grid grid-cols-3">
                     {dataabout3.map((data, i) => {
                         return (
-                            <div className="col-span-4 trans-box-count h-full lg:flex p-4 bg-grey " key={i}>
-                                <div className="col-lg-4 p-2 align-items-center">
+                            <div className="col-span-3 sm:col-span-1 trans-box-count h-full lg:flex p-4 bg-grey grid-cols-3 gap-2 justify-center items-center shadow-2xl" 
+                             key={i}>
+                                <div className="col-span-1 p-2 align-items-center">
                                     <img src={data.logo_link} className="mx-auto aspect-square" alt="logo" width={70} />
                                 </div>
-                                <div className="col-lg-8 text-center text-align-center my-auto">
+                                <div className="col-span-2 text-center text-align-center my-auto">
                                     <CountUp end={data.data} className="text-3xl block font-bold" />
                                     <a className="text" href={data.link} target="_blank" rel="noopener noreferrer"><b>{data.title}</b></a>
                                 </div>
