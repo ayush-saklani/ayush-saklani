@@ -87,7 +87,7 @@ code {
 }
 
 .cursor__dot div:last-child {
-    background-color: var(--text-color-3) !important;
+    background-color: var(--text-color-4) !important;
 }
 
 .cursor__dot div:first-child {

@@ -8,7 +8,7 @@ const AnimatedName = () => {
         duration: 5000,
         delay: stagger(10),
         autoplay: true,
-        loop: true,
+        loop: false,
     });
 
     return (
