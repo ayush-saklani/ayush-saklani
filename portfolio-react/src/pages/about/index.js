@@ -27,7 +27,7 @@ export const About = () => {
                         <hr className="my-4 ml-0 text-left" />
                     </Col>
                 </Row>
-                <Row className="mb-5 bg-grey py-2" >
+                <Row className="mb-5 bg-[#25252549] py-2" >
                     <img src={images.my_photo2} className="col-xl-4 col-lg-7 py-2" style={{ objectFit: "contain" }} alt="Me" />
                     <div className="col-xl-8 col-lg-5 row py-3">
                         <h3 className="text-highlight hover:text-highlight-hover mb-2 text-3xl font-bold">{dataabout.title}</h3>
@@ -47,7 +47,7 @@ export const About = () => {
                 <div class="mb-5 justify-content-between align-items-center text-center row gap-3 py-3 grid grid-cols-3">
                     {dataabout3.map((data, i) => {
                         return (
-                            <div className="col-span-3 sm:col-span-1 trans-box-count h-full lg:flex p-4 bg-grey grid-cols-3 gap-2 justify-center items-center shadow-2xl" 
+                            <div className="col-span-3 sm:col-span-1 trans-box-count h-full lg:flex p-4 bg-[#25252549] grid-cols-3 gap-2 justify-center items-center shadow-2xl" 
                              key={i}>
                                 <div className="col-span-1 p-2 align-items-center">
                                     <img src={data.logo_link} className="mx-auto aspect-square" alt="logo" width={70} />
@@ -60,11 +60,11 @@ export const About = () => {
                         )
                     })}
                 </div>
-                {/* <Row className="mb-5 bg-grey text-center align-items-center row px-2 py-3 gap-2">
+                {/* <Row className="mb-5 bg-[#25252549] text-center align-items-center row px-2 py-3 gap-2">
                     <h3 className="color_sec py-2 font-bold text-xl">Github Contibution Graph</h3>
                     <img src="http://ghchart.rshah.org/ayush-saklani" />
                 </Row> */}
-                <Row className="mb-5 bg-grey text-center justify-evenly row px-2 py-3 grid grid-cols-12 gap-2">
+                <Row className="mb-5 bg-[#25252549] text-center justify-evenly row px-2 py-3 grid grid-cols-12 gap-2">
                     {
                         Interests.map((data, i) => {
                             return (

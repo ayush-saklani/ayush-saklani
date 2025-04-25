@@ -10,8 +10,7 @@ const Project_Card = ({ information }) => {
   return (
     <StyledWrapper>
       <div className="flip-card w-full flex items-center justify-center lg:h-[40vh] h-[50vh]">
-        <div className="flip-card-inner bg-gradient-to-tr from-[#171717] to-[#252525] rounded-lg shadow-lg flex flex-col justify-center items-center gap-2">
-
+        <div className="flip-card-inner bg-gradient-to-tr from-[#17171791] to-[#25252593] rounded-lg shadow-lg flex flex-col justify-center items-center gap-2">
           <div className="flip-card-front px-3 align-middle flex flex-col justify-center items-center gap-2"
             style={{
               backgroundImage: `url(${information.image[0]})`,
@@ -20,7 +19,7 @@ const Project_Card = ({ information }) => {
               backgroundRepeat: 'no-repeat',
             }}
           >
-            <div className="absolute inset-0 bg-[#000000d3]"></div>
+            <div className="absolute inset-0 bg-[#000000d7]"></div>
             <div className="absolute top-2 right-2 text-white text-xl">
               <GiClick size={22} />
             </div>
