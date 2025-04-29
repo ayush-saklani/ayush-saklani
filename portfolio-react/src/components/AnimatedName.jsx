@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+// import React, { useEffect, useRef } from 'react';
 import { animate, svg, stagger } from 'animejs';
 
 const AnimatedName = () => {
@@ -8,11 +8,11 @@ const AnimatedName = () => {
         duration: 5000,
         delay: stagger(10),
         autoplay: true,
-        loop: false,
+        loop: true,
     });
 
     return (
-        <svg width="818.001" height="98.4" viewBox="0 0 818.001 98.4" xmlns="http://www.w3.org/2000/svg">
+        <svg width="818.001" height="180" viewBox="0 0 818.001 98.4" xmlns="http://www.w3.org/2000/svg">
             <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
                 {/* header font */}
                 {/* 

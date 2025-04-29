@@ -17,7 +17,7 @@ export const Home = () => {
         </Helmet>
         <div className="intro_sec align-items-center block lg:flex">
           <div
-            className="h-[50vh] md:h-[60vh] lg:h-full lg:w-1/2 bg-cover bg-center order-1"
+            className="h-[60vh] md:h-[60vh] lg:h-full lg:w-1/2 bg-cover bg-center order-1"
             style={{ backgroundImage: `url(${introdata.your_img_url})` }}
           ></div>
           <div className="text h-100 lg:flex justify-content-center mt-6 lg:mt-0">
