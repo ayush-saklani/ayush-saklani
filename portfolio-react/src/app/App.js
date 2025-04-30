@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, useLocation, } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
-import Headermain from "../header";
+import Headermain from "../components/header";
 import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
 import video from "../assets/images/stars-motion-loop-background.mp4";
