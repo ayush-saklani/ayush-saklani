@@ -49,7 +49,7 @@ export default function App() {
         />
       </div>
       {/* black layer and star video below */}
-      {/* <video ref={videoRef} src={video} autoPlay muted loop id="bg-video" className="bg-video" preload="auto"
+      <video ref={videoRef} src={video} autoPlay muted loop id="bg-video" className="bg-video" preload="auto"
         onContextMenu={(e) => e.preventDefault()} onDragStart={(e) => e.preventDefault()}
         style={{
           position: "fixed",
@@ -71,10 +71,10 @@ export default function App() {
           backgroundColor: "#0000009a", // adjust 0.4 for opacity
           zIndex: -1,
         }}
-      ></div> */}
+      ></div>
       {
         loading &&
-        <div className="fixed inset-0 w-full h-screen bg-black bg-opacity-25 backdrop-blur-xl flex items-center justify-center z-[9999]">
+        <div className="fixed inset-0 w-full h-screen bg-[#000000b6] backdrop-blur-xl flex items-center justify-center z-[9999]">
           <div className="text-center text-5xl md:text-8xl font-extrabold text-highlight">
             <AnimatedNameLoader />
           </div>

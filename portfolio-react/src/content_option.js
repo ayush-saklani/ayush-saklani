@@ -3,6 +3,14 @@ import leafletlogo from "./assets/images/Leaflet_logo.png";
 import vercellogo from "./assets/images/vercel-logo.png";
 import myphoto2 from "./assets/images/me5.jpg";
 import myphoto3 from "./assets/images/me_3.jpg";
+import LSTM1 from "./assets/images/projects/LSTM1.png";
+import LSTM2 from "./assets/images/projects/LSTM2.png";
+import LMS1 from "./assets/images/projects/LMS1.png";
+import LMS2 from "./assets/images/projects/LMS2.png";
+import CRS1 from "./assets/images/projects/CRS1.png";
+import CRS2 from "./assets/images/projects/CRS2.png";
+import GA1 from "./assets/images/projects/GA1.png";
+import GA2 from "./assets/images/projects/GA2.png";
 const logotext = "Ayush Saklani";
 
 const images = {
@@ -84,7 +92,7 @@ const Interests = [
 
 const dataabout = {
     title: "Know Me Better",
-    aboutme: "I am a final-year CSE undergrad student. With a strong foundation in Machine Learning and Full-Stack Development. I am a passionate programmer and a quick learner, always eager to learn new technologies and implement them in my projects.",
+    aboutme: "I am a final-year CSE undergrad student With a strong foundation in Machine Learning and Full-Stack Development. I’ve developed projects like an Genetic Algorithm based timetable generator and Indoor navigation system for my University.",
 };
 
 const socialprofils = {
@@ -93,7 +101,7 @@ const socialprofils = {
     github: "https://github.com/ayush-saklani/",
     linkedin: "https://www.linkedin.com/in/ayush-saklani/",
     instagram: "https://www.instagram.com/ayush_saklanii/",
-    twitter: "https://x.com/ayush_saklanii",
+    // twitter: "https://x.com/ayush_saklanii",
     leetcode: "",
     chesscom: "https://www.chess.com/member/ayushsaklani",
 };
@@ -191,9 +199,8 @@ const Projects = [
             logos['python'], logos["jupyter"], logos["numpy"], logos["pandas"],
             logos["javascript"], logos["nodejs"], logos["mongodb"], logos["json"]
         ],
-        image: [
+        image: [GA2, GA1,
             "https://raw.githubusercontent.com/ayush-saklani/classsync-generator/eb13f2f42e3714492d6d357f05e9fa3d0c69223c/assets/img/structure.svg",
-            "https://raw.githubusercontent.com/ayush-saklani/classsync-generator/eb13f2f42e3714492d6d357f05e9fa3d0c69223c/assets/img/structure.svg"
         ]
     },
     {
@@ -260,10 +267,7 @@ const Projects = [
             "Machine Learning project that does content-based filtering to recommend the books to users.",
         ],
         technologies: [logos["python"], logos["jupyter"], logos['tensorflow'], logos["numpy"], logos["pandas"], logos["scikitlearn"]],
-        image: [
-            "https://raw.githubusercontent.com/ayush-saklani/Stock-price-prediction-using-LSTM/refs/heads/main/assets/logo1.png",
-            "https://raw.githubusercontent.com/ayush-saklani/Stock-price-prediction-using-LSTM/refs/heads/main/assets/logo1.png"
-        ]
+        image: [LSTM1, LSTM2]
     },
     {
         heading: "Mr. Minesweeper",
@@ -307,10 +311,7 @@ const Projects = [
             "With admin and user portals.",
         ],
         technologies: [logos["c"], logos["cplusplus"]],
-        image: [
-            "https://raw.githubusercontent.com/ayush-saklani/car-rental-system/refs/heads/main/Readme%20Media/7_user_car_list.png",
-            "https://raw.githubusercontent.com/ayush-saklani/car-rental-system/refs/heads/main/Readme%20Media/4_Admin_portal.png",
-        ]
+        image: [CRS2, CRS1]
     },
     {
         heading: "Library Management System",
@@ -322,10 +323,7 @@ const Projects = [
             "With Librarian and user portals.",
         ],
         technologies: [logos["c"], logos["cplusplus"]],
-        image: [
-            "https://raw.githubusercontent.com/ayush-saklani/library-management-system/refs/heads/main/Readme%20Media/6.0_student_book_list.png",
-            "https://raw.githubusercontent.com/ayush-saklani/library-management-system/refs/heads/main/Readme%20Media/9_admin_logs.png",
-        ]
+        image: [LMS1, LMS2]
     },
 ]
 

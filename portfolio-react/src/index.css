@@ -1,6 +1,6 @@
 :root {
     --bg-color: #0c0c0c;
-    --primary-color: #0d0d0d;
+    --primary-color: #000000;
     --secondary-color: #fff;
     --text-color: #fff;
     --text-color-2: #fff;
@@ -42,7 +42,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-top: 60px;
-    border-left: 10px solid var(--primary-color);
+    /* i think this is not required we have br-top, br-bottom, br-left, br-right */
+    border-left: 10px solid var(--primary-color); 
     border-right: 10px solid var(--primary-color);
 }
 
@@ -106,15 +107,15 @@ code {
     position: relative;
 }
 .under-development::before {
-    content: "";        
-    position: absolute; 
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;                                 
-    height: 100%;                               
-    background-image: url('./assets/images/under-development.png');     
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/images/under-development.png');
     background-size:contain ;                   
     background-position: center ;               
     background-repeat: no-repeat;
-    z-index: 3; 
+    z-index: 3;
 }

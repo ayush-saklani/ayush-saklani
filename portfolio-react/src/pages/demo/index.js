@@ -22,14 +22,22 @@ export const Demo = () => {
                     {
                         Projects.map((data, i) => {
                             return (
-                                data.hosted_link &&
                                 <div key={i} className="pb-3 mb-4 project-container">
                                     <a href={data.link} target="_blank" rel="noopener noreferrer">
                                         <h2 className="font-bold text-2xl my-1 uppercase p-2 text-highlight hover:text-highlight-hover">{data.heading} </h2>
                                     </a>
-                                    <div className="ratio ratio-16x9 project-frame">
-                                        <iframe src={data.hosted_link} allowfullscreen title={data.heading}></iframe>
-                                    </div>
+                                    {
+                                        data.hosted_link ?
+                                            <div className="ratio ratio-16x9 project-frame">
+                                                <iframe src={data.hosted_link} allowfullscreen title={data.heading} className="rounded-md"></iframe>
+                                            </div>
+                                            :
+                                            <div className="flex justify-center">
+                                                <div className="w-full aspect-[16/9]">
+                                                    <img src={data.image[0]} title={data.heading} className="w-full h-full object-scale-down rounded-md" alt={data.heading} />
+                                                </div>
+                                            </div>
+                                    }
                                 </div>
                             );
                         })

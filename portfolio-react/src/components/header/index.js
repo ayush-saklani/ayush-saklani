@@ -17,7 +17,7 @@ const Headermain = () => {
     <>
       <header className="fixed-top p-2 ">
         <div className="d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac bg-[#0d0d0d]" to="/">
+          <Link className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
@@ -25,7 +25,7 @@ const Headermain = () => {
             {/* Uncomment this line to enable theme toggle */}
             {/* /////////////////////////////////////////// */}
             {/* <Themetoggle /> */}
-            <button className="menu__button  nav_ac d-flex align-items-center justify-content-center bg-[#0d0d0d]" onClick={handleToggle}>
+            <button className="menu__button  nav_ac d-flex align-items-center justify-content-center" onClick={handleToggle}>
               {!isActive ? <VscClose /> : <VscGrabber />}
             </button>
           </div>
