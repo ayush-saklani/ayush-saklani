@@ -5,6 +5,7 @@
     "dependencies": {
         "animejs": "^4.0.1",
         "bootstrap": "^5.2.3",
+        "ogl": "^1.0.11",
         "react": "^18.2.0",
         "react-bootstrap": "^2.7.0",
         "react-countup": "^6.5.3",
