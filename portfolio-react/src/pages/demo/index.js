@@ -3,6 +3,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { meta, Projects } from "../../content_option";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const Demo = () => {
     return (
@@ -23,8 +24,9 @@ export const Demo = () => {
                         Projects.map((data, i) => {
                             return (
                                 <div key={i} className="pb-3 mb-4 project-container">
-                                    <a href={data.link} target="_blank" rel="noopener noreferrer">
+                                    <a href={data.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
                                         <h2 className="font-bold text-2xl my-1 uppercase p-2 text-highlight hover:text-highlight-hover">{data.heading} </h2>
+                                        <FaExternalLinkAlt size={20} />
                                     </a>
                                     {
                                         data.hosted_link ?

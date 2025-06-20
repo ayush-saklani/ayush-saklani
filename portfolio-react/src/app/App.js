@@ -49,7 +49,7 @@ export default function App() {
         />
       </div>
       {/* black layer and star video below */}
-      <video ref={videoRef} src={video} autoPlay muted loop id="bg-video" className="bg-video" preload="auto"
+      {/* <video ref={videoRef} src={video} autoPlay muted loop id="bg-video" className="bg-video" preload="auto"
         onContextMenu={(e) => e.preventDefault()} onDragStart={(e) => e.preventDefault()}
         style={{
           position: "fixed",
@@ -60,7 +60,7 @@ export default function App() {
           objectFit: "cover",
           zIndex: -2,
         }}
-      />
+      /> */}
       <div
         style={{
           position: "fixed",

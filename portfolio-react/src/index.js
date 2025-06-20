@@ -4,6 +4,7 @@ import App from './app/App';
 import './index.css';
 // import Hyperspeed from './effects/Hyperspeed';
 import SplashCursor from './effects/SplashCursor';
+import Particles from './effects/Particles';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,7 +13,7 @@ root.render(
             <SplashCursor />
         </div>
         {/* Uncomment the Hyperspeed effect below if you want to use it */}
-        {/* <div className='h-screen w-screen absolute top-0 left-0 z-[-1]'
+        <div className='h-screen w-screen absolute top-0 left-0 z-[-2] bg-black'
             style={{
                 position: "fixed",
                 top: 0,
@@ -20,7 +21,17 @@ root.render(
                 objectFit: "cover",
             }}
         >
-            <Hyperspeed
+            <Particles
+                particleColors={['#ffffff', '#ffffff']}
+                particleCount={400}
+                particleSpread={10}
+                speed={0.1}
+                particleBaseSize={100}
+                moveParticlesOnHover={false}
+                alphaParticles={false}
+                disableRotation={false}
+            />
+            {/* <Hyperspeed
                 effectOptions={{
                     onSpeedUp: () => { },
                     onSlowDown: () => { },
@@ -58,8 +69,8 @@ root.render(
                         sticks: 0x03B3C3,
                     }
                 }}
-            />
-        </div> */}
+            /> */}
+        </div>
         <App />
     </>
 );

@@ -84,12 +84,16 @@ const logos = {
 };
 
 const Interests = [
+    logos["cplusplus"], logos["python"], logos["reactjs"], logos["nextjs"],
+    logos["tailwindcss"], logos["javascript"], logos["typescript"], logos["nodejs"],
+    logos["mongodb"], logos["mysql"], logos["openstreetmap"], logos["leaflet"]
+];
+const Interests2 = [
     logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"],
     logos["reactjs"], logos["nextjs"], logos["tailwindcss"], logos["javascript"], logos["typescript"],
     logos["nodejs"], logos["expressjs"], logos["firebase"], logos["mongodb"], logos["azure"],
     logos["mysql"], logos["openstreetmap"], logos["leaflet"], logos["json"], logos["postman"], logos["pikachu"],
 ];
-
 const dataabout = {
     title: "Know Me Better",
     aboutme: "I am a final-year CSE undergrad student With a strong foundation in Machine Learning and Full-Stack Development. I’ve developed projects like an Genetic Algorithm based timetable generator and Indoor navigation system for my University.",
@@ -337,6 +341,7 @@ export {
     logotext,
     logos,
     Interests,
+    Interests2,
     images,
     Education,
     Experience,
