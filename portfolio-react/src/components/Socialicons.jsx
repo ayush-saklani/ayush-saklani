@@ -1,3 +1,57 @@
+import React from "react";
+import { FaGithub, FaLinkedin, FaYoutube, FaInstagram, } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { socialprofils } from "../content_option";
+import styled from 'styled-components';
+
+export const Socialicons = (params) => {
+  return (
+    <StyledWrapper>
+      <div className="stick_follow_icon">
+        <ul>
+          {socialprofils.twitter && (
+            <li>
+              <a href={socialprofils.twitter} target="_blank" rel="noopener noreferrer">
+                <FaXTwitter />
+              </a>
+            </li>
+          )}
+          {socialprofils.github && (
+            <li>
+              <a href={socialprofils.github} target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+            </li>
+          )}
+          {socialprofils.linkedin && (
+            <li>
+              <a href={socialprofils.linkedin} target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
+            </li>
+          )}
+          {socialprofils.youtube && (
+            <li>
+              <a href={socialprofils.youtube} target="_blank" rel="noopener noreferrer">
+                <FaYoutube />
+              </a>
+            </li>
+          )}
+          {socialprofils.instagram && (
+            <li>
+              <a href={socialprofils.instagram} target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+            </li>
+          )}
+        </ul>
+        <p>Follow Me</p>
+      </div>
+    </StyledWrapper>
+  );
+};
+
+const StyledWrapper = styled.div`
 .stick_follow_icon {
     top: 50%;
     left: 30px;
@@ -52,13 +106,7 @@
     background-color: var(--text-color);
 }
 
-@media screen and (max-width: 1260px) {
-    .stick_follow_icon {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1400px) {
     .stick_follow_icon {
         width: unset;
         height: unset;
@@ -95,3 +143,4 @@
         margin-right: 10px;
     }
 }
+`;
