@@ -101,7 +101,7 @@ const dataabout = {
 
 const socialprofils = {
     email: "mailto:ayushsaklani04@gmail.com",
-    resume: "",
+    resume: "https://drive.google.com/file/d/13PyfSSKROHG5tEhlguPm3nB_r-fRIit9/view?usp=sharing",
     github: "https://github.com/ayush-saklani/",
     linkedin: "https://www.linkedin.com/in/ayush-saklani/",
     instagram: "https://www.instagram.com/ayush_saklanii/",
@@ -197,7 +197,6 @@ const Projects = [
             "Created a Genetic Algorithm from scratch to generate the timetable for university.",
             "This eliminates any conflicts, clashes and optimizes the timetable Scheduling.",
             "It uses the data from the Class-Sync project to generate the timetable.",
-            "It Generates the timetable and saves it back to the database.",
         ],
         technologies: [
             logos['python'], logos["jupyter"], logos["numpy"], logos["pandas"],
@@ -213,8 +212,7 @@ const Projects = [
         hosted_link: "https://navit.vercel.app/",
         tags: ["2024", "Web Development"],
         description: [
-            "Guides you to the place you want to go inside university campus.",
-            "Designed specially for freshers and Visiting Faculties.",
+            "Guides you inside university campus, Designed specially for freshers and Visiting Faculties.",
             "Uses Dijkstra algorithm and show you the path to the room.",
             "Uses OpenStreetMap for custom mapping features for map.",
         ],
@@ -289,23 +287,23 @@ const Projects = [
             "https://raw.githubusercontent.com/ayush-saklani/minesweeper/refs/heads/main/assets/image/snapshots/ss1.png",
         ]
     },
-    {
-        heading: "Attendance Marking System",
-        link: "https://github.com/ayush-saklani/QR-Atttendence-System",
-        hosted_link: "https://markmyspot.vercel.app/",
-        tags: ["2024", "Web Development"],
-        description: [
-            "The Smart Attendance Marking web-based application.",
-            "It allows students to input their details via a web form and generates QR codes",
-            "Enables teachers to scan QR codes to mark attendance",
-            "later a CSV file with record can be downloaded.",
-        ],
-        technologies: [logos["html"], logos["css"], logos["javascript"]],
-        image: [
-            "https://raw.githubusercontent.com/ayush-saklani/QR-Atttendence-System/refs/heads/main/media/pika.png",
-            "https://raw.githubusercontent.com/ayush-saklani/QR-Atttendence-System/refs/heads/main/media/pika.png",
-        ]
-    },
+    // {
+    //     heading: "Attendance Marking System",
+    //     link: "https://github.com/ayush-saklani/QR-Atttendence-System",
+    //     hosted_link: "https://markmyspot.vercel.app/",
+    //     tags: ["2024", "Web Development", "Mini Project"],
+    //     description: [
+    //         "The Smart Attendance Marking web-based application.",
+    //         "It allows students to input their details via a web form and generates QR codes",
+    //         "Enables teachers to scan QR codes to mark attendance",
+    //         "later a CSV file with record can be downloaded.",
+    //     ],
+    //     technologies: [logos["html"], logos["css"], logos["javascript"]],
+    //     image: [
+    //         "https://raw.githubusercontent.com/ayush-saklani/QR-Atttendence-System/refs/heads/main/media/pika.png",
+    //         "https://raw.githubusercontent.com/ayush-saklani/QR-Atttendence-System/refs/heads/main/media/pika.png",
+    //     ]
+    // },
     {
         heading: "Car Rental Management System",
         link: "https://github.com/ayush-saklani/car-rental-system",
