@@ -37,8 +37,8 @@ const introdata = {
 };
 
 const logos = {
-    "c": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
-    "cplusplus": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    "c": "https://devicon-website.vercel.app/api/c/original.svg",
+    "cplusplus": "https://devicon-website.vercel.app/api/cplusplus/original.svg",
     "python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     "jupyter": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg",
     "java": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
@@ -227,7 +227,7 @@ const Projects = [
         ]
     },
     {
-        heading: "Class-Sync - University Timetable manager (v.2.0)",
+        heading: "Class-Sync - University Timetable manager (v.3.0)",
         link: "https://github.com/ayush-saklani/classsync",
         hosted_link: "https://projectclasssync.vercel.app/",
         tags: ["2024", "Web Development"],
@@ -238,8 +238,8 @@ const Projects = [
             "Enabled real-time updates and conﬂict resolution through dedicated viewing and editing pages.",
         ],
         technologies: [
-            logos["html"], logos["css"], logos["javascript"], logos['bootstrap'], logos["nodejs"], logos["expressjs"], logos["mongodb"],
-            logos["json"], logos['azure'], logos["vercel"], logos["postman"],
+            logos["nextjs"], logos["typescript"], logos["javascript"], logos["nodejs"], logos["expressjs"], logos['tailwindcss'], logos['bootstrap'],
+            logos["mongodb"], logos["json"], logos['azure'], logos["vercel"], logos["postman"],
         ],
         image: [
             "https://raw.githubusercontent.com/ayush-saklani/classsync/refs/heads/main/assets/img/snapshots/ss2.png",
