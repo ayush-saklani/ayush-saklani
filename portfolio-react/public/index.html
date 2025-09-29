@@ -3,7 +3,17 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./icon.png" />
+    <link rel="icon" href="./logo.png" />
+    <script>
+      const today = new Date();
+    if (
+      (today.getMonth() === 7 && today.getDate() === 15) || // 15 August (month 7)  // Independence Day
+      (today.getMonth() === 0 && today.getDate() === 26)    // 26 January (month 0) // Republic Day
+      // saare jaha se accha hindostan hamara 
+    ) {
+      document.write('<link rel="icon" type="image/png" href="./flag.png" />');
+    }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Ayush Saklani">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
