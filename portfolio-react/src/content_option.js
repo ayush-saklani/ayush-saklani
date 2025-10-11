@@ -101,7 +101,7 @@ const dataabout = {
 
 const socialprofils = {
     email: "mailto:ayushsaklani04@gmail.com",
-    resume: "https://drive.google.com/file/d/13PyfSSKROHG5tEhlguPm3nB_r-fRIit9/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1y1lMtcVQ2dxG9gMO71N15mmsFl2QZliu/view?usp=sharing",
     github: "https://github.com/ayush-saklani/",
     linkedin: "https://www.linkedin.com/in/ayush-saklani/",
     instagram: "https://www.instagram.com/ayush_saklanii/",
