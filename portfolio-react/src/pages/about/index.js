@@ -3,6 +3,7 @@ import "./style.css";
 import CountUp from 'react-countup';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
+import LogoLoop from "../../components/LogoLoop";
 import {
     dataabout,
     dataabout2,
@@ -44,7 +45,7 @@ export const About = () => {
                         })}
                     </div>
                 </Row>
-                <div class="mb-5 justify-content-between align-items-center text-center row gap-3 py-3 grid grid-cols-3">
+                <div className="mb-5 justify-content-between align-items-center text-center row gap-3 py-3 grid grid-cols-3">
                     {dataabout3.map((data, i) => {
                         return (
                             <div className="col-span-3 sm:col-span-1 trans-box-count h-full lg:flex p-4 bg-[#25252549] grid-cols-3 gap-2 justify-center items-center shadow-2xl"
@@ -77,6 +78,22 @@ export const About = () => {
                             })
                         }
                     </div>
+                    {/* <div className="px-2 py-3" style={{ height: '', position: 'relative', overflow: 'hidden' }}>
+                        <LogoLoop
+                            logos={Interests.map((src, i) => ({
+                                src,
+                                alt: `Interest ${i + 1}`
+                            }))}
+                            speed={40}
+                            direction="left"
+                            logoHeight={70}
+                            gap={40}
+                            pauseOnHover={false}
+                            scaleOnHover
+                            fadeOut
+                            fadeOutColor="transparent"
+                        />
+                    </div> */}
                 </Row>
             </Container>
         </HelmetProvider>
