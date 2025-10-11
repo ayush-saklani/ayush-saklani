@@ -54,8 +54,10 @@ export const About = () => {
                                     <img src={data.logo_link} className="mx-auto aspect-square" alt="logo" width={70} />
                                 </div>
                                 <div className="col-span-2 text-center text-align-center my-auto">
-                                    <CountUp end={data.data} className="text-3xl block font-bold" />
-                                    <a className="text" href={data.link} target="_blank" rel="noopener noreferrer"><b>{data.title}</b></a>
+                                    <a className="text" href={data.link} target="_blank" rel="noopener noreferrer">
+                                        <CountUp end={data.data} className="text-3xl block font-bold" />
+                                        <b>{data.title}</b>
+                                    </a>
                                 </div>
                             </div>
                         )
@@ -67,7 +69,7 @@ export const About = () => {
                 </Row> */}
                 <Row className="mb-5 bg-[#25252549] text-center align-items-center row">
                     {/* <h3 className=" bg-[#25252549]  color_sec py-2 font-bold text-xl">Technologies I Use</h3> */}
-                    <div className="text-center justify-evenly px-2 py-3 grid grid-cols-12 gap-2">
+                    {/* <div className="text-center justify-evenly px-2 py-3 grid grid-cols-12 gap-2">
                         {
                             Interests.map((data, i) => {
                                 return (
@@ -77,23 +79,23 @@ export const About = () => {
                                 );
                             })
                         }
-                    </div>
-                    {/* <div className="px-2 py-3" style={{ height: '', position: 'relative', overflow: 'hidden' }}>
+                    </div> */}
+                    <div className="px-2 py-3" style={{ height: '', position: 'relative', overflow: 'hidden' }}>
                         <LogoLoop
                             logos={Interests.map((src, i) => ({
                                 src,
                                 alt: `Interest ${i + 1}`
                             }))}
-                            speed={40}
+                            speed={50}
                             direction="left"
                             logoHeight={70}
-                            gap={40}
+                            gap={25}
                             pauseOnHover={false}
-                            scaleOnHover
-                            fadeOut
+                            scaleOnHover={true}
+                            fadeOut={true}
                             fadeOutColor="transparent"
                         />
-                    </div> */}
+                    </div>
                 </Row>
             </Container>
         </HelmetProvider>

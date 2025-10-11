@@ -85,8 +85,9 @@ const logos = {
 
 const Interests = [
     logos["cplusplus"], logos["python"], logos["reactjs"], logos["nextjs"],
-    logos["tailwindcss"], logos["javascript"], logos["typescript"], logos["nodejs"],
-    logos["mongodb"], logos["mysql"], logos["openstreetmap"], logos["leaflet"]
+    logos["tailwindcss"], logos["javascript"], logos["typescript"], logos["nodejs"], logos["expressjs"],
+    logos["mongodb"], logos["firebase"], logos["mysql"], logos["openstreetmap"], logos["leaflet"],
+    logos["postman"], logos["pikachu"],
 ];
 const Interests2 = [
     logos["c"], logos["cplusplus"], logos["leetcode"], logos["python"], logos["jupyter"],
@@ -114,7 +115,7 @@ const dataabout2 = [
     { title: "Email", "data": "ayushsaklani04@gmail.com" },
     { title: "City", "data": "Dehradun, Uttarakhand" },
     { title: "Degree", "data": "BTech CSE" },
-    { title: "Age", "data": "20" },
+    { title: "Age", "data": "21" },
     { title: "Languages", data: "English, Hindi" },
     // { title: "Interests", data: "Programming, Web Development, Machine Learning" },
 ]
@@ -122,7 +123,7 @@ const dataabout2 = [
 const dataabout3 = [
     {
         title: "Problem solved",
-        data: 148,
+        data: 180,
         logo_link: logos["leetcode"],
         link: socialprofils.leetcode,
     },
