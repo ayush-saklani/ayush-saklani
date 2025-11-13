@@ -28,7 +28,7 @@ const meta = {
 const introdata = {
     title: "I’m Ayush Saklani",
     animated: {
-        first: "I'm a Full Stack Developer",
+        first: "I'm a Software Developer",
         second: "I'm a CS undergrad Student",
         third: "I develop Web apps",
     },
@@ -102,7 +102,7 @@ const dataabout = {
 
 const socialprofils = {
     email: "mailto:ayushsaklani04@gmail.com",
-    resume: "https://drive.google.com/file/d/1y1lMtcVQ2dxG9gMO71N15mmsFl2QZliu/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1P19ZjsTnijLNGqMcC-zAqkJNr-jiEwDT/view?usp=sharing",
     github: "https://github.com/ayush-saklani/",
     linkedin: "https://www.linkedin.com/in/ayush-saklani/",
     instagram: "https://www.instagram.com/ayush_saklanii/",
@@ -123,7 +123,7 @@ const dataabout2 = [
 const dataabout3 = [
     {
         title: "Problem solved",
-        data: 180,
+        data: 210,
         logo_link: logos["leetcode"],
         link: socialprofils.leetcode,
     },
@@ -135,7 +135,7 @@ const dataabout3 = [
     },
     {
         title: "Rapid Rating",
-        data: 1552,
+        data: 1800,
         logo_link: logos["chess.com"],
         link: socialprofils.chesscom
     }
