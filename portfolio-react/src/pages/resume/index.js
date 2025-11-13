@@ -1,16 +1,51 @@
 import React, { useState } from "react";
 import "./style.css";
+import Modal from 'react-modal';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { Education, Experience, meta, Projects, socialprofils } from "../../content_option";
 import { FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
-import { FaFileDownload } from "react-icons/fa";
+import { FaExternalLinkAlt, FaFileDownload } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 import { BiLogoGmail } from "react-icons/bi";
 import Project_Card from "../../components/Project_Card";
 import ToggleSwitch from "../../components/ToggleSwitch";
 
+
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        // right: 'auto',
+        // bottom: 'auto',
+        height: '100%',
+        width: '70%',
+        backgroundColor: 'transparent',
+        // marginRight: '-50%',
+        border: 'none',
+        transform: 'translate(-50%, -50%)',
+        borderRadius: '10px',
+    },
+    overlay: {
+        backgroundColor: 'rgba(0,0,0,0.4)',
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
+        borderRadius: '10px',
+        zIndex: '99999',
+    },
+};
+
 export const Resume = () => {
     const [projectstyle, setProjectStyle] = useState(true);
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [selectedProject, setSelectedProject] = useState(null);
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
     return (
         <HelmetProvider>
             <Container className="About-header pb-5">
@@ -90,8 +125,9 @@ export const Resume = () => {
                         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6 lg:gap-8 mb-3">
                             {projectstyle &&
                                 Projects.map((data, i) => (
-                                    <div className="w-3/3 col-span-1">
+                                    <div className="w-3/3 col-span-1" key={i}>
                                         <Project_Card information={data} />
+                                        <button className="text-lg font-bold text-highlight-dark hover:text-highlight-hover pt-2" onClick={() => { setSelectedProject(data); openModal(); }}>Demo</button>
                                     </div>
                                 ))}
                         </div>
@@ -106,6 +142,7 @@ export const Resume = () => {
                                             </a> : data.heading
                                         }
                                     </h4>
+                                    <button className="ml-auto ps-3 py-1 text-lg md:text-xl font-extrabold my-0.5" onClick={() => { setSelectedProject(data); openModal(); }}>Demo</button>
                                     {
                                         data.tags &&
                                         <div className="mx-[2rem] gap-1.5 flex flex-wrap">
@@ -135,7 +172,74 @@ export const Resume = () => {
                         }
                     </div>
                 }
+                <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={closeModal}
+                    style={customStyles}
+                >
+                    <div className="" style={{ position: 'relative' }}>
+                        {/* Red cross close button on the top-right */}
+                        <button
+                            onClick={closeModal}
+                            aria-label="Close"
+                            style={{
+                                position: 'absolute',
+                                top: 10,
+                                right: 10,
+                                height: 28,
+                                width: 28,
+                                color: 'white',
+                                background: 'red',
+                                border: 'none',
+                                fontSize: 26,
+                                borderRadius: '50%',
+                                cursor: 'pointer',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                            }}
+                        > <ImCross size={15} className="p-0 m-0" />
+                        </button>
+
+                        {selectedProject ? (
+                            selectedProject.link ? (
+                                <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 ">
+                                    <h2 className="font-bold text-2xl my-1 uppercase p-2 text-highlight hover:text-highlight-hover">{selectedProject.heading} </h2>
+                                    <FaExternalLinkAlt size={20} />
+                                </a>
+                            ) : (
+                                <h2 className="font-bold text-2xl my-1 uppercase p-2 text-highlight">{selectedProject.heading}</h2>
+                            )
+                        ) : null}
+
+                        {
+                            selectedProject && (selectedProject.hosted_link ?
+                                <div className="ratio ratio-16x9 rounded-md">
+                                    <iframe src={selectedProject.hosted_link} title={selectedProject.heading} className="" allowFullScreen></iframe>
+                                </div>
+                                :
+                                <div className="flex justify-center">
+                                    <div className="w-full aspect-[16/9]">
+                                        {selectedProject.image && selectedProject.image[0] && (
+                                            <img src={selectedProject.image[0]} title={selectedProject.heading} className="w-full h-full object-scale-down rounded-md" alt={selectedProject.heading} />
+                                        )}
+                                    </div>
+                                </div>
+                            )
+                        }
+                        {
+                            <div className="row project-super-container lg:hidden">
+                                <h1 className="text-3xl font-bold my-2">
+                                    <div className="sm:text-2xl text-xl font-bold my-2">Screen size too small.</div>
+                                    <div className="sm:text-2xl text-xl font-bold my-2">Please use a larger screen.</div>
+                                    <div className="sm:text-2xl text-xl font-bold my-2">OR</div>
+                                    <div className="sm:text-2xl text-xl font-bold my-2">Use the <span className="text-highlight">{"Demo"}</span> link in the resume section.</div>
+                                </h1>
+                            </div>
+                        }
+                    </div>
+                </Modal>
             </Container>
-        </HelmetProvider>
+        </HelmetProvider >
     );
 };
