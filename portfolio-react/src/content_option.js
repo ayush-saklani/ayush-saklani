@@ -220,7 +220,7 @@ const Projects = [
         technologies: [
             logos['reactjs'], logos["tailwindcss"],
             logos["javascript"], logos["nodejs"], logos["expressjs"], logos["mongodb"],
-            logos["json"], logos["openstreetmap"], logos["leaflet"], logos['azure'], logos["vercel"], logos["postman"],
+            logos["json"], logos["openstreetmap"], logos["leaflet"], logos['azure']
         ],
         image: [
             "https://raw.githubusercontent.com/ayush-saklani/navit/refs/heads/main/assets/images/snapshot/ss1.png",
@@ -239,8 +239,8 @@ const Projects = [
             "Enabled real-time updates and conﬂict resolution through dedicated viewing and editing pages.",
         ],
         technologies: [
-            logos["nextjs"], logos["typescript"], logos["javascript"], logos["nodejs"], logos["expressjs"], logos['tailwindcss'], logos['bootstrap'],
-            logos["mongodb"], logos["json"], logos['azure'], logos["vercel"], logos["postman"],
+            logos["nextjs"], logos['tailwindcss'], logos["typescript"], logos["javascript"],
+            logos["nodejs"], logos["expressjs"], logos["mongodb"], logos["json"], logos['azure'],
         ],
         image: [
             "https://raw.githubusercontent.com/ayush-saklani/classsync/refs/heads/main/assets/img/snapshots/ss2.png",

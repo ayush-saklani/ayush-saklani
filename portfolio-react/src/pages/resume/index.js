@@ -6,32 +6,40 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Education, Experience, meta, Projects, socialprofils } from "../../content_option";
 import { FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
 import { FaExternalLinkAlt, FaFileDownload } from "react-icons/fa";
+import { TbFileCv } from "react-icons/tb";
+import { TfiEmail } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
-import { BiLogoGmail } from "react-icons/bi";
 import Project_Card from "../../components/Project_Card";
 import ToggleSwitch from "../../components/ToggleSwitch";
+import GradientText from "../../components/GradientText";
 
+const isBrowser = typeof window !== "undefined";
+const isMobile = isBrowser && window.innerWidth <= 768;
 
 const customStyles = {
     content: {
         top: '50%',
         left: '50%',
-        // right: 'auto',
-        // bottom: 'auto',
-        height: '100%',
-        width: '70%',
-        backgroundColor: 'transparent',
-        // marginRight: '-50%',
-        border: 'none',
         transform: 'translate(-50%, -50%)',
+        width: isMobile ? '90%' : '70%',
+        height: '100%',
+        overflow: 'auto',
+        backgroundColor: 'transparent',
+        border: 'none',
         borderRadius: '10px',
+        padding: isMobile ? '0.5rem' : '1rem',
+        boxSizing: 'border-box',
     },
     overlay: {
-        backgroundColor: 'rgba(0,0,0,0.4)',
-        backdropFilter: 'blur(8px)',
-        WebkitBackdropFilter: 'blur(8px)',
-        borderRadius: '10px',
-        zIndex: '99999',
+        backgroundColor: 'rgba(0,0,0,0.6)',
+        backdropFilter: 'blur(6px)',
+        WebkitBackdropFilter: 'blur(6px)',
+        zIndex: 99999,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: isMobile ? '1rem' : '2rem',
+        boxSizing: 'border-box',
     },
 };
 
@@ -65,8 +73,8 @@ export const Resume = () => {
                     {socialprofils.github && <a href={socialprofils.github} target="_blank" rel="noopener noreferrer"><FaGithub /></a>}
                     {socialprofils.linkedin && <a href={socialprofils.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>}
                     {socialprofils.twitter && <a href={socialprofils.twitter} target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>}
-                    {socialprofils.email && <a href={socialprofils.email} target="_blank" rel="noopener noreferrer"><BiLogoGmail /></a>}
-                    {socialprofils.resume && <a href={socialprofils.resume} target="_blank" rel="noopener noreferrer"><FaFileDownload /></a>}
+                    {socialprofils.email && <a href={socialprofils.email} target="_blank" rel="noopener noreferrer"><TfiEmail /></a>}
+                    {socialprofils.resume && <a href={socialprofils.resume} target="_blank" rel="noopener noreferrer"><TbFileCv /></a>}
                 </h2>
                 {
                     <div className="py-3">
@@ -127,7 +135,15 @@ export const Resume = () => {
                                 Projects.map((data, i) => (
                                     <div className="w-3/3 col-span-1" key={i}>
                                         <Project_Card information={data} />
-                                        <button className="text-lg font-bold text-highlight-dark hover:text-highlight-hover pt-2" onClick={() => { setSelectedProject(data); openModal(); }}>Demo</button>
+                                        <button className="ml-auto pt-1 text-lg md:text-xl font-extrabold my-0.5" onClick={() => { setSelectedProject(data); openModal(); }}>
+                                            <GradientText
+                                                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                                animationSpeed={3}
+                                                showBorder={false}
+                                                className="custom-class"
+                                            >Demo
+                                            </GradientText>
+                                        </button>
                                     </div>
                                 ))}
                         </div>
@@ -141,8 +157,16 @@ export const Resume = () => {
                                                 {data.heading}
                                             </a> : data.heading
                                         }
+                                        <button className="ml-auto ps-3 py-1 text-lg md:text-xl font-extrabold my-0.5" onClick={() => { setSelectedProject(data); openModal(); }}>
+                                            <GradientText
+                                                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                                animationSpeed={3}
+                                                showBorder={false}
+                                                className="custom-class"
+                                            >Demo
+                                            </GradientText>
+                                        </button>
                                     </h4>
-                                    <button className="ml-auto ps-3 py-1 text-lg md:text-xl font-extrabold my-0.5" onClick={() => { setSelectedProject(data); openModal(); }}>Demo</button>
                                     {
                                         data.tags &&
                                         <div className="mx-[2rem] gap-1.5 flex flex-wrap">
@@ -177,19 +201,19 @@ export const Resume = () => {
                     onRequestClose={closeModal}
                     style={customStyles}
                 >
-                    <div className="" style={{ position: 'relative' }}>
+                    <div className="p-1" style={{ position: 'relative' }}>
                         {/* Red cross close button on the top-right */}
                         <button
                             onClick={closeModal}
                             aria-label="Close"
                             style={{
                                 position: 'absolute',
-                                top: 10,
-                                right: 10,
-                                height: 28,
-                                width: 28,
+                                top: 0,
+                                right: 0,
+                                height: 25,
+                                width: 25,
                                 color: 'white',
-                                background: 'red',
+                                background: '#e81123',
                                 border: 'none',
                                 fontSize: 26,
                                 borderRadius: '50%',
@@ -198,7 +222,7 @@ export const Resume = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                             }}
-                        > <ImCross size={15} className="p-0 m-0" />
+                        > <ImCross size={13} className="p-0 m-0" />
                         </button>
 
                         {selectedProject ? (
@@ -214,26 +238,21 @@ export const Resume = () => {
 
                         {
                             selectedProject && (selectedProject.hosted_link ?
-                                <div className="ratio ratio-16x9 rounded-md">
-                                    <iframe src={selectedProject.hosted_link} title={selectedProject.heading} className="" allowFullScreen></iframe>
-                                </div>
+                                <iframe src={selectedProject.hosted_link} title={selectedProject.heading} className="aspect-video rounded-md" allowFullScreen></iframe>
                                 :
                                 <div className="flex justify-center">
-                                    <div className="w-full aspect-[16/9]">
-                                        {selectedProject.image && selectedProject.image[0] && (
-                                            <img src={selectedProject.image[0]} title={selectedProject.heading} className="w-full h-full object-scale-down rounded-md" alt={selectedProject.heading} />
-                                        )}
-                                    </div>
+                                    {selectedProject.image && selectedProject.image[0] && (
+                                        <img src={selectedProject.image[0]} title={selectedProject.heading} className="w-full h-full object-scale-down rounded-md" alt={selectedProject.heading} />
+                                    )}
                                 </div>
                             )
                         }
                         {
                             <div className="row project-super-container lg:hidden">
                                 <h1 className="text-3xl font-bold my-2">
-                                    <div className="sm:text-2xl text-xl font-bold my-2">Screen size too small.</div>
-                                    <div className="sm:text-2xl text-xl font-bold my-2">Please use a larger screen.</div>
+                                    <div className="sm:text-2xl text-xl font-bold my-2">Screen size too small. Please use a larger screen.</div>
                                     <div className="sm:text-2xl text-xl font-bold my-2">OR</div>
-                                    <div className="sm:text-2xl text-xl font-bold my-2">Use the <span className="text-highlight">{"Demo"}</span> link in the resume section.</div>
+                                    <div className="sm:text-2xl text-xl font-bold my-2">Use the <span className="text-highlight">{"Demo"}</span> link Above.</div>
                                 </h1>
                             </div>
                         }
