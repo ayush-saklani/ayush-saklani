@@ -20,19 +20,19 @@ const images = {
 
 const meta = {
     title: "Ayush Saklani",
-    short_description: "I’m Ayush Saklani a CS undergrad, Full stack devloper, from Dehradun Uttrarakhand",
-    description: ` I am Ayush Saklani, a final-year CSE undergrad student. With a strong foundation in Machine Learning and Full-Stack Development. 
-    I am a passionate programmer and a quick learner, always eager to learn new technologies and implement them in my projects.`,
+    short_description: "Software Engineer at IBM | Full Stack Developer | Computer Science Graduate from Uttarakhand, India",
+    description: `I am Ayush Saklani, a Computer Science graduate currently working as an Associate System Engineer at IBM. 
+    I specialize in Machine Learning and Full-Stack Development and enjoy building scalable web applications, solving problems, and learning modern technologies.`,
 };
-
 const introdata = {
     title: "I’m Ayush Saklani",
     animated: {
-        first: "I'm a Software Developer",
-        second: "I'm a CS undergrad Student",
-        third: "I develop Web apps",
+        first: "I'm a Software Engineer",
+        second: "I'm a Full Stack Developer",
+        third: "I'm building real-world solutions",
     },
-    description: "I'm a Software Developer, hailing from Dehradun, Uttarakhand, India.",
+    // description: "I'm a Software Developer, hailing from Dehradun, Uttarakhand, India.",
+    description: "Associate System Engineer at IBM, based in India. I build clean, scalable software and practical solutions.",
     your_img_url: images.my_photo,
 };
 
@@ -97,9 +97,9 @@ const Interests2 = [
 ];
 const dataabout = {
     title: "Know Me Better",
-    aboutme: "I am a final-year CSE undergrad student With a strong foundation in Machine Learning and Full-Stack Development. I’ve developed projects like an Genetic Algorithm based timetable generator and Indoor navigation system for my University.",
+    // aboutme: "I am a final-year CSE undergrad student With a strong foundation in Machine Learning and Full-Stack Development. I’ve developed projects like an Genetic Algorithm based timetable generator and Indoor navigation system for my University.",
+    aboutme: "I am a CS graduate currently working at IBM as an Associate System Engineer. My background includes Full-Stack Development, backend systems, and problem solving. I’ve built projects in web development, automation, and machine learning.",
 };
-
 const socialprofils = {
     email: "mailto:ayushsaklani04@gmail.com",
     resume: "https://drive.google.com/file/d/1P19ZjsTnijLNGqMcC-zAqkJNr-jiEwDT/view?usp=sharing",
@@ -113,7 +113,7 @@ const socialprofils = {
 
 const dataabout2 = [
     { title: "Email", "data": "ayushsaklani04@gmail.com" },
-    { title: "City", "data": "Dehradun, Uttarakhand" },
+    { title: "City", "data": "Dehradun | Bengaluru" },
     { title: "Degree", "data": "BTech CSE" },
     { title: "Age", "data": "21" },
     { title: "Languages", data: "English, Hindi" },
@@ -123,7 +123,7 @@ const dataabout2 = [
 const dataabout3 = [
     {
         title: "Problem solved",
-        data: 210,
+        data: 220,
         logo_link: logos["leetcode"],
         link: socialprofils.leetcode,
     },
@@ -166,6 +166,17 @@ const Education = [
 ]
 const Experience = [
     {
+        heading: "IBM",
+        role: "Associate System Engineer",
+        year: "December 2025 - Present",
+        tags: ["Associate System Engineer", "December 2025 - Present"],
+        description: [
+            "Working on enterprise application development, maintenance, and production support.",
+            "Contributing to backend and full-stack solutions with focus on reliability and scalability.",
+            "Collaborating with cross-functional teams in an agile delivery environment.",
+        ],
+    },
+    {
         heading: "Crux Sphere Technologies",
         role: "Software Developer Intern",
         year: "November 2024 - March 2025",
@@ -176,17 +187,17 @@ const Experience = [
             "Gained hands-on experience with full-stack development technologies.",
         ],
     },
-    {
-        heading: "Technology Business Incubator - GEU",
-        role: "Full Stack Developer Intern",
-        year: "July 2024 - October 2024",
-        tags: ["Full Stack Developer Intern", "July 2024 - October 2024"],
-        description: [
-            "Worked on developing and maintaining web applications.",
-            "Collaborated with a team to design and implement new features.",
-            "Gained hands-on experience with full-stack development technologies.",
-        ],
-    },
+    // {
+    //     heading: "Technology Business Incubator - GEU",
+    //     role: "Full Stack Developer Intern",
+    //     year: "July 2024 - October 2024",
+    //     tags: ["Full Stack Developer Intern", "July 2024 - October 2024"],
+    //     description: [
+    //         "Worked on developing and maintaining web applications.",
+    //         "Collaborated with a team to design and implement new features.",
+    //         "Gained hands-on experience with full-stack development technologies.",
+    //     ],
+    // },
 ]
 const Projects = [
     {

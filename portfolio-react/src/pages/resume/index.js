@@ -78,30 +78,6 @@ export const Resume = () => {
                 </h2>
                 {
                     <div className="py-3">
-                        <h1 className="text-3xl md:text-4xl font-bold my-1">Education</h1>
-                        {
-                            Education.map((data, i) => (
-                                <div key={i} className="rounded-m p-3 bg-[#25252549]">
-                                    <h4 className="px-2 text-highlight flex text-lg md:text-xl font-extrabold uppercase align-middle flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
-                                        <span className="flex flex-col lg:flex-row items-start lg:items-center gap-2">
-                                            <span className="flex items-center text-highlight font-extrabold uppercase gap-2">
-                                                <FaPlay className="me-2" size={16} />
-                                                <span>{data.heading}</span>
-                                            </span>
-                                            <div className="flex flex-wrap items-center gap-2 px-[2rem] lg:px-0">
-                                                <span className="text-white">{data.board}</span>
-                                                <span className="text-[cyan]">{data.certification}</span>
-                                            </div>
-                                        </span>
-                                        <span className="text-white font-bold uppercase px-[2rem] lg:px-0">{data.year}</span>
-                                    </h4>
-                                </div>
-                            ))
-                        }
-                    </div>
-                }
-                {
-                    <div className="py-3">
                         <h1 className="text-3xl md:text-4xl font-bold my-1">Experience</h1>
                         {
                             Experience.map((data, i) => (
@@ -119,6 +95,30 @@ export const Resume = () => {
                                         <span className="text-white font-bold px-[2rem] lg:px-0">{data.year}</span>
                                     </div>
 
+                                </div>
+                            ))
+                        }
+                    </div>
+                }
+                {
+                    <div className="py-3">
+                        <h1 className="text-3xl md:text-4xl font-bold my-1">Education</h1>
+                        {
+                            Education.map((data, i) => (
+                                <div key={i} className="rounded-m p-3 bg-[#25252549]">
+                                    <h4 className="px-2 text-highlight flex text-lg md:text-xl font-extrabold uppercase align-middle flex-col lg:flex-row lg:items-center lg:justify-between gap-2">
+                                        <span className="flex flex-col lg:flex-row items-start lg:items-center gap-2">
+                                            <span className="flex items-center text-highlight font-extrabold uppercase gap-2">
+                                                <FaPlay className="me-2" size={16} />
+                                                <span>{data.heading}</span>
+                                            </span>
+                                            <div className="flex flex-wrap items-center gap-2 px-[2rem] lg:px-0">
+                                                <span className="text-white">{data.board}</span>
+                                                <span className="text-[cyan]">{data.certification}</span>
+                                            </div>
+                                        </span>
+                                        <span className="text-white font-bold uppercase px-[2rem] lg:px-0">{data.year}</span>
+                                    </h4>
                                 </div>
                             ))
                         }

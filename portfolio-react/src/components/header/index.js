@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
@@ -10,8 +10,15 @@ const Headermain = () => {
 
   const handleToggle = () => {
     setMenuOpen(!isMenuOpen);
-    document.body.classList.toggle("ovhidden");
   };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("ovhidden");
+    } else {
+      document.body.classList.remove("ovhidden");
+    }
+  }, [isMenuOpen]);
 
   return (
     <>

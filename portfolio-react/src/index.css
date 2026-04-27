@@ -22,8 +22,7 @@
     --primary-color-lighter : #ecebeb;
 }
 
-html,
-body {
+html {
     height: 100%;
 }
 .nav_ac {
@@ -33,18 +32,15 @@ body {
 }
 body {
     margin: 0;
-    height: 100%;
+    min-height: 100%;
     overflow-x: hidden;
-    overflow-y: visible;
+    overflow-y: auto;
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: Montserrat;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-top: 60px;
-    /* i think this is not required we have br-top, br-bottom, br-left, br-right */
-    /* border-left: 10px solid var(--primary-color); 
-    border-right: 10px solid var(--primary-color); */
 }
 
 ul {
