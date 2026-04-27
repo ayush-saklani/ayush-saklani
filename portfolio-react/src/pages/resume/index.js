@@ -5,7 +5,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { Education, Experience, meta, Projects, socialprofils } from "../../content_option";
 import { FaGithub, FaLinkedin, FaPlay, FaXTwitter } from "react-icons/fa6";
-import { FaExternalLinkAlt, FaFileDownload } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { TbFileCv } from "react-icons/tb";
 import { TfiEmail } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";

@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
-import AnimatedName from "../../components/AnimatedName";
+// import AnimatedName from "../../components/AnimatedName";
 
 export const Home = () => {
   return (

@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdOutlineSwipeRight, MdOutlineSwipeVertical, MdSwipeRight, MdSwipeUp } from "react-icons/md";
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { TbHandClick } from "react-icons/tb";
 import { GiClick } from "react-icons/gi";
 import { FaGithub } from 'react-icons/fa6';
 
