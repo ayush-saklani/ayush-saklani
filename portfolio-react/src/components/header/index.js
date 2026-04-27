@@ -6,10 +6,10 @@ import { logotext } from "../../content_option";
 // import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleToggle = () => {
-    setActive(!isActive);
+    setMenuOpen(!isMenuOpen);
     document.body.classList.toggle("ovhidden");
   };
 
@@ -26,34 +26,34 @@ const Headermain = () => {
             {/* /////////////////////////////////////////// */}
             {/* <Themetoggle /> */}
             <button className="menu__button  nav_ac d-flex align-items-center justify-content-center" onClick={handleToggle}>
-              {!isActive ? <VscClose /> : <VscGrabber />}
+              {isMenuOpen ? <VscClose /> : <VscGrabber />}
             </button>
           </div>
         </div>
-
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
-          <div className="bg__menu h-100">
-            <div className="menu__wrapper">
-              <div className="menu__container p-3">
-                <ul className="the_menu hover:text-highlight-light">
-                  <li className="menu_item ">
-                    <Link onClick={handleToggle} to="/" className="my-3">Home</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/resume" className="my-3"> Resume</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/demo" className="my-3">Demo</Link>
-                  </li>
-                </ul>
-              </div>
+      </header>
+      <div className={`site__navigation ${isMenuOpen ? "menu__opend" : ""}`}>
+        <div className="bg__menu h-100">
+          <div className="menu__wrapper">
+            <div className="menu__container p-3">
+              <ul className="the_menu hover:text-highlight-light">
+                <li className="menu_item ">
+                  <Link onClick={handleToggle} to="/" className="my-3">Home</Link>
+                </li>
+                <li className="menu_item">
+                  <Link onClick={handleToggle} to="/resume" className="my-3"> Resume</Link>
+                </li>
+                <li className="menu_item">
+                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                </li>
+                <li className="menu_item">
+                  <Link onClick={handleToggle} to="/demo" className="my-3">Demo</Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+
       {/* <div className="br-top"></div>
       <div className="br-bottom"></div>
       <div className="br-left"></div>

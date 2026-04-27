@@ -86,6 +86,7 @@ header{
     top: 0;
     width: 100%;
     visibility: hidden;
+    z-index: 1020;
 }
 
 .menu__opend {
