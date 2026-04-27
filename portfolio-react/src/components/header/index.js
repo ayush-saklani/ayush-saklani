@@ -15,7 +15,7 @@ const Headermain = () => {
 
   return (
     <>
-      <header className="fixed-top p-2 ">
+      <header className="fixed-top p-2 bg-black/50 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none">
         <div className="d-flex align-items-center justify-content-between">
           <Link className="navbar-brand nav_ac" to="/">
             {logotext}
@@ -54,10 +54,10 @@ const Headermain = () => {
           </div>
         </div>
       </header>
-      <div className="br-top"></div>
+      {/* <div className="br-top"></div>
       <div className="br-bottom"></div>
       <div className="br-left"></div>
-      <div className="br-right"></div>
+      <div className="br-right"></div> */}
 
     </>
   );

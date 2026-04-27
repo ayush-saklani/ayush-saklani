@@ -43,8 +43,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     padding-top: 60px;
     /* i think this is not required we have br-top, br-bottom, br-left, br-right */
-    border-left: 10px solid var(--primary-color); 
-    border-right: 10px solid var(--primary-color);
+    /* border-left: 10px solid var(--primary-color); 
+    border-right: 10px solid var(--primary-color); */
 }
 
 ul {
