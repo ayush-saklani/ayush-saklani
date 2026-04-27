@@ -12,6 +12,7 @@ import { ImCross } from "react-icons/im";
 import Project_Card from "../../components/Project_Card";
 import ToggleSwitch from "../../components/ToggleSwitch";
 import GradientText from "../../components/GradientText";
+import Carousel from "../../components/Carousel";
 
 const isBrowser = typeof window !== "undefined";
 const isMobile = isBrowser && window.innerWidth <= 768;
@@ -241,9 +242,13 @@ export const Resume = () => {
                                 <iframe src={selectedProject.hosted_link} title={selectedProject.heading} className="aspect-video rounded-md" allowFullScreen></iframe>
                                 :
                                 <div className="flex justify-center">
-                                    {selectedProject.image && selectedProject.image[0] && (
-                                        <img src={selectedProject.image[0]} title={selectedProject.heading} className="w-full h-full object-scale-down rounded-md" alt={selectedProject.heading} />
-                                    )}
+                                    <Carousel
+                                        items={selectedProject.image.map((img, index) => ({
+                                            id: index,
+                                            image: img,
+                                            alt: `${selectedProject.heading} - Image ${index + 1}`
+                                        }))}
+                                    />
                                 </div>
                             )
                         }

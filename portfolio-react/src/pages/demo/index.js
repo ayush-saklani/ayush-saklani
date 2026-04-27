@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { meta, Projects } from "../../content_option";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import Carousel from "../../components/Carousel";
 
 export const Demo = () => {
     return (
@@ -36,7 +37,14 @@ export const Demo = () => {
                                             :
                                             <div className="flex justify-center">
                                                 <div className="w-full aspect-[16/9]">
-                                                    <img src={data.image[0]} title={data.heading} className="w-full h-full object-scale-down rounded-md" alt={data.heading} />
+                                                    <Carousel
+                                                        items={data.image.map((img, index) => ({
+                                                            id: index,
+                                                            image: img,
+                                                            alt: `${data.heading} - Image ${index + 1}`
+                                                        }))}
+                                                    />
+                                                    {/* <img src={data.image[0]} title={data.heading} className="w-full h-full object-scale-down rounded-md" alt={data.heading} /> */}
                                                 </div>
                                             </div>
                                     }

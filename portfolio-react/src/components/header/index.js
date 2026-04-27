@@ -24,7 +24,7 @@ const Headermain = () => {
     <>
       <header className="fixed-top p-2 bg-black/50 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none">
         <div className="d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" to="/">
+          <Link className="navbar-brand nav_ac bg-black bg-opacity-50" to="/">
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
