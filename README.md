@@ -1,5 +1,6 @@
 <!-- ![](https://komarev.com/ghpvc/?username=ayush-saklani) -->
-<img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="100%"/>
+<!-- <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="100%"/> -->
+<img src="./assets/img/mario.gif" width="100%"/>
 <p align="center">
 <!-- <img src="https://devicon-website.vercel.app/api/c/original.svg" height="60"/> -->
 <img src="https://devicon-website.vercel.app/api/cplusplus/original.svg" height="60"/>
